@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RecipeHub</string>
+    <string-array name="tipos_de_receita">
+        <item>Tipo</item>
+        <item>Normal</item>
+        <item>Vegetariano</item>
+        <item>Vegano</item>
+        <item>Sem lactose</item>
+        <item>Sem glúten</item>
+        <item>Sem açúcar</item>
+    </string-array>
+    <string name="nome_receita">Nome:</string>
+    <string name="ingredientes">Ingredientes:</string>
+    <string name="tempo">Tempo:</string>
+    <string name="sal">Salgado</string>
+    <string name="doce">Doce</string>
+    <string-array name="database">
+        <item>Bolo de cenoura</item>
+        <item>Suflê de couve-flor</item>
+        <item>Macarrão da Vovó</item>
+    </string-array>
+    <string name="preparo">Modo de preparo:</string>
+    <string name="tipo">Tipo: </string>
+    <string name="nome">Nome: </string>
+
+</resources>

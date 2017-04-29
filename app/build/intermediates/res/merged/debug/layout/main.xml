@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/searchBackground"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_textedit"
+        android:drawableLeft="@drawable/ic_search_black_18dp"
+        android:drawableStart="@drawable/ic_search_black_18dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Search..."
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:textColor="@color/searchText"
+        android:textColorHint="@color/searchHint"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addRecipe"
+        android:layout_width="389dp"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="novaReceita"
+        android:text="Adicionar receita" />
+
+    <Button
+        android:id="@+id/menuID"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/search"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ic_menu_black_24dp"
+        android:onClick="onClick" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addRecipe">
+
+        <TableRow
+            android:id="@+id/firstRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/addRecipe">
+
+            <TextView
+                android:id="@+id/receitaFeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tipoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/receitaFeed"
+                android:layout_alignBottom="@+id/receitaFeed"
+                android:layout_marginStart="116dp"
+                android:layout_toEndOf="@+id/receitaFeed"
+                android:text="TextView"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/sdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+
+
+
+</RelativeLayout>
