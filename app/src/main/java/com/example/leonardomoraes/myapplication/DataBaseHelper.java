@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by ADM on 22/05/2017.
  */
-
+/*
 public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "RecipeHub.db";
     public static final String TABLE_NAME = "tabela_Receitas";
@@ -61,7 +61,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     }
     public Cursor getAllData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM" + TABLE_NAME, null);
-        return res;
+        return db.rawQuery("SELECT * FROM" + TABLE_NAME, null);
     }
 }
+*/

@@ -38,15 +38,13 @@ public class TelaReceita extends AppCompatActivity {
         final EditText ingrediente = (EditText) findViewById(R.id.ingredientesEdit);
         final EditText preparo = (EditText) findViewById(R.id.preparoEdit);
         final EditText tempo = (EditText) findViewById(R.id.tempoEdit);
-        final int tempoInt = Integer.parseInt(tempo.getText().toString());
-        final DataBaseHelper myDB = new DataBaseHelper(this);
 
         criar = (Button) findViewById(R.id.criarReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                myDB.insertData(nome.toString(), ingrediente.toString(), tempoInt, sabor.toString(), tipo.toString(), preparo.toString());
+                //myDB.insertData(nome.toString(), ingrediente.toString(), tempo.toString(), sabor.toString(), tipo.toString(), preparo.toString());
             }
         });
     }

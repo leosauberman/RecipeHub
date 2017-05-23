@@ -1,4 +1,4 @@
-#Mon May 22 21:50:17 BRT 2017
+#Tue May 23 19:38:53 BRT 2017
 file.2=C\:\\Users\\ADM\\Documents\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_95972253be51c3223bb49c6277c71238915e0961\\classes.dex
 base.2=C\:\\Users\\ADM\\Documents\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_95972253be51c3223bb49c6277c71238915e0961
 file.1=C\:\\Users\\ADM\\Documents\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_7a7ba371f66793baf4c6f651659a44cd0ef09703\\classes.dex
