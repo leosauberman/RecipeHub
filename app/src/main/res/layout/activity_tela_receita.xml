@@ -102,8 +102,8 @@
         android:layout_marginBottom="101dp"
         android:layout_marginTop="300dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignBottom="@id/ingredientesEdit"

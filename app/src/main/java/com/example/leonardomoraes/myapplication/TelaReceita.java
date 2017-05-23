@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -20,8 +21,7 @@ import java.util.Map;
 public class TelaReceita extends AppCompatActivity {
 
     private Button criar;
-    private EditText nomeReceita, ingredientes, preparo, tempo;
-    private TextView receitaFeed, tipoTextView, sdTextView;
+    private ImageButton addImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,49 +31,24 @@ public class TelaReceita extends AppCompatActivity {
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         ((Spinner) findViewById(R.id.tipo)).setAdapter(adapter);
 
+        addImage = (ImageButton) findViewById(R.id.imageButton);
+        final EditText nome = (EditText) findViewById(R.id.nomeEdit);
+        final Spinner tipo = (Spinner) findViewById(R.id.tipo);
+        final RadioGroup sabor = (RadioGroup) findViewById(R.id.radioGroup);
+        final EditText ingrediente = (EditText) findViewById(R.id.ingredientesEdit);
+        final EditText preparo = (EditText) findViewById(R.id.preparoEdit);
+        final EditText tempo = (EditText) findViewById(R.id.tempoEdit);
+        final int tempoInt = Integer.parseInt(tempo.getText().toString());
+        final DataBaseHelper myDB = new DataBaseHelper(this);
+
         criar = (Button) findViewById(R.id.criarReceita);
+        criar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                myDB.insertData(nome.toString(), ingrediente.toString(), tempoInt, sabor.toString(), tipo.toString(), preparo.toString());
+            }
+        });
     }
-    public void addReceita(View view) {
-        Bundle params = new Bundle();
-        //Map<String, String> campos = new HashMap<>();
-        EditText nome = (EditText) findViewById(R.id.nomeEdit);
-        Spinner tipo = (Spinner) findViewById(R.id.tipo);
-        RadioButton sal = (RadioButton) findViewById(R.id.salgado);
-        RadioButton doce = (RadioButton) findViewById(R.id.doce);
-        EditText ingredientes = (EditText) findViewById(R.id.ingredientesEdit);
-        EditText preparo = (EditText) findViewById(R.id.preparoEdit);
-        EditText tempo = (EditText) findViewById(R.id.tempoEdit);
-
-        if(!nome.toString().isEmpty() && !tipo.toString().isEmpty() && !ingredientes.toString().isEmpty() && !preparo.toString().isEmpty()){
-            params.putString("nome", nome.toString());
-            params.putString("tipo", nome.toString());
-        }
-
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtras(params);
-
-        startActivityForResult(intent, 1);
-    }
-    public void aceitou(View view){
-            Intent intent = new Intent();
-            intent.putExtra("msg", "Receita adicionada");
-            setResult(1, intent);
-            finish();
-    }
-    /*Intent intent = new Intent(this, MainActivity.class);
-                                intent.putExtras(params);
-
-    startActivityForResult(intent, 1);*/
-
-
-        /*
-
-        public void aceitou(View view){
-            Intent intent = new Intent();
-            intent.putExtra("msg", "Aceitou");
-
-            setResult(1, intent);
-            finish();
-        }*/
-    }
+}
 
