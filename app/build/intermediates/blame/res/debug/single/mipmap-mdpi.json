@@ -2,5 +2,9 @@
     {
         "merged": "D:\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "D:\\MyApplication\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "J:\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "J:\\MyApplication\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]
