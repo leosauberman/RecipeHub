@@ -5,12 +5,12 @@ package com.example.leonardomoraes.myapplication;
  */
 
 public class Receita {
-    String nome;
-    String ingrediente;
-    String tempo;
-    String sabor;
-    String tipo;
-    String preparo;
+    private String nome;
+    private String ingrediente;
+    private String tempo;
+    private String sabor;
+    private String tipo;
+    private String preparo;
 
     public String getNome() {
         return nome;
