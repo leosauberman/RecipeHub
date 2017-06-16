@@ -1,7 +1,7 @@
-#Tue Jun 13 22:35:09 BRT 2017
-base.0=D\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68994dc71f3db8cf0686299f241e2114c8957c07
+#Fri Jun 16 16:00:47 BRT 2017
+base.0=J\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b382193a1d9d08df3a4524d8486fe002dec0b11b
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=D\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7f1486bfaa8347ba56a31cf1ce9dbe7ba493c42d\\classes.dex
-base.1=D\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7f1486bfaa8347ba56a31cf1ce9dbe7ba493c42d
-file.0=D\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68994dc71f3db8cf0686299f241e2114c8957c07\\classes.dex
+file.1=J\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_85a569df4c2fa155799d7916cd5da9b621557178\\classes.dex
+base.1=J\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_85a569df4c2fa155799d7916cd5da9b621557178
+file.0=J\:\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b382193a1d9d08df3a4524d8486fe002dec0b11b\\classes.dex

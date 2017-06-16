@@ -6,6 +6,16 @@ package com.example.leonardomoraes.myapplication;
 
 public class Receita {
     private String nome;
+
+    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo) {
+        this.nome = nome;
+        this.ingrediente = ingrediente;
+        this.tempo = tempo;
+        this.sabor = sabor;
+        this.tipo = tipo;
+        this.preparo = preparo;
+    }
+
     private String ingrediente;
     private String tempo;
     private String sabor;

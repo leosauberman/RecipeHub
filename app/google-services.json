@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "578118998514-oi5qs7f1q5o64h3suqojd4aa2l3abm63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leonardomoraes.myapplication",
+            "certificate_hash": "1c948c5f40e0d6a0e690b15a033b9ca1d3f6ad44"
+          }
+        },
+        {
           "client_id": "578118998514-5kqtp3ilh1ad4h8qik96un1qgkunmh2g.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578118998514-5kqtp3ilh1ad4h8qik96un1qgkunmh2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

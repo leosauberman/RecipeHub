@@ -15,13 +15,22 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class TelaReceita extends AppCompatActivity {
 
     private Button criar;
+    private EditText nome, ingrediente, tempo, preparo;
+    private Spinner tipo;
     private ImageButton addImage;
+    private Receita receita;
+    private RadioButton sal, doce;
+    private FirebaseDatabase database;
+    private DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +41,36 @@ public class TelaReceita extends AppCompatActivity {
         ((Spinner) findViewById(R.id.tipo)).setAdapter(adapter);
 
         addImage = (ImageButton) findViewById(R.id.imageButton);
-        final EditText nome = (EditText) findViewById(R.id.nomeEdit);
-        final Spinner tipo = (Spinner) findViewById(R.id.tipo);
-        final RadioGroup sabor = (RadioGroup) findViewById(R.id.radioGroup);
-        final EditText ingrediente = (EditText) findViewById(R.id.ingredientesEdit);
-        final EditText preparo = (EditText) findViewById(R.id.preparoEdit);
-        final EditText tempo = (EditText) findViewById(R.id.tempoEdit);
+
+        nome = (EditText) findViewById(R.id.nomeEdit);
+        ingrediente = (EditText) findViewById(R.id.ingredientesEdit);
+        tempo = (EditText) findViewById(R.id.tempoEdit);
+        sal = (RadioButton) findViewById(R.id.salgado);
+        doce = (RadioButton) findViewById(R.id.doce);
+        tipo = (Spinner) findViewById(R.id.tipo);
+        preparo = (EditText) findViewById(R.id.preparoEdit);
+
+        /*if(sal.isChecked()) {
+            receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
+        }
+        else if(doce.isChecked()){
+            receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), doce.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
+        }
+        else{
+            Toast.makeText(this, "Selecione doce ou salgado", Toast.LENGTH_SHORT).show();
+        }*/
+
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("Receita");
+        final String id = myRef.push().getKey();
 
         criar = (Button) findViewById(R.id.criarReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                //myDB.insertData(nome.toString(), ingrediente.toString(), tempo.toString(), sabor.toString(), tipo.toString(), preparo.toString());
+                receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
+                myRef.child(id).setValue(receita);
             }
         });
     }
