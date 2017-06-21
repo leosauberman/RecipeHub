@@ -1,11 +1,12 @@
 package com.example.leonardomoraes.myapplication;
 
 /**
- * Created by ADM on 22/05/2017.
+    Classe receita
  */
 
-public class Receita {
-    private String nome;
+class Receita {
+
+    public Receita(){}
 
     public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo) {
         this.nome = nome;
@@ -15,12 +16,13 @@ public class Receita {
         this.tipo = tipo;
         this.preparo = preparo;
     }
-
+    private String nome;
     private String ingrediente;
     private String tempo;
     private String sabor;
     private String tipo;
     private String preparo;
+
 
     public String getNome() {
         return nome;

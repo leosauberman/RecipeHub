@@ -64,15 +64,28 @@ public class TelaReceita extends AppCompatActivity {
         myRef = database.getReference("Receita");
         final String id = myRef.push().getKey();
 
+
+
         criar = (Button) findViewById(R.id.criarReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(TelaReceita.this, MainActivity.class));
                 receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
-                myRef.child(id).setValue(receita);
+                addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
             }
         });
+    }
+    private void addRecipe(String recipeId,
+                           String nome,
+                           String ingrediente,
+                           String tempo,
+                           String sabor,
+                           String tipo,
+                           String preparo){
+        Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo);
+
+        myRef.child(recipeId).setValue(receita);
     }
 }
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:3:5-55
 		INJECTED from J:\MyApplication\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:2:1-21:12
 		INJECTED from J:\MyApplication\app\src\main\AndroidManifest.xml
 		INJECTED from J:\MyApplication\app\src\main\AndroidManifest.xml
 application
-ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\output\AndroidManifest.xml:29:5-20
@@ -63,6 +63,14 @@ activity#com.example.leonardomoraes.myapplication.TelaReceita
 ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:18:9-49
 	android:name
 		ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:18:19-46
+activity#com.example.leonardomoraes.myapplication.Main2Activity
+ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:19:9-22:68
+	android:label
+		ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:21:13-57
+	android:theme
+		ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:22:13-56
+	android:name
+		ADDED from J:\MyApplication\app\src\main\AndroidManifest.xml:20:13-42
 uses-sdk
 INJECTED from J:\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:5:5-7:41
