@@ -2,6 +2,7 @@ package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -32,48 +33,20 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
-    private Button add1;
-    private TextView txt1;
+    private ArrayList<Receita> receitaArrayList;
+    private FloatingActionButton add1;
     private RecyclerView recyclerView;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference myRef = database.getReference("Receita");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(false);
+        receitaArrayList = new ArrayList<>();
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
-
-        recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(new RecyclerAdapter());
-
-        txt1 = (TextView) findViewById(R.id.textView);
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myRef = database.getReference("Receita");
-
-        // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                Receita value = dataSnapshot.getValue(Receita.class);
-                txt1.setText("Value: " + value.getTipo());
-                Log.d(TAG, "Value is: " + value);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w(TAG, "Failed to read value.", error.toException());
-            }
-        });
-
-        add1 = (Button) findViewById(R.id.addRecipe);
+        add1 = (FloatingActionButton) findViewById(R.id.addRecipe);
         add1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v){
@@ -82,4 +55,34 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Read from the database
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
+
+                    receitaArrayList.add(receita);
+                }
+
+                RecyclerAdapter adapter = new RecyclerAdapter(receitaArrayList);
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+            }
+        });
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(false);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+
+        recyclerView.setLayoutManager(gridLayoutManager);
+
+    }
 }

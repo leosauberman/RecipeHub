@@ -727,6 +727,7 @@
     <string name="google_app_id" translatable="false">1:578118998514:android:e186a120fc011c58</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBXMsnHyH-sPlu88befd4AM8AJvoPftgIk</string>
     <string name="google_storage_bucket" translatable="false">recipehub-a79d2.appspot.com</string>
+    <string name="ingredient_description">Ex.: 1kg de feijão;</string>
     <string name="ingredientes">Ingredientes:</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -744,7 +745,6 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tempo">Tempo:</string>
     <string name="tipo">Tipo: </string>
-    <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

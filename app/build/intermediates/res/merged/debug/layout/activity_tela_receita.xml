@@ -21,16 +21,17 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="12dp"
         android:text="@string/nome_receita"
+        android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/nomeEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tempoEdit" />
 
     <TextView
         android:id="@+id/ingredientes"
@@ -40,6 +41,7 @@
         android:layout_below="@+id/nomeEdit"
         android:layout_marginTop="22dp"
         android:text="@string/ingredientes"
+        android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
 
     <EditText
@@ -50,7 +52,8 @@
         android:layout_below="@+id/ingredientes"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="text"
+        android:hint="@string/ingredient_description"
+        android:inputType="textMultiLine"
         android:textSize="18sp" />
 
     <TextView
@@ -60,7 +63,8 @@
         android:layout_alignStart="@+id/ingredientesEdit"
         android:layout_below="@+id/ingredientesEdit"
         android:layout_marginTop="44dp"
-        android:text="@string/tempo" />
+        android:text="@string/tempo"
+        android:textColor="#ff000000" />
 
     <EditText
         android:id="@+id/tempoEdit"
@@ -100,7 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="101dp"
-        android:layout_marginTop="300dp" />
+        android:layout_marginTop="300dp"
+        android:spinnerMode="dialog" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -110,18 +115,17 @@
         android:layout_marginLeft="300dp"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <Button
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/criarReceita"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/round_button"
-        android:ellipsize="none"
-        android:onClick="addReceita"
-        android:text="+"
-        android:textColor="#ffffff"
-        android:textSize="24dp" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/preparo"
@@ -131,19 +135,17 @@
         android:layout_below="@+id/radioGroup"
         android:layout_marginTop="30dp"
         android:text="@string/preparo"
+        android:textColor="#ff000000"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/preparoEdit"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_alignBottom="@+id/criarReceita"
-        android:layout_alignEnd="@+id/nomeEdit"
-        android:layout_alignStart="@id/preparo"
-        android:layout_marginTop="36dp"
         android:ems="10"
-        android:inputType="textLongMessage"
-        />
+        android:inputType="textMultiLine"
+        android:layout_alignBottom="@+id/criarReceita"
+        android:layout_alignStart="@+id/preparo" />
 
     <TextView
         android:id="@+id/minutes"

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+        "outputFile": "C:\\Users\\ADM\\Documents\\Android Projects\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
         "map": [
             {
                 "to": {
@@ -12,30 +12,6 @@
                 },
                 "from": {
                     "file": "C:\\Users\\ADM\\.android\\build-cache\\ad497ea5ca5a6ea0cd09b260c24523e64aab909b\\output\\res\\values-kk\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 285,
-                        "endColumn": 222,
-                        "endOffset": 507
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "J:\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 222,
-                    "endOffset": 323
-                },
-                "from": {
-                    "file": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\c7388ab8cc0cd98042954d590663920cbfce786b\\output\\res\\values-kk\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

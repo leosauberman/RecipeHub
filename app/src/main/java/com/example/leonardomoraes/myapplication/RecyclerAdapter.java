@@ -13,14 +13,19 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 /**
     Adapter do recylcerView
  */
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("Receita");
+    private ArrayList<Receita> receitaArrayList;
+
+    public RecyclerAdapter(ArrayList<Receita> receitaArrayList) {
+        this.receitaArrayList = receitaArrayList;
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -29,31 +34,22 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        ValueEventListener valueEventListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                holder.nome.setText(myRef.child("*****").child("nome").toString());
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        };
+        holder.nome.setText(receitaArrayList.get(position).getNome());
+        holder.tempo.setText(receitaArrayList.get(position).getTempo());
+        holder.tipo.setText(receitaArrayList.get(position).getTipo());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return receitaArrayList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView nome;
-        TextView tempo;
+        TextView nome = (TextView) itemView.findViewById(R.id.nomeTV);
+        TextView tempo = (TextView) itemView.findViewById(R.id.tempoTV);
+        TextView tipo = (TextView) itemView.findViewById(R.id.tipoTV);
         public ViewHolder(View itemView) {
             super(itemView);
-            nome = (TextView) itemView.findViewById(R.id.nomeTV);
-            tempo = (TextView) itemView.findViewById(R.id.tempoTV);
         }
     }
 }

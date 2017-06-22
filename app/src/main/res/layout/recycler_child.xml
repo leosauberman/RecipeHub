@@ -15,7 +15,7 @@
 
         <TextView
             android:id="@+id/nomeTV"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome"
             android:textColor="@android:color/black"
@@ -24,15 +24,26 @@
 
         <TextView
             android:id="@+id/tempoTV"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@id/nomeTV"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
-            android:textSize="18sp"
-            android:text="TextView" />
+            android:text="Tempo"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tipoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tempoTV"
+            android:layout_alignBottom="@+id/tempoTV"
+            android:layout_marginStart="65dp"
+            android:layout_toEndOf="@+id/tempoTV"
+            android:text="Tipo"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

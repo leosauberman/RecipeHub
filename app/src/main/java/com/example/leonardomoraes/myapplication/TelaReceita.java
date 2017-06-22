@@ -2,6 +2,7 @@ package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,22 +24,26 @@ import java.util.Map;
 
 public class TelaReceita extends AppCompatActivity {
 
-    private Button criar;
+    private FloatingActionButton criar;
     private EditText nome, ingrediente, tempo, preparo;
     private Spinner tipo;
     private ImageButton addImage;
-    private Receita receita;
     private RadioButton sal, doce;
-    private FirebaseDatabase database;
-    private DatabaseReference myRef;
+    private String sabor;
+
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference myRef = database.getReference("Receita");
+    private String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_receita);
+        //region Spinner Adapter
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tipos_de_receita, R.layout.support_simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         ((Spinner) findViewById(R.id.tipo)).setAdapter(adapter);
+        //endregion
 
         addImage = (ImageButton) findViewById(R.id.imageButton);
 
@@ -50,32 +55,31 @@ public class TelaReceita extends AppCompatActivity {
         tipo = (Spinner) findViewById(R.id.tipo);
         preparo = (EditText) findViewById(R.id.preparoEdit);
 
-        /*if(sal.isChecked()) {
-            receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
-        }
-        else if(doce.isChecked()){
-            receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), doce.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
-        }
-        else{
-            Toast.makeText(this, "Selecione doce ou salgado", Toast.LENGTH_SHORT).show();
-        }*/
 
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("Receita");
-        final String id = myRef.push().getKey();
+        id = myRef.push().getKey();
 
 
-
-        criar = (Button) findViewById(R.id.criarReceita);
+        criar = (FloatingActionButton) findViewById(R.id.criarReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                receita = new Receita(nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
-                addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sal.getText().toString(), tipo.getSelectedItem().toString(), preparo.getText().toString());
+
+                if(verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo())
+                {
+                    startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                    addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString());
+                }
+                //startActivity(new Intent(TelaReceita.this, MainActivity.class));
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(TelaReceita.this, MainActivity.class));
+    }
+
     private void addRecipe(String recipeId,
                            String nome,
                            String ingrediente,
@@ -86,6 +90,65 @@ public class TelaReceita extends AppCompatActivity {
         Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo);
 
         myRef.child(recipeId).setValue(receita);
+    }
+    private boolean verifyNome(){
+        if(nome.getText().toString().isEmpty()){
+            Toast.makeText(TelaReceita.this, "Dê um nome à sua receita", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private boolean verifyIngred(){
+        if(ingrediente.getText().toString().isEmpty()){
+            Toast.makeText(TelaReceita.this, "Quais são os ingredientes da sua receita?", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private boolean verifyTempo(){
+        if(tempo.getText().toString().isEmpty()){
+            Toast.makeText(TelaReceita.this, "Quanto tempo demora para fazer esta receita?", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private boolean verifyTipo(){
+        if(tipo.getSelectedItem().toString().equalsIgnoreCase("Tipo")){
+            Toast.makeText(TelaReceita.this, "Sua receita tem alguma especificidade?", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private boolean verifyPreparo(){
+        if(preparo.getText().toString().isEmpty()){
+            Toast.makeText(TelaReceita.this, "Como se faz esta receita?", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private String verifySabor(){
+        if(sal.isChecked()) {
+            sabor = sal.getText().toString();
+            return sabor;
+        }
+        else if(doce.isChecked()){
+            sabor = doce.getText().toString();
+            return sabor;
+        }
+        else{
+            Toast.makeText(TelaReceita.this, "Selecione doce ou salgado", Toast.LENGTH_SHORT).show();
+            return "";
+        }
     }
 }
 
