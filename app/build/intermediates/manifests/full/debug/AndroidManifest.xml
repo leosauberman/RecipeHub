@@ -36,6 +36,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.leonardomoraes.myapplication.TelaReceita" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

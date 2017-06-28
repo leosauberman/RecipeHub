@@ -8,13 +8,14 @@ class Receita {
 
     public Receita(){}
 
-    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo) {
+    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo, String urlFoto) {
         this.nome = nome;
         this.ingrediente = ingrediente;
         this.tempo = tempo;
         this.sabor = sabor;
         this.tipo = tipo;
         this.preparo = preparo;
+        this.urlFoto = urlFoto;
     }
     private String nome;
     private String ingrediente;
@@ -22,6 +23,7 @@ class Receita {
     private String sabor;
     private String tipo;
     private String preparo;
+    private String urlFoto;
 
 
     public String getNome() {
@@ -72,4 +74,11 @@ class Receita {
         this.preparo = preparo;
     }
 
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
+    }
 }

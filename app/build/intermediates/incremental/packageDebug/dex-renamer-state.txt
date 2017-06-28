@@ -1,4 +1,4 @@
-#Thu Jun 22 20:09:56 BRT 2017
+#Tue Jun 27 22:44:41 BRT 2017
 base.0=C\:\\Users\\ADM\\Documents\\Android Projects\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_628e713295024215643417033a6a0bac95850a5f
 renamed.1=classes2.dex
 renamed.0=classes.dex

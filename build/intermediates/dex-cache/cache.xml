@@ -3,6 +3,24 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\ADM\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_62b282fd2d6c4bbd3e783a74231e05a5e0cc0918\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7c77e29a26ea1f4078a4d8ecf0bfa7fb110dd997">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_628e713295024215643417033a6a0bac95850a5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -12,12 +30,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\ADM\.android\build-cache\5e71439d294f5bc9268936ebc1d086fd681d0273\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="56f6ebd6f2089db98781cc770fa2acd104794587">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_628e713295024215643417033a6a0bac95850a5f\classes.dex" />
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_970987415f5465e652e0ae0fd5fc9793a790dd24\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ADM\.android\build-cache\ab9ddd8fe45132e65b06bf34baa4153a407ad9e3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f696f4f88d1732c4c5c566697300de2f6055a323\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ADM\.android\build-cache\9b460bee3263b50dff8c68bd5f422290e20a1aac\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e4cd5da60bc813b673a2ea2fa7144d7002f5508d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ADM\.android\build-cache\aa99e421b145755737be82ad07bde97480eff71e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0c339c9aaab26d245e7c7cc3ddfd31722452877\classes.dex" />
     </item>
 
 </items>
