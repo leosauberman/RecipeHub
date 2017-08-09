@@ -43,10 +43,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
         receitaArrayList = new ArrayList<>();
 
-        add1 = (FloatingActionButton) findViewById(R.id.addRecipe);
+        add1 = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_main);
         add1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v){
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     protected void onStart() {

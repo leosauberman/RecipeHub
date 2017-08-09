@@ -13,11 +13,11 @@
     tools:theme="@style/AppTheme">
 
     <TextView
-        android:id="@+id/nomeReceita"
+        android:id="@+id/tv_nomeReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/nomeEdit"
-        android:layout_alignBottom="@+id/nomeEdit"
+        android:layout_alignBaseline="@+id/et_nomeReceita_Act_telaReceita"
+        android:layout_alignBottom="@+id/et_nomeReceita_Act_telaReceita"
         android:layout_alignParentStart="true"
         android:layout_marginStart="12dp"
         android:text="@string/nome_receita"
@@ -25,31 +25,31 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/nomeEdit"
+        android:id="@+id/et_nomeReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/tempoEdit" />
+        android:layout_alignStart="@+id/et_tempoReceita_Act_telaReceita" />
 
     <TextView
-        android:id="@+id/ingredientes"
+        android:id="@+id/tv_ingredientesReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/nomeReceita"
-        android:layout_below="@+id/nomeEdit"
+        android:layout_alignStart="@+id/tv_nomeReceita_Act_telaReceita"
+        android:layout_below="@+id/et_nomeReceita_Act_telaReceita"
         android:layout_marginTop="22dp"
         android:text="@string/ingredientes"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/ingredientesEdit"
+        android:id="@+id/et_ingredientesReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/ingredientes"
-        android:layout_below="@+id/ingredientes"
+        android:layout_alignStart="@+id/tv_ingredientesReceita_Act_telaReceita"
+        android:layout_below="@+id/tv_ingredientesReceita_Act_telaReceita"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/ingredient_description"
@@ -57,49 +57,49 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/tempo"
+        android:id="@+id/tv_tempoReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/ingredientesEdit"
-        android:layout_below="@+id/ingredientesEdit"
+        android:layout_alignStart="@+id/et_ingredientesReceita_Act_telaReceita"
+        android:layout_below="@+id/et_ingredientesReceita_Act_telaReceita"
         android:layout_marginTop="44dp"
         android:text="@string/tempo"
         android:textColor="#ff000000" />
 
     <EditText
-        android:id="@+id/tempoEdit"
+        android:id="@+id/et_tempoReceita_Act_telaReceita"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_alignBaseline="@id/tempo"
-        android:layout_alignTop="@+id/tempo"
+        android:layout_alignBaseline="@id/tv_tempoReceita_Act_telaReceita"
+        android:layout_alignTop="@+id/tv_tempoReceita_Act_telaReceita"
         android:layout_marginStart="7dp"
-        android:layout_toEndOf="@+id/nomeReceita"
+        android:layout_toEndOf="@+id/tv_nomeReceita_Act_telaReceita"
         android:inputType="time"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <RadioGroup
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_alignStart="@+id/tempo"
-        android:layout_below="@+id/tempoEdit"
-        android:id="@+id/radioGroup">
+        android:layout_alignStart="@+id/tv_tempoReceita_Act_telaReceita"
+        android:layout_below="@+id/et_tempoReceita_Act_telaReceita"
+        android:id="@+id/tipoRadioGroup_Act_telaReceita">
 
         <RadioButton
-            android:id="@+id/salgado"
+            android:id="@+id/rb_salgado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
             android:text="@string/sal" />
 
         <RadioButton
-            android:id="@+id/doce"
+            android:id="@+id/rb_doce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/doce" />
     </RadioGroup>
 
     <Spinner
-        android:id="@+id/tipo"
+        android:id="@+id/spinner_tipo_Act_telaReceita"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -108,16 +108,16 @@
         android:spinnerMode="dialog" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButton_Act_telaReceita"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignStart="@+id/criarReceita"
+        android:layout_alignStart="@+id/fab_criarReceita_Act_telaReceita"
         android:background="@drawable/ic_add_a_photo_black_24dp"
-        android:layout_below="@+id/ingredientes"
-        android:layout_alignEnd="@+id/criarReceita" />
+        android:layout_below="@+id/tv_ingredientesReceita_Act_telaReceita"
+        android:layout_alignEnd="@+id/fab_criarReceita_Act_telaReceita" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/criarReceita"
+        android:id="@+id/fab_criarReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add"
@@ -129,39 +129,39 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/preparo"
+        android:id="@+id/tv_preparoReceita_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tempo"
-        android:layout_below="@+id/radioGroup"
+        android:layout_alignStart="@+id/tv_tempoReceita_Act_telaReceita"
+        android:layout_below="@+id/tipoRadioGroup_Act_telaReceita"
         android:layout_marginTop="30dp"
         android:text="@string/preparo"
         android:textColor="#ff000000"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/preparoEdit"
+        android:id="@+id/et_preparoReceita_Act_telaReceita"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:layout_alignBottom="@+id/criarReceita"
-        android:layout_alignStart="@+id/preparo" />
+        android:layout_alignBottom="@+id/fab_criarReceita_Act_telaReceita"
+        android:layout_alignStart="@+id/tv_preparoReceita_Act_telaReceita" />
 
     <TextView
-        android:id="@+id/minutes"
+        android:id="@+id/tv_minutes_Act_telaReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="min"
-        android:layout_alignBaseline="@+id/tempoEdit"
-        android:layout_alignBottom="@+id/tempoEdit"
-        android:layout_toEndOf="@+id/tempoEdit" />
+        android:layout_alignBaseline="@+id/et_tempoReceita_Act_telaReceita"
+        android:layout_alignBottom="@+id/et_tempoReceita_Act_telaReceita"
+        android:layout_toEndOf="@+id/et_tempoReceita_Act_telaReceita" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_Act_telaReceita"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_above="@+id/tempoEdit"
+        android:layout_above="@+id/et_tempoReceita_Act_telaReceita"
         android:layout_alignParentEnd="true" />
 
 

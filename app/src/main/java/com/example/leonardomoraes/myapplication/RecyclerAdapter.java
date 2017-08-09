@@ -1,17 +1,10 @@
 package com.example.leonardomoraes.myapplication;
 
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -45,9 +38,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView nome = (TextView) itemView.findViewById(R.id.nomeTV);
-        TextView tempo = (TextView) itemView.findViewById(R.id.tempoTV);
-        TextView tipo = (TextView) itemView.findViewById(R.id.tipoTV);
+        TextView nome = (TextView) itemView.findViewById(R.id.tv_nomeReceita_Act_telaReceita);
+        TextView tempo = (TextView) itemView.findViewById(R.id.tv_tempoReceita_Act_telaReceita);
+        TextView tipo = (TextView) itemView.findViewById(R.id.tv_tipoReceita_Act_telaReceita);
         public ViewHolder(View itemView) {
             super(itemView);
         }

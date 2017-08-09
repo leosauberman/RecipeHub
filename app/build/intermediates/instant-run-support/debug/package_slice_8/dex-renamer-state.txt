@@ -1,4 +1,4 @@
-#Tue Jun 27 22:29:46 BRT 2017
-base.0=C\:\\Users\\ADM\\Documents\\Android Projects\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
+#Wed Aug 09 16:47:28 BRT 2017
+base.0=C\:\\Users\\leonardo.moraes\\Downloads\\RecipeHubBranchLeo\\RecipeHubBranchLeo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 renamed.0=classes.dex
-file.0=C\:\\Users\\ADM\\Documents\\Android Projects\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex
+file.0=C\:\\Users\\leonardo.moraes\\Downloads\\RecipeHubBranchLeo\\RecipeHubBranchLeo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex

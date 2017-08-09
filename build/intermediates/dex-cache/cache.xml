@@ -3,66 +3,129 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\7133b42e6fea52fbbf8c41da6dcbe8b54b64a5c1\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_62b282fd2d6c4bbd3e783a74231e05a5e0cc0918\classes.dex" />
+        sha1="32054268e6c9fdff0c9c5deafafd0bd105120fb6">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a5dffc3c120de3ecadfcbfec024b403d3dfc06b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\fe34a2c09081b0f428c778a2bae30d8bd3cc6ffc\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="7c77e29a26ea1f4078a4d8ecf0bfa7fb110dd997">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_628e713295024215643417033a6a0bac95850a5f\classes.dex" />
+        sha1="3013ffee567202ddab82286ac45b28fcb1e7926a">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d7045bb83d92ae6ff135cfcf47bec99a5ea5e29\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\6ca6974e8f61d02f8625b2a4124b12f948e328ea\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b8884e7dd03113f763fd826acd35ce8568f9279\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\9ba2ec8344c236b345019846901b01c7b16161de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3cd5717fd153450db4833c4668077debdc4d70eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\e3ffa12f5d5622402694d1200e155dd7b04ecb15\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b4fa53b1dbc43a65e9cbcbfe25f4abc47264e78c">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_47337dd556d1ccd44d7de438189d1d69c75efbdc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\0acff5a6a627a474cc1aeee1d2df16701667e380\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ec1f195979cc7f1ec94779fa16f1b10aac8aceca">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_34ad9419bde9683b1aa443546effef81dc245d5b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\7d76bd95dc9e8fd69cbe3737a74856eca62d7bf6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="54511008bf7d1aabd871d8d3a26781b3f2bd9617">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c4bf6eb5bb7d7ab2621cda144bb4c689f745edf2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\c41035a2d8dd76bba812415831fb727d75a5bdfc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d94940ddde71cc57402c78b7d8c335d61958f486">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4146ed9643f5db451ff0366fd51fc7805309f283\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\efe9d7b703f9ee791dddd3ee3322fba87451a7fc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8a572a0bd9ea324b099b1761670237bc1be8ba7b">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c5fb7253c002072c12e77d6224c6cfa00783b46c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d61dcaade021983570dc48c519f14dfb7060eb47\classes.dex" />
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_163a4c3e2cd44b6f19e40080e8bbde1ab1ea405a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\5e71439d294f5bc9268936ebc1d086fd681d0273\output\jars\classes.jar"
+        jar="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_970987415f5465e652e0ae0fd5fc9793a790dd24\classes.dex" />
+        sha1="43137d7ab3f5c59cc8db69d79b44b0224fe1b7b6">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9a9db164449b5c1c2b3b291cf9defe1b13773987\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\ab9ddd8fe45132e65b06bf34baa4153a407ad9e3\output\jars\classes.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\261164893fbea4e65b0519765c28e764e60cd2f1\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f696f4f88d1732c4c5c566697300de2f6055a323\classes.dex" />
+        sha1="e00b71dcf2fbecaf59b0d487d11839522dd7863d">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ed795bdba53574c3c28e8810d0b2b440a9a4f710\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\9b460bee3263b50dff8c68bd5f422290e20a1aac\output\jars\classes.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\da4e94fb0b1bd473e1ad1849711371bd815465c0\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e4cd5da60bc813b673a2ea2fa7144d7002f5508d\classes.dex" />
+        sha1="6178e31397c24ab1bfc09766832cdcf519621eb7">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f128c39ad24d1027e423fe1e5ec68b5d99978246\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\aa99e421b145755737be82ad07bde97480eff71e\output\jars\classes.jar"
+        jar="C:\Users\leonardo.moraes\.android\build-cache\3fa5687780dc1faff7473705d95912c54543362d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="C:\Users\ADM\Documents\Android Projects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0c339c9aaab26d245e7c7cc3ddfd31722452877\classes.dex" />
+        sha1="d4acacbab67243d9eb026ea759aefd401d070f3e">
+        <dex dex="C:\Users\leonardo.moraes\Downloads\RecipeHubBranchLeo\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_66efed3f1ccbeba63d3f49d6491f9753988b943f\classes.dex" />
     </item>
 
 </items>
