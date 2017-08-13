@@ -32,7 +32,7 @@
             android:duplicateParentState="true">
 
         <TextView
-            android:id="@+id/nome"
+            android:id="@+id/tv_nomeReceita_Act_openReceita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -47,7 +47,7 @@
             android:id="@+id/shortcut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/nome"
+            android:layout_below="@id/tv_nomeReceita_Act_openReceita"
             android:layout_alignParentLeft="true"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:singleLine="true"

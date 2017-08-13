@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Receita> receitaArrayList;
     private FloatingActionButton add1;
     private RecyclerView recyclerView;
+    private RecyclerAdapter adapter;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
 
@@ -43,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
         receitaArrayList = new ArrayList<>();
 
-        add1 = (FloatingActionButton) findViewById(R.id.addRecipe);
+        add1 = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_main);
         add1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v){
@@ -67,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
                     receitaArrayList.add(receita);
                 }
-
-                RecyclerAdapter adapter = new RecyclerAdapter(receitaArrayList);
+                adapter = new RecyclerAdapter(receitaArrayList, MainActivity.this);
                 recyclerView.setAdapter(adapter);
             }
 
@@ -83,6 +84,5 @@ public class MainActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
 
         recyclerView.setLayoutManager(gridLayoutManager);
-
     }
 }

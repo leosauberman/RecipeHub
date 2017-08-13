@@ -27,7 +27,7 @@ enabled.
         android:fitsSystemWindows="true">
 
     <TextView
-            android:id="@+id/nome"
+            android:id="@+id/tv_nomeReceita_Act_openReceita"
             style="?android:attr/windowTitleStyle"
             android:singleLine="true"
             android:ellipsize="end"

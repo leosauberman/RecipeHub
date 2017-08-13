@@ -9,14 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -27,9 +24,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class TelaReceita extends AppCompatActivity {
 
     private static final int RC_NICE = 1;
@@ -37,6 +31,7 @@ public class TelaReceita extends AppCompatActivity {
     private FloatingActionButton criar;
     private EditText nome, ingrediente, tempo, preparo;
     private Spinner tipo;
+
     private ImageButton addImage;
     private RadioButton sal, doce;
     private String sabor;
@@ -58,20 +53,20 @@ public class TelaReceita extends AppCompatActivity {
         //region Spinner Adapter
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tipos_de_receita, R.layout.support_simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        ((Spinner) findViewById(R.id.tipo)).setAdapter(adapter);
+        ((Spinner) findViewById(R.id.spinner_tipo_Act_telaReceita)).setAdapter(adapter);
         //endregion
 
-        addImage = (ImageButton) findViewById(R.id.imageButton);
+        addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
 
-        nome = (EditText) findViewById(R.id.nomeEdit);
-        ingrediente = (EditText) findViewById(R.id.ingredientesEdit);
-        tempo = (EditText) findViewById(R.id.tempoEdit);
-        sal = (RadioButton) findViewById(R.id.salgado);
-        doce = (RadioButton) findViewById(R.id.doce);
-        tipo = (Spinner) findViewById(R.id.tipo);
-        preparo = (EditText) findViewById(R.id.preparoEdit);
+        nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
+        ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
+        tempo = (EditText) findViewById(R.id.et_tempoReceita_Act_telaReceita);
+        sal = (RadioButton) findViewById(R.id.rb_salgado);
+        doce = (RadioButton) findViewById(R.id.rb_doce);
+        tipo = (Spinner) findViewById(R.id.spinner_tipo_Act_telaReceita);
+        preparo = (EditText) findViewById(R.id.et_preparoReceita_Act_telaReceita);
 
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView = (ImageView) findViewById(R.id.imageView_Act_telaReceita);
 
         id = myRef.push().getKey();
 
@@ -96,7 +91,7 @@ public class TelaReceita extends AppCompatActivity {
             imageView.setVisibility(View.GONE);
         }
 */
-        criar = (FloatingActionButton) findViewById(R.id.criarReceita);
+        criar = (FloatingActionButton) findViewById(R.id.fab_criarReceita_Act_telaReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

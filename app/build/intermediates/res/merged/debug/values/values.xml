@@ -122,12 +122,18 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_main">#ff3b3b</color>
+    <color name="bg_register">#2e3237</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="btn_logut_bg">#ff6861</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="cardview_dark_background">#FF424242</color>
@@ -135,8 +141,11 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#ff0000</color>
+    <color name="colorAccent2">#FFFFFF</color>
     <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimary2">#e00000</color>
     <color name="colorPrimaryDark">#ce2121</color>
+    <color name="colorPrimaryDark2">#b30000</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -165,6 +174,12 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="lbl_name">#333333</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -201,6 +216,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -694,6 +710,7 @@
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
+    <item name="masked" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
@@ -703,13 +720,14 @@
     <item name="transition_scene_layoutid_cache" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
+    <item name="visible" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
-    <integer name="google_play_services_version">10084000</integer>
+    <integer name="google_play_services_version">11011000</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
@@ -745,9 +763,23 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_settings">Settings</string>
+    <string name="action_sign_in_short">Registrar</string>
     <string name="app_name">RecipeHub</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="btn_back">&lt;&lt; Back</string>
+    <string name="btn_change">Mudar</string>
+    <string name="btn_forgot_password">Esqueceu sua senha?</string>
+    <string name="btn_link_to_login">Entrar</string>
+    <string name="btn_link_to_register">Não tem uma conta? Crie agora!</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_remove">Remover</string>
+    <string name="btn_reset_password">Resetar a senha</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_sign_out">Sair</string>
+    <string name="change_email">Mudar email</string>
+    <string name="change_password">Mudar senha</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -768,16 +800,25 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="default_web_client_id" translatable="false">578118998514-5kqtp3ilh1ad4h8qik96un1qgkunmh2g.apps.googleusercontent.com</string>
     <string name="doce">Doce</string>
+    <string name="email">Email</string>
     <string name="firebase_database_url" translatable="false">https://recipehub-a79d2.firebaseio.com</string>
+    <string name="forgot_password_msg">Informe seu email cadastrado.</string>
     <string name="gcm_defaultSenderId" translatable="false">578118998514</string>
     <string name="google_api_key" translatable="false">AIzaSyBXMsnHyH-sPlu88befd4AM8AJvoPftgIk</string>
     <string name="google_app_id" translatable="false">1:578118998514:android:e186a120fc011c58</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBXMsnHyH-sPlu88befd4AM8AJvoPftgIk</string>
     <string name="google_storage_bucket" translatable="false">recipehub-a79d2.appspot.com</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Fullname</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="hint_password">Password</string>
     <string name="ingredient_description">Ex.: 1kg de feijão;</string>
     <string name="ingredientes">Ingredientes:</string>
+    <string name="lbl_forgot_password">Esqueceu a senha?</string>
+    <string name="minimum_password">Mínimo de 6 caracteres na senha</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="new_pass">Nova senha</string>
     <string name="nome">Nome: </string>
     <string name="nome_receita">Nome:</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
@@ -787,13 +828,18 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="preparo">Modo de preparo:</string>
     <string name="project_id" translatable="false">recipehub-a79d2</string>
+    <string name="remove_user">Remover usuario</string>
     <string name="sal">Salgado</string>
     <string name="search_menu_title">Search</string>
+    <string name="send_password_reset_email">Enviar o email de resetar a senha</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tempo">Tempo:</string>
     <string name="tipo">Tipo: </string>
+    <string name="title_activity_login">Entrar</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
