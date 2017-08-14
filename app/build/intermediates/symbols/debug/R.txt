@@ -894,7 +894,7 @@ int id et_emailLogin 0x7f0e0085
 int id et_emailSingUp 0x7f0e009a
 int id et_ingredientesReceita_Act_telaReceita 0x7f0e00a4
 int id et_nomeReceita_Act_telaReceita 0x7f0e00a1
-int id et_preparoReceita_Act_telaReceita 0x7f0e00ad
+int id et_preparoReceita_Act_telaReceita 0x7f0e00ac
 int id et_senhaLogin 0x7f0e0086
 int id et_senhaSingUp 0x7f0e009b
 int id et_tempoReceita_Act_telaReceita 0x7f0e00a2
@@ -902,7 +902,7 @@ int id exitUntilCollapsed 0x7f0e0025
 int id expand_activities_button 0x7f0e0055
 int id expanded_menu 0x7f0e006a
 int id fab_adicionarReceita_Act_main 0x7f0e00bd
-int id fab_criarReceita_Act_telaReceita 0x7f0e00ab
+int id fab_criarReceita_Act_telaReceita 0x7f0e00aa
 int id fill 0x7f0e003e
 int id fill_horizontal 0x7f0e003f
 int id fill_vertical 0x7f0e0035
@@ -914,9 +914,9 @@ int id icon_group 0x7f0e00cf
 int id icon_only 0x7f0e004a
 int id ifRoom 0x7f0e0047
 int id image 0x7f0e0056
-int id imageButton_Act_telaReceita 0x7f0e00aa
+int id imageButton_Act_telaReceita 0x7f0e00af
 int id imageView_Act_openReceita 0x7f0e008a
-int id imageView_Act_telaReceita 0x7f0e00af
+int id imageView_Act_telaReceita 0x7f0e00ae
 int id info 0x7f0e00cb
 int id ingredientes 0x7f0e008c
 int id item_touch_helper_previous_elevation 0x7f0e0005
@@ -1017,11 +1017,11 @@ int id tv_esqueceuSenha_Act_resetpassword 0x7f0e0095
 int id tv_informeEmail_Act_resetpassword 0x7f0e0096
 int id tv_ingredientesReceita_Act_openReceita 0x7f0e008e
 int id tv_ingredientesReceita_Act_telaReceita 0x7f0e00a3
-int id tv_minutes_Act_telaReceita 0x7f0e00ae
+int id tv_minutes_Act_telaReceita 0x7f0e00ad
 int id tv_nomeReceita_Act_openReceita 0x7f0e005a
 int id tv_nomeReceita_Act_telaReceita 0x7f0e00a0
 int id tv_preparoReceita_Act_openReceita 0x7f0e0091
-int id tv_preparoReceita_Act_telaReceita 0x7f0e00ac
+int id tv_preparoReceita_Act_telaReceita 0x7f0e00ab
 int id tv_tempoReceita_Act_openReceita 0x7f0e0090
 int id tv_tempoReceita_Act_telaReceita 0x7f0e00a5
 int id tv_tipoReceita_Act_openReceita 0x7f0e0093

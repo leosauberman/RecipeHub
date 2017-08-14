@@ -31,6 +31,7 @@ public class TelaReceita extends AppCompatActivity {
     private FloatingActionButton criar;
     private EditText nome, ingrediente, tempo, preparo;
     private Spinner tipo;
+    Uri selectedImageUri;
 
     private ImageButton addImage;
     private RadioButton sal, doce;
@@ -74,10 +75,9 @@ public class TelaReceita extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/jpegpng");
+                intent.setType("image/*");
                 intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
                 startActivityForResult(Intent.createChooser(intent, "Complete act using"), RC_PHOTO_PICKER);
-                changeImageStatus();
             }
         });
 /*
@@ -106,7 +106,7 @@ public class TelaReceita extends AppCompatActivity {
         });
     }
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -127,7 +127,7 @@ public class TelaReceita extends AppCompatActivity {
         AlertDialog alertDialog;
         alertDialog = builder.create();
         alertDialog.show();
-    }
+    }*/
 
     private void addRecipe(String recipeId,
                            String nome,
@@ -155,7 +155,7 @@ public class TelaReceita extends AppCompatActivity {
             }
         }
         else if(resultCode == RESULT_OK && requestCode == RC_PHOTO_PICKER) {
-            Uri selectedImageUri = data.getData();
+            selectedImageUri = data.getData();
             // Get a reference to store file at chat_photos/<FILENAME>
             StorageReference photoRef = storageRef.child(selectedImageUri.getLastPathSegment());
 
@@ -167,17 +167,20 @@ public class TelaReceita extends AppCompatActivity {
                             downloadUrl = taskSnapshot.getDownloadUrl();
                         }
                     });
+            changeImageStatus();
         }
     }
     //quero atualizar a imagem conforme a selecionada
-    //problemas: só deica de ser null no onClick do criar
+    //problemas: só deixa de ser null no onClick do criar
     private void changeImageStatus(){
-        if(downloadUrl.toString().isEmpty()){
+        if(downloadUrl == null){
             addImage.setVisibility(View.GONE);
             imageView.setVisibility(View.VISIBLE);
             Glide.with(imageView.getContext()).load(downloadUrl).into(imageView);
         }
         else{
+            Toast.makeText(this, "Espere a imagem ser carregada", Toast.LENGTH_LONG).show();
+            changeImageStatus();
             addImage.setVisibility(View.VISIBLE);
             imageView.setVisibility(View.GONE);
         }

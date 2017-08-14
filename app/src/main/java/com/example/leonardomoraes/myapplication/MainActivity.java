@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
 
-                    receitaArrayList.add(receita);
+                    if(!receitaArrayList.contains(receita)){
+                        receitaArrayList.add(receita);
+                    }
                 }
                 adapter = new RecyclerAdapter(receitaArrayList, MainActivity.this);
                 recyclerView.setAdapter(adapter);

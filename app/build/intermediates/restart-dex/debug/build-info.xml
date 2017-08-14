@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1502596236396"
+    timestamp="1502676754694"
     token="-126434893590974804"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1047" />
+        duration="460" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="159" />
+        duration="44" />
     <task
         name="verifier"
-        duration="46" />
+        duration="5" />
 
     <artifact
         location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -32,17 +32,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1502593774385"
+        timestamp="1502671613264"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
@@ -51,6 +42,9 @@
             type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -62,10 +56,16 @@
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -73,7 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502594201754"
+        timestamp="1502676508149"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\outputs\apk\app-debug.apk"
@@ -81,7 +81,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502596236396"
+        timestamp="1502676754694"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"

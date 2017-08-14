@@ -3426,7 +3426,7 @@ containing a value of this type.
         public static final int et_emailSingUp=0x7f0e009a;
         public static final int et_ingredientesReceita_Act_telaReceita=0x7f0e00a4;
         public static final int et_nomeReceita_Act_telaReceita=0x7f0e00a1;
-        public static final int et_preparoReceita_Act_telaReceita=0x7f0e00ad;
+        public static final int et_preparoReceita_Act_telaReceita=0x7f0e00ac;
         public static final int et_senhaLogin=0x7f0e0086;
         public static final int et_senhaSingUp=0x7f0e009b;
         public static final int et_tempoReceita_Act_telaReceita=0x7f0e00a2;
@@ -3434,7 +3434,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0e0055;
         public static final int expanded_menu=0x7f0e006a;
         public static final int fab_adicionarReceita_Act_main=0x7f0e00bd;
-        public static final int fab_criarReceita_Act_telaReceita=0x7f0e00ab;
+        public static final int fab_criarReceita_Act_telaReceita=0x7f0e00aa;
         public static final int fill=0x7f0e003e;
         public static final int fill_horizontal=0x7f0e003f;
         public static final int fill_vertical=0x7f0e0035;
@@ -3446,9 +3446,9 @@ containing a value of this type.
         public static final int icon_only=0x7f0e004a;
         public static final int ifRoom=0x7f0e0047;
         public static final int image=0x7f0e0056;
-        public static final int imageButton_Act_telaReceita=0x7f0e00aa;
+        public static final int imageButton_Act_telaReceita=0x7f0e00af;
         public static final int imageView_Act_openReceita=0x7f0e008a;
-        public static final int imageView_Act_telaReceita=0x7f0e00af;
+        public static final int imageView_Act_telaReceita=0x7f0e00ae;
         public static final int info=0x7f0e00cb;
         public static final int ingredientes=0x7f0e008c;
         public static final int item_touch_helper_previous_elevation=0x7f0e0005;
@@ -3549,11 +3549,11 @@ containing a value of this type.
         public static final int tv_informeEmail_Act_resetpassword=0x7f0e0096;
         public static final int tv_ingredientesReceita_Act_openReceita=0x7f0e008e;
         public static final int tv_ingredientesReceita_Act_telaReceita=0x7f0e00a3;
-        public static final int tv_minutes_Act_telaReceita=0x7f0e00ae;
+        public static final int tv_minutes_Act_telaReceita=0x7f0e00ad;
         public static final int tv_nomeReceita_Act_openReceita=0x7f0e005a;
         public static final int tv_nomeReceita_Act_telaReceita=0x7f0e00a0;
         public static final int tv_preparoReceita_Act_openReceita=0x7f0e0091;
-        public static final int tv_preparoReceita_Act_telaReceita=0x7f0e00ac;
+        public static final int tv_preparoReceita_Act_telaReceita=0x7f0e00ab;
         public static final int tv_tempoReceita_Act_openReceita=0x7f0e0090;
         public static final int tv_tempoReceita_Act_telaReceita=0x7f0e00a5;
         public static final int tv_tipoReceita_Act_openReceita=0x7f0e0093;

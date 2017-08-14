@@ -2,6 +2,7 @@ package com.example.leonardomoraes.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -24,6 +25,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
     private String recipeTempo;
     private String recipePreparo;
     private String recipeTipo;
+    private String recipeUrl;
     Context context;
 
 
@@ -43,17 +45,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         holder.tempo.setText(receitaArrayList.get(position).getTempo());
         holder.tipo.setText(receitaArrayList.get(position).getTipo());
 
-        recipeNome = receitaArrayList.get(holder.getAdapterPosition()).getNome();
-        recipeIngredientes = receitaArrayList.get(holder.getAdapterPosition()).getIngrediente();
-        recipeTempo = receitaArrayList.get(holder.getAdapterPosition()).getTempo();
-        recipePreparo = receitaArrayList.get(holder.getAdapterPosition()).getPreparo();
-        recipeTipo = receitaArrayList.get(holder.getAdapterPosition()).getTipo();
+        recipeNome = receitaArrayList.get(position).getNome();
+        recipeIngredientes = receitaArrayList.get(position).getIngrediente();
+        recipeTempo = receitaArrayList.get(position).getTempo();
+        recipePreparo = receitaArrayList.get(position).getPreparo();
+        recipeTipo = receitaArrayList.get(position).getTipo();
+        recipeUrl = receitaArrayList.get(position).getUrlFoto();
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
                 openActivity();
-                Toast.makeText(context, "BKJVKGC", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "TA ROLANDO TIOOOW", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -70,6 +73,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         intent.putExtra("tempo", recipeTempo);
         intent.putExtra("preparo", recipePreparo);
         intent.putExtra("tipo", recipeTipo);
+        intent.putExtra("url", recipeUrl);
         context.startActivity(intent);
     }
 }

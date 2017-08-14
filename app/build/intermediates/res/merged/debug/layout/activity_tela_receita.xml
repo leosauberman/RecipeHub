@@ -107,15 +107,6 @@
         android:layout_marginTop="300dp"
         android:spinnerMode="dialog" />
 
-    <ImageButton
-        android:id="@+id/imageButton_Act_telaReceita"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_alignStart="@+id/fab_criarReceita_Act_telaReceita"
-        android:background="@drawable/ic_add_a_photo_black_24dp"
-        android:layout_below="@+id/tv_ingredientesReceita_Act_telaReceita"
-        android:layout_alignEnd="@+id/fab_criarReceita_Act_telaReceita" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_criarReceita_Act_telaReceita"
         android:layout_width="wrap_content"
@@ -163,6 +154,15 @@
         android:layout_height="100dp"
         android:layout_above="@+id/et_tempoReceita_Act_telaReceita"
         android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Act_telaReceita"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/fab_criarReceita_Act_telaReceita"
+        android:layout_alignStart="@+id/fab_criarReceita_Act_telaReceita"
+        android:layout_below="@+id/tv_ingredientesReceita_Act_telaReceita"
+        android:background="@drawable/ic_add_a_photo_black_24dp" />
 
 
 </RelativeLayout>
