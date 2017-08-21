@@ -80,17 +80,7 @@ public class TelaReceita extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(intent, "Complete act using"), RC_PHOTO_PICKER);
             }
         });
-/*
-        if(!downloadUrl.equals(null)){
-            addImage.setVisibility(View.GONE);
-            imageView.setVisibility(View.VISIBLE);
-            Glide.with(imageView.getContext()).load(downloadUrl).into(imageView);
-        }
-        else{
-            addImage.setVisibility(View.VISIBLE);
-            imageView.setVisibility(View.GONE);
-        }
-*/
+
         criar = (FloatingActionButton) findViewById(R.id.fab_criarReceita_Act_telaReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -165,13 +155,13 @@ public class TelaReceita extends AppCompatActivity {
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             // When the image has successfully uploaded, we get its download URL
                             downloadUrl = taskSnapshot.getDownloadUrl();
+                            Glide.with(TelaReceita.this).load(downloadUrl).into(imageView);
                         }
                     });
             changeImageStatus();
         }
     }
-    //quero atualizar a imagem conforme a selecionada
-    //problemas: só deixa de ser null no onClick do criar
+
     private void changeImageStatus(){
         if(downloadUrl == null){
             addImage.setVisibility(View.GONE);

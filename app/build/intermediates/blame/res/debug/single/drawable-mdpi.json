@@ -6,5 +6,9 @@
     {
         "merged": "C:\\Users\\aiko.oliveira\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_add.png",
         "source": "C:\\Users\\aiko.oliveira\\RecipeHub\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHubBranchLeo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_file_download_black_24dp.png",
+        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHubBranchLeo\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_file_download_black_24dp.png"
     }
 ]

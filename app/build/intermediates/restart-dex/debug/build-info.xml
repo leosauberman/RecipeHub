@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1502676754694"
+    timestamp="1503356666316"
     token="-126434893590974804"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="460" />
+        duration="605" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="44" />
+        duration="35" />
     <task
         name="verifier"
-        duration="5" />
+        duration="4" />
 
     <artifact
         location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -32,7 +32,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1502671613264"
+        timestamp="1503351360611"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -73,7 +73,18 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502676508149"
+        timestamp="1503355433046"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1503356343502"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\outputs\apk\app-debug.apk"
@@ -81,7 +92,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502676754694"
+        timestamp="1503356666316"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"

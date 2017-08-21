@@ -25,7 +25,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
     private String recipeTempo;
     private String recipePreparo;
     private String recipeTipo;
-    private String recipeUrl;
+    private String recipeUri;
     Context context;
 
 
@@ -50,13 +50,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         recipeTempo = receitaArrayList.get(position).getTempo();
         recipePreparo = receitaArrayList.get(position).getPreparo();
         recipeTipo = receitaArrayList.get(position).getTipo();
-        recipeUrl = receitaArrayList.get(position).getUrlFoto();
+        recipeUri = receitaArrayList.get(position).getUrlFoto();
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
                 openActivity();
-                Toast.makeText(context, "TA ROLANDO TIOOOW", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Receita nº: " + pos , Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -73,7 +73,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         intent.putExtra("tempo", recipeTempo);
         intent.putExtra("preparo", recipePreparo);
         intent.putExtra("tipo", recipeTipo);
-        intent.putExtra("url", recipeUrl);
+        intent.putExtra("uri", recipeUri);
         context.startActivity(intent);
     }
 }
