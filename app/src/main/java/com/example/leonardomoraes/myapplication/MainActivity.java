@@ -9,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.ListViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +28,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,12 +41,52 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerAdapter adapter;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
+    private MaterialSearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("Pesquisar");
+
+        searchView = (MaterialSearchView) findViewById(R.id.search_view);
+
+        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
+            @Override
+            public void onSearchViewShown() {
+
+            }
+            @Override
+            public void onSearchViewClosed() {
+                //código do recycleView
+            }
+
+        });
+
+        /*searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener(){
+            @Override
+            public boolean onQueryTextSubmit(String query){
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText){
+                if (newText != null && !newText.isEmpty()){
+                    List <String> lstFound = new ArrayList<String>();
+                    for(String item: receitaArrayList){
+//falta acabar
+                    }
+                }
+            }
+        });*/
+
+        //searchView.setOnQueryTextListener
+
+
 
         receitaArrayList = new ArrayList<>();
 
@@ -87,5 +129,12 @@ public class MainActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
 
         recyclerView.setLayoutManager(gridLayoutManager);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu.menu_item,menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        return true;
     }
 }

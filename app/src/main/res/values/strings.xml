@@ -62,5 +62,7 @@
     <string name="lbl_forgot_password">Esqueceu a senha?</string>
     <string name="forgot_password_msg">Informe seu email cadastrado.</string>
 
+    <string name="pesquisar">Pesquisar</string>
+
 
 </resources>

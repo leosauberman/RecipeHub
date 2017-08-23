@@ -2,22 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\195f149f04acad27c59d6f0f0f3e06e7d999f434\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="3adadd381e7f62eb818add26e5235fc8062b985d">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_42e368616033f1919e4eead833fab08626968beb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHubBranchLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c07028fd1001ae3c21547d90a6e168a5ed90265c\classes.dex" />
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="C:\Users\aiko.oliveira\RecipeHub\app\build\intermediates\pre-dexed\debug\classes_c350c145d467b4fa55df345d2041801dc9c694b1.jar" />
     </item>
 
 </items>

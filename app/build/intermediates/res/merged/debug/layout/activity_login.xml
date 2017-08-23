@@ -21,14 +21,13 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/white"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin"
-        android:layout_alignTop="@+id/progressBar"
-        android:layout_alignLeft="@+id/progressBar"
-        android:layout_alignStart="@+id/progressBar"
-        tools:ignore="RtlHardcoded">
+        tools:ignore="RtlHardcoded"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <!--
         Gabriela, mexa nisso se vc quiser uma imagem no topo, senao, pode destruir bjs
@@ -39,19 +38,21 @@
             android:layout_marginBottom="30dp"
             android:src="@mipmap/ic_launcher" />
          !-->
+
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
 
             <EditText
                 android:id="@+id/et_emailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/hint_email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white"
+
                 tools:ignore="HardcodedText" />
         </android.support.design.widget.TextInputLayout>
 
@@ -59,6 +60,7 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <!--android:theme="@style/AppTheme"-->
 
             <EditText
                 android:id="@+id/et_senhaLogin"
@@ -67,8 +69,6 @@
                 android:layout_marginBottom="10dp"
                 android:hint="@string/hint_password"
                 android:inputType="textPassword"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white"
                 tools:ignore="HardcodedText" />
         </android.support.design.widget.TextInputLayout>
 
@@ -79,9 +79,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="@color/colorAccent2"
+            android:background="@color/colorPrimary"
             android:text="LOGIN"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent2"
             tools:ignore="HardcodedText" />
 
         <Button
@@ -92,7 +92,7 @@
             android:background="@null"
             android:text="Esqueceu sua senha?"
             android:textAllCaps="false"
-            android:textColor="@color/colorAccent2"
+            android:textColor="@color/colorPrimary"
             tools:ignore="HardcodedText" />
 
         <!-- Link to LoginActivity Screen -->
@@ -105,7 +105,7 @@
             android:background="@null"
             android:text="Não tem uma conta? Crie agora!"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
