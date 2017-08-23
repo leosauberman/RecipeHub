@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/colorPrimary2"
+        android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
@@ -27,33 +27,34 @@
                android:layout_marginBottom="30dp"
                android:src="" />
            !-->
-    <EditText
-        android:id="@+id/et_emailSingUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="email"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:textColor="@android:color/white" />
-
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
 
+        <EditText
+            android:id="@+id/et_emailSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
     </android.support.design.widget.TextInputLayout>
 
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
 
         <EditText
             android:id="@+id/et_senhaSingUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
-            android:hint="senha"
+            android:hint="Senha"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -70,7 +71,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/colorAccent2"
         android:text="REGISTRAR"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold" />
 
         <Button

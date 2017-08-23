@@ -5,17 +5,10 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name = "android:textColorHint">@color/colorAccent2</item>!
-    </style>
-
-    <style name="TextLabel" parent="TextAppearance.AppCompat">
-        <!-- Hint color and label color in FALSE state -->
-        <item name="android:textColorHint">@color/input_login_hint</item>
-        <item name="android:textSize">20sp</item>
-        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorAccent">@color/colorAccent</item> <!-- cor da fonte -->
-        <item name="colorControlNormal">@color/input_login_hint</item> <!-- cor da hint sem estar no foco -->
-        <item name="colorControlActivated">@color/bg_login</item> <!-- cor da hint e da label quando ativado -->
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark2</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark2</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
