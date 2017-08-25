@@ -8,11 +8,11 @@
     <color name="colorPrimaryDark2">#b30000</color>
     <color name="colorAccent2">#FFFFFF</color>
 
-
+    <!---
     <color name="searchBackground">#e0e0e0</color>
     <color name="searchHint">#616161</color>
     <color name="searchText">#212121</color>
-
+    -->
     <color name="criarReceita">#ce2121</color>
 
 

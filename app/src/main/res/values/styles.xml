@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlActivated">@color/white</item>
         <item name="colorControlNormal">@color/colorPrimaryDark2</item>
         <item name="android:textColorHint">@color/colorPrimaryDark2</item>
@@ -14,6 +14,12 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name= "criarReceita" parent="AppTheme">
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="android:textColorHint">#000000</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

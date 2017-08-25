@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:3:5-55
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:3:5-55
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:5:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\7133b42e6fea52fbbf8c41da6dcbe8b54b64a5c1\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\3fa5687780dc1faff7473705d95912c54543362d\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\261164893fbea4e65b0519765c28e764e60cd2f1\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:7:5-25:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\3b834f04bbb7a8135fa2e46f5f7038579fe41094\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\0acff5a6a627a474cc1aeee1d2df16701667e380\output\AndroidManifest.xml:19:5-20:19
@@ -46,51 +46,51 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\leonardo.morae
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\790e8f0577e421749ad7f6e01ce7611941e781ab\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\8d6b2f601e4330a15ded2de1a1053e74094a41ed\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:9:9-47
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:9:9-47
 	android:theme
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.example.leonardomoraes.myapplication.MainActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:13:9-50
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.example.leonardomoraes.myapplication.TelaReceita
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:14:9-49
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:14:9-49
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:14:19-46
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:14:19-46
 activity#com.example.leonardomoraes.myapplication.LoginActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:15:19-48
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:15:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.leonardomoraes.myapplication.SignupActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:22:9-52
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:22:9-52
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:22:19-49
 activity#com.example.leonardomoraes.myapplication.ResetPasswordActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:23:9-59
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:23:9-59
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:23:19-56
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:23:19-56
 activity#com.example.leonardomoraes.myapplication.OpenReceitaActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:24:9-66
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:24:9-66
 	android:name
-		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml:24:19-54
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:24:19-54
 uses-sdk
-INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\3b834f04bbb7a8135fa2e46f5f7038579fe41094\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-database:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\efe9d7b703f9ee791dddd3ee3322fba87451a7fc\output\AndroidManifest.xml:3:5-43
@@ -122,11 +122,11 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\leonardo.moraes
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\3b834f04bbb7a8135fa2e46f5f7038579fe41094\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:design:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\output\AndroidManifest.xml:25:5-27:34

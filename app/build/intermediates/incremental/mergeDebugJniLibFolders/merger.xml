@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\debug\jniLibs"/></dataSet></merger>

@@ -9,8 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:theme="@style/AppTheme"
-    tools:theme="@style/AppTheme">
+    android:theme="@style/criarReceita"
+    >
 
     <TextView
         android:id="@+id/tv_nomeReceita_Act_telaReceita"
@@ -132,12 +132,15 @@
 
     <EditText
         android:id="@+id/et_preparoReceita_Act_telaReceita"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/fab_criarReceita_Act_telaReceita"
+        android:layout_below="@+id/tv_preparoReceita_Act_telaReceita"
+        android:layout_margin="12dp"
+        android:gravity="top"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:layout_alignBottom="@+id/fab_criarReceita_Act_telaReceita"
-        android:layout_alignStart="@+id/tv_preparoReceita_Act_telaReceita" />
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
 
     <TextView
         android:id="@+id/tv_minutes_Act_telaReceita"

@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\578e5183d91bfecb457c3beeb0dbb2d62c1ac40a\output\jars\classes.jar"
+        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f9506f0fbf58b30a5f23890bd24a90bde95a85f9\classes.dex" />
+        sha1="ae8cdb3e04626ebccf86effe1e63e9f1d705fa0b">
+        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c9111e52aa77c2c4ebb4e49700533a1773ee3df8\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_bc932ac571b60759cecbfb1501bbfdacc2c10ea0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="ba13c73756ad2a54fac7e48471fe2743903bcc01">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubLeo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_efef958781911c123358f8d43b11a8afa1e4c656\classes.dex" />
+        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5da9c6ffa7ef3a53d11acc5783f949db27e9e92c\classes.dex" />
     </item>
 
 </items>

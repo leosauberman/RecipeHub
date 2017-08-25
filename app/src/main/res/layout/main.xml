@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/searchBackground"
+
     android:orientation="vertical"
     android:theme="@style/AppTheme">
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:scrollbars="vertical"
@@ -15,28 +14,30 @@
         android:layout_height="match_parent"
         />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_adicionarReceita_Act_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="16dp"
-        android:onClick="onClick"
-        android:src="@drawable/ic_add"
-        app:fabSize="normal"
-        app:layout_anchor="@id/recycler_view"
-        app:layout_anchorGravity="bottom|right|end" />
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary">
 
     <com.miguelcatalan.materialsearchview.MaterialSearchView
         android:id="@+id/search_view"
-        android:layout_width="match_parent"
+        android:layout_width="386dp"
         android:layout_height="wrap_content" />
 
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_adicionarReceita_Act_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="16dp"
+        android:onClick="onClick"
+        android:src="@drawable/ic_add"
+        android:background="@color/colorPrimary"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/recycler_view"
+        app:layout_anchorGravity="bottom|right" />
 
 </android.support.design.widget.CoordinatorLayout>
