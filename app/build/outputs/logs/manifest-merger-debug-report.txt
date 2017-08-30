@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:3:5-55
 		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
@@ -14,14 +14,14 @@ ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\mai
 		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\7133b42e6fea52fbbf8c41da6dcbe8b54b64a5c1\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\3fa5687780dc1faff7473705d95912c54543362d\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\261164893fbea4e65b0519765c28e764e60cd2f1\output\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:7:5-26:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\leonardo.moraes\.android\build-cache\3b834f04bbb7a8135fa2e46f5f7038579fe41094\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\leonardo.moraes\.android\build-cache\0acff5a6a627a474cc1aeee1d2df16701667e380\output\AndroidManifest.xml:19:5-20:19
@@ -86,9 +86,13 @@ ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\mai
 	android:name
 		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:23:19-56
 activity#com.example.leonardomoraes.myapplication.OpenReceitaActivity
-ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:24:9-66
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:24:9-57
 	android:name
 		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:24:19-54
+activity#com.example.leonardomoraes.myapplication.PerfilUsuarioActivity
+ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:25:9-68
+	android:name
+		ADDED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml:25:19-56
 uses-sdk
 INJECTED from C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\leonardo.moraes\.android\build-cache\f2322ae94242cceaa55dd4da38a6a0697750fc83\output\AndroidManifest.xml:5:5-7:41
