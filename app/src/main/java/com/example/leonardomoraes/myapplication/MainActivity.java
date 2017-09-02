@@ -110,9 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
 
-                    if(!receitaArrayList.contains(receita)){
-                        receitaArrayList.add(receita);
-                    }
+                    receitaArrayList.add(receita);
                 }
                 adapter = new RecyclerAdapter(receitaArrayList, MainActivity.this);
                 recyclerView.setAdapter(adapter);
@@ -137,5 +135,9 @@ public class MainActivity extends AppCompatActivity {
         MenuItem item = menu.findItem(R.id.action_search);
         searchView.setMenuItem(item);
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
     }
 }

@@ -28,11 +28,15 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         auth = FirebaseAuth.getInstance();
-        auth.signOut();
 
-        setContentView(R.layout.activity_login);
+        if(auth.getCurrentUser()!= null) {
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            Toast.makeText(this, "Bem-vindo "+auth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
+        }
+        else{}
 
         inputEmail = (EditText) findViewById(R.id.et_emailLogin);
         inputPassword = (EditText) findViewById(R.id.et_senhaLogin);
@@ -41,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         bt_Login = (Button) findViewById(R.id.bt_login_Act_login);
         bt_Reset = (Button) findViewById(R.id.bt_resetaSenha_Act_login);
 
-        auth = FirebaseAuth.getInstance();
+
 
         bt_Signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +98,7 @@ public class LoginActivity extends AppCompatActivity {
                                 } else {
                                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(intent);
+                                    Toast.makeText(getApplicationContext(), "Bem-vindo "+auth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
                                     finish();
                                 }
                             }
