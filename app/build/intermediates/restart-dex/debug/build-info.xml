@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504379926773"
+    timestamp="1504386560105"
     token="-2406106690265537846"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="196" />
+        duration="875" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="41" />
+        duration="31" />
     <task
         name="verifier"
-        duration="11" />
+        duration="6" />
 
     <artifact
         location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -32,17 +32,26 @@
 
     <build
         build-mode="FULL"
-        timestamp="1504378397680"
+        timestamp="1504385373933"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
@@ -50,13 +59,7 @@
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -67,21 +70,10 @@
         <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1504379763338"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1504379926773"
+        timestamp="1504386560105"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHubb\app\build\intermediates\split-apk\debug\slices\slice_8.apk"

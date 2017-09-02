@@ -20,6 +20,14 @@
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\src\\main\\res\\drawable-xhdpi\\ic_add.png"
     },
     {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_settings.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_about.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_action_about.png"
+    },
+    {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_navigation_arrow_back.png",
         "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\578e5183d91bfecb457c3beeb0dbb2d62c1ac40a\\output\\res\\drawable-xhdpi\\ic_action_navigation_arrow_back.png"
     },
@@ -34,6 +42,10 @@
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_file_download_black_24dp.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_file_download_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_android.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_android.png"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_action_search.png",

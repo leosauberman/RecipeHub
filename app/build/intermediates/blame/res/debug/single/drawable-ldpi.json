@@ -2,5 +2,17 @@
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_android.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_android.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_settings.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_about.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_about.png"
     }
 ]

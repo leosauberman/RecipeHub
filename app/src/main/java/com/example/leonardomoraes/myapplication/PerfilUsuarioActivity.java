@@ -36,7 +36,7 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
 
         receitaArrayList = new ArrayList<>();
 
-        add = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_main);
+        add = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_perfil);
         add.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v){
