@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.leonardomoraes.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".OpenReceitaActivity"></activity>
+        <activity android:name=".OpenReceitaActivity" />
+        <activity android:name=".SearchActivity"></activity>
     </application>
 
 </manifest>

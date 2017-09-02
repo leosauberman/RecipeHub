@@ -42,6 +42,7 @@
         <activity android:name="com.example.leonardomoraes.myapplication.SignupActivity" />
         <activity android:name="com.example.leonardomoraes.myapplication.ResetPasswordActivity" />
         <activity android:name="com.example.leonardomoraes.myapplication.OpenReceitaActivity" />
+        <activity android:name="com.example.leonardomoraes.myapplication.SearchActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

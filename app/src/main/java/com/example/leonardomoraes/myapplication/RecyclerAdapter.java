@@ -76,4 +76,5 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         intent.putExtra("uri", recipeUri);
         context.startActivity(intent);
     }
+
 }
