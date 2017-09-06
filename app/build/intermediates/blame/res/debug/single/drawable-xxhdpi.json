@@ -1,22 +1,60 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_add.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_about.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_action_about.png"
+=======
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_voice_search_inverted.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_voice_search_inverted.png"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_file_download_black_24dp.png",
-        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_file_download_black_24dp.png"
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_navigation_arrow_back_inverted.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_navigation_arrow_back_inverted.png"
     },
     {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_navigation_arrow_back.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_navigation_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_voice_search.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_voice_search.png"
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_add.png",
+        "source": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_navigation_close_inverted.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_navigation_close_inverted.png"
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_action_search.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_action_search.png"
+>>>>>>> versionamento
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_file_download_black_24dp.png",
+        "source": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_file_download_black_24dp.png"
+    },
+    {
+<<<<<<< HEAD
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_settings.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_action_settings.png"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_android.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android.png"
+=======
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_navigation_close.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_action_navigation_close.png"
+    },
+    {
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_suggestion.png",
+        "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\\output\\res\\drawable-xxhdpi\\ic_suggestion.png"
+>>>>>>> versionamento
     }
 ]

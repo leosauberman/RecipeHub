@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -15,6 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -22,6 +27,11 @@ public class SignupActivity extends AppCompatActivity {
     private Button bt_SignIn, bt_SignUp, bt_ResetaSenha;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference myRef = database.getReference("Usuario");
+    private String id;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +40,7 @@ public class SignupActivity extends AppCompatActivity {
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
+
 
         bt_SignIn = (Button) findViewById(R.id.bt_singIn_Act_singUp);
         bt_SignUp = (Button) findViewById(R.id.bt_singUp_Act_singUp);
@@ -82,6 +93,7 @@ public class SignupActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(SignupActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
+                                id = auth.getCurrentUser().getUid();
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
@@ -90,17 +102,26 @@ public class SignupActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                    //addUser(id, null);
                                     finish();
                                 }
                             }
                         });
+
+
+
 
             }
         });
 
 
     }
+    private void addUser(String id,
+                         String receitas){
+        Usuario usuario = new Usuario(id, receitas);
 
+        myRef.child(id).setValue(usuario);
+    }
     @Override
     protected void onResume() {
         super.onResume();

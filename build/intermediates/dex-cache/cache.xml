@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\0d8567c9823fc9a6a396c1b5b54b9474b8216ca6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_50b61a73b529276d3ad6934700f6d89d34aaa810.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\08622e6fc58eb636882982ba4e281807c09eeb3f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d94940ddde71cc57402c78b7d8c335d61958f486">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_f9fa5044bc70cbbf3b8663751470caf7171a4421.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\3a498df5c356f1a49b1432d27e274d0bb0fb837a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_7be53ed8577b45607ea92741f7b7fcf24aecc66c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\cc19a2b68c48f1767088231005ef6d896b9fa4c8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e00b71dcf2fbecaf59b0d487d11839522dd7863d">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_2bab0066f8843a7d42011992101f70ac3b8cd617.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\f784a7a67c801e884eb697ca90558d93f1467ead\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4acacbab67243d9eb026ea759aefd401d070f3e">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_5241624a4c16d56ce76f930d147fc45b8eb4c71b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\eb0f9a87a6e705325a97b8f6cedf2feba28dc4d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="32054268e6c9fdff0c9c5deafafd0bd105120fb6">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_1d9a3fc0979bb85cf80a0fa9905cc03a166683bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\3406a6897c120ed300d414a83c54ba01cfd8be75\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="54511008bf7d1aabd871d8d3a26781b3f2bd9617">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_dc08093163629bb5bd02d2ff65e058021e3fc5be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\35fea2a4df714fb83bdbcbfa7b65fd48f9a77941\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_13f3a677866e70302ed216f557133b062e0028eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\4de2f44b0bd2f2b5dbcbb2e4c5d79bf050330a46\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b4fa53b1dbc43a65e9cbcbfe25f4abc47264e78c">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_80c7ad3341617e7077feefdd5a7ed2f8632ef335.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\b88fbc9de77a0ed3c516315013480fc617336710\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_9f4463ebd8245139ebb2e2b20858b42df533fbde.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\101f97d4022e6c974b2cf40ff7eab5351c534435\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6178e31397c24ab1bfc09766832cdcf519621eb7">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_8148610ce7f7416f128a050ece53e12c4732580a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\707993197c55d01b21afb5f69e694a80b7fe5364\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8a572a0bd9ea324b099b1761670237bc1be8ba7b">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_97c1c689f8c520e48ac29bba1bb70162247c7a59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\ef22de142189a885884ab4f736cc56917865337c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3013ffee567202ddab82286ac45b28fcb1e7926a">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_20b82dec684ce1eee787780d5eaea8c98eff2572.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\f625d41295d7afb2286b8c7da733ab4bc650589b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_7f16d48872244ef3fd8cfb048ab92c834ea9e2f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\520fd35d78d681f61b96d602a78942e8743586f7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_b8a145ddb46d638bd8b718bbea5d339778cbfc48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\376d239a240b357ee5bd00c17cdcea0239adb37c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_ee620b71b298c47aae7bbc2981f2161a4aeb4388.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\34b2882bc825a886195aa6f39ae87c259de69667\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_6f46aa64f8cab69feb96da849bbd7c09d54f360c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\98e26fb6e72c581b20604897d609deb03ae335b8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_96f384e697d7e471e42f0d0aa17cb48e26243a5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\82485f022b82b230541c1385ca1235ef61128492\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_436d72ce479c84c60676df49e2481c0a4ebd327c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\3a4c5ccee1d3d8eff2d5bd01255bbb2209fa64d4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_55d5bf92bb26612e844e93306fda00752c7ff122.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\b0086a85b2b0f7e75abd718f3e6e209d7d257013\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_6abc6b8845dac162bbd42099365ba8ebbf722ce7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_b3b6adf6702b1f73f3efa2a59f3a690170a97c35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_c205eb1744762010eb1025959d40edb533c2dd31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\b793221bda2776fd536a74333b73e31fbef4fc10\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_23955e61a62279839713168c472937b95add510b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\03da1ccb682866380011f4aadd3444b5d644b682\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_455b022d1bf619134e0edb619ab3a78cf73d86b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\aa135b43fc59e5a84ab8bf85fe1155192e0bd014\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_6a6079f1418857732ca02a0f8b6da2939251822b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\783372d062a0d77f66b07297e399710010b5af2f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ec1f195979cc7f1ec94779fa16f1b10aac8aceca">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_b4266843f6a786fb8edad9cabfb4e4d2a22ee6a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\885db1abc183ee2113669fdf8c4cc89e4c8f574f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_013a23e137f07dd95ebb607ccc6c487cc37b79a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\glide-3.7.0_5fe4c957b3ec270756d2daa6b4ed8e8574aa6b97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\aiko.oliveira\.android\build-cache\ecd0115a85d7053f1fe3bd35d4743a0fa44dd078\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\aiko.oliveira\Documents\RecipeHub0209\app\build\intermediates\pre-dexed\debug\classes_12b2a528d68c6540066a41f558460b5cd8ee48e8.jar" />
+    </item>
+
+</items>

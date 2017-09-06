@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png"
     },
@@ -14,5 +15,9 @@
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_about.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHubb\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_about.png"
+=======
+        "merged": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png",
+        "source": "C:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_file_download_black_24dp.png"
+>>>>>>> versionamento
     }
 ]
