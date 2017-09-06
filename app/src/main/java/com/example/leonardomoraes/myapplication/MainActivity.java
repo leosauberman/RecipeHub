@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recyclerView.setAdapter(adapter);
         return false;*/
 
-        Query busca = myRef.orderByChild("nome").equalTo(query);
+        Query busca = myRef.orderByChild("nome").startAt(query);
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
