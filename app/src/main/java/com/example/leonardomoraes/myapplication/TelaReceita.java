@@ -52,7 +52,7 @@ public class TelaReceita extends AppCompatActivity {
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
-    private String id;
+    private String idReceita;
     private String idDono = auth.getCurrentUser().getUid();
     DatabaseReference receitasRef = myRef2.child(idDono).child("receitas");
 
@@ -82,7 +82,7 @@ public class TelaReceita extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.imageView_Act_telaReceita);
 
-        id = myRef.push().getKey();
+        idReceita = myRef.push().getKey();
 
         addImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,8 +103,8 @@ public class TelaReceita extends AppCompatActivity {
                 if(verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo())
                 {
                     startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                    addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
-                    addUser(idDono, receitasRef.child(nome.getText().toString()).setValue(id));
+                    //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
+                    addUser(retorna());
                 }
                 //startActivity(new Intent(TelaReceita.this, MainActivity.class));
             }
@@ -121,11 +121,16 @@ public class TelaReceita extends AppCompatActivity {
     }
 
 
-    private void addUser(String id,
-                         void receitas){
-        Usuario usuario = new Usuario(id, receitas);
+    private void addUser(String nomeReceita){
+        Usuario usuario = new Usuario(nomeReceita);
 
-        myRef2.child(id).setValue(usuario);
+        receitasRef.child(idReceita).setValue(usuario);
+    }
+
+    private String retorna()
+    {
+        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
+        return nome.getText().toString();
     }
     /*@Override
     public void onBackPressed() {
@@ -163,6 +168,7 @@ public class TelaReceita extends AppCompatActivity {
 
         myRef.child(recipeId).setValue(receita);
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

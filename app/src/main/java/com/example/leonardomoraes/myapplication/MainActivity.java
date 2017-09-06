@@ -5,13 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.design.widget.FloatingActionButton;
-<<<<<<< HEAD
 import android.support.v4.view.MenuItemCompat;
-=======
 import android.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
->>>>>>> UserInterface
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -78,25 +75,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-<<<<<<< HEAD
-=======
         //getSupportActionBar().setTitle("Pesquisar");
-
-        searchView = (MaterialSearchView) findViewById(R.id.search_view);
-
-        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
-            @Override
-            public void onSearchViewShown() {
-
-            }
-            @Override
-            public void onSearchViewClosed() {
-                //código do recycleView
-            }
-
-        });
->>>>>>> UserInterface
-
 
         receitaArrayList = new ArrayList<>();
 
@@ -117,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         });
 
         //MENU
-        mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_action_navigation_close));
+        mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
         mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
         mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
 
@@ -145,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     protected void onStart() {
         super.onStart();
+        receitaArrayList.clear();
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -183,7 +163,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     }
 
     @Override
-<<<<<<< HEAD
     public boolean onQueryTextSubmit(String query) {
         /*query = query.toLowerCase();
         ArrayList<Receita> newList = new ArrayList<>();
@@ -224,40 +203,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        /*newText = newText.toLowerCase();
-        ArrayList<Receita> newList = new ArrayList<>();
-        for (Receita receita : receitaArrayList){
-            String nome = receita.getNome().toLowerCase();
-            if (nome.contains(newText)){
-                newList.add(receita);
-            }
-        }
-        adapter = new RecyclerAdapter(newList, MainActivity.this);
-        recyclerView.setAdapter(adapter);
-
-        Query query = myRef.orderByChild("nome").equalTo(newText);
-        query.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
-
-                    if(!searchArrayList.contains(receita)){
-                        searchArrayList.add(receita);
-                    }
-                }
-                adapter = new RecyclerAdapter(searchArrayList, MainActivity.this);
-                recyclerView.setAdapter(adapter);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });*/
-
         return false;
-=======
+    }
     public void onBackPressed() {
     }
 
@@ -333,6 +280,5 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
->>>>>>> UserInterface
     }
 }

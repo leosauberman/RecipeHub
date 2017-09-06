@@ -102,7 +102,7 @@ public class SignupActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new Intent(SignupActivity.this, MainActivity.class));
-                                    //addUser(id, null);
+                                    addUser(null);
                                     finish();
                                 }
                             }
@@ -116,12 +116,12 @@ public class SignupActivity extends AppCompatActivity {
 
 
     }
-    private void addUser(String id,
-                         String receitas){
-        Usuario usuario = new Usuario(id, receitas);
+    private void addUser(String nomeReceita){
+        Usuario usuario = new Usuario(nomeReceita);
 
         myRef.child(id).setValue(usuario);
     }
+
     @Override
     protected void onResume() {
         super.onResume();
