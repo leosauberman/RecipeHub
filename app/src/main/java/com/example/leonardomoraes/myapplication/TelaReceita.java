@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -37,13 +39,14 @@ public class TelaReceita extends AppCompatActivity {
     private RadioButton sal, doce;
     private String sabor;
     private Uri downloadUrl;
-
+    private Button signout;
     private ImageView imageView;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
+    private FirebaseAuth auth = FirebaseAuth.getInstance();
     private String id;
 
 
@@ -92,6 +95,15 @@ public class TelaReceita extends AppCompatActivity {
                     addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString());
                 }
                 //startActivity(new Intent(TelaReceita.this, MainActivity.class));
+            }
+        });
+
+        signout = (Button) findViewById(R.id.signOut);
+        signout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
+                startActivity(new Intent(TelaReceita.this, LoginActivity.class));
             }
         });
     }

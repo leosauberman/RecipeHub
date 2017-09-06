@@ -23,6 +23,7 @@
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".OpenReceitaActivity" />
         <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".PerfilUsuarioActivity"></activity>
     </application>
 
 </manifest>
