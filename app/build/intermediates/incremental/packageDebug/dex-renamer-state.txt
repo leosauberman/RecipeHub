@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Wed Sep 06 10:49:00 BRT 2017
 base.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+=======
+#Sat Sep 02 18:40:13 BRT 2017
+base.0=C\:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+>>>>>>> 095a719eb4a03ecf94d7b080c93d4a62e9436f5a
 renamed.0=classes.dex
-file.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\aiko.oliveira\\Documents\\RecipeHub0209\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

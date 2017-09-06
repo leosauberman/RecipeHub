@@ -1,14 +1,14 @@
 package com.example.leonardomoraes.myapplication;
 
 /**
-    Classe receita
+    Classe receitatatata
  */
 
 class Receita {
 
     public Receita(){}
 
-    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo, String urlFoto) {
+    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo, String urlFoto, String idDono) {
         this.nome = nome;
         this.ingrediente = ingrediente;
         this.tempo = tempo;
@@ -16,6 +16,7 @@ class Receita {
         this.tipo = tipo;
         this.preparo = preparo;
         this.urlFoto = urlFoto;
+        this.idDono = idDono;
     }
     private String nome;
     private String ingrediente;
@@ -24,7 +25,16 @@ class Receita {
     private String tipo;
     private String preparo;
     private String urlFoto;
+    private String idDono;
 
+
+    public String getIdDono() {
+        return idDono;
+    }
+
+    public void setIdDono(String idDono) {
+        this.idDono = idDono;
+    }
 
     public String getNome() {
         return nome;

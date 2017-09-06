@@ -3,12 +3,14 @@ package com.example.leonardomoraes.myapplication;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -17,12 +19,16 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.common.data.Freezable;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+
+import java.util.ArrayList;
 
 public class TelaReceita extends AppCompatActivity {
 
@@ -37,14 +43,21 @@ public class TelaReceita extends AppCompatActivity {
     private RadioButton sal, doce;
     private String sabor;
     private Uri downloadUrl;
-
+    private Button signout;
     private ImageView imageView;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
+    private DatabaseReference myRef2 = database.getReference("Usuario");
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
+    private FirebaseAuth auth = FirebaseAuth.getInstance();
     private String id;
+    private String idDono = auth.getCurrentUser().getUid();
+    DatabaseReference receitasRef = myRef2.child(idDono).child("receitas");
+
+
+
 
 
     @Override
@@ -81,6 +94,7 @@ public class TelaReceita extends AppCompatActivity {
             }
         });
 
+
         criar = (FloatingActionButton) findViewById(R.id.fab_criarReceita_Act_telaReceita);
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -89,13 +103,30 @@ public class TelaReceita extends AppCompatActivity {
                 if(verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo())
                 {
                     startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                    addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString());
+                    addRecipe(id, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
+                    addUser(idDono, receitasRef.child(nome.getText().toString()).setValue(id));
                 }
                 //startActivity(new Intent(TelaReceita.this, MainActivity.class));
             }
         });
+
+        signout = (Button) findViewById(R.id.signOut);
+        signout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
+                startActivity(new Intent(TelaReceita.this, LoginActivity.class));
+            }
+        });
     }
 
+
+    private void addUser(String id,
+                         void receitas){
+        Usuario usuario = new Usuario(id, receitas);
+
+        myRef2.child(id).setValue(usuario);
+    }
     /*@Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -126,8 +157,9 @@ public class TelaReceita extends AppCompatActivity {
                            String sabor,
                            String tipo,
                            String preparo,
-                           String urlFoto){
-        Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto);
+                           String urlFoto,
+                           String idDono){
+        Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto, idDono);
 
         myRef.child(recipeId).setValue(receita);
     }

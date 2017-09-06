@@ -64,5 +64,9 @@
 
     <string name="pesquisar">Pesquisar</string>
 
+    <string name="seguidores">Seguidores: </string>
+    <string name="seguindo">Seguindo: </string>
+
+    <string name="novaReceita">Nova receita</string>
 
 </resources>
