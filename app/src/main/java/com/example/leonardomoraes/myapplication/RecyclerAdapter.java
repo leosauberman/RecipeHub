@@ -17,7 +17,7 @@ import java.util.ArrayList;
     Adapter do recylcerView
  */
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
 
     private ArrayList<Receita> receitaArrayList;
     private String recipeNome;
@@ -26,12 +26,38 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
     private String recipePreparo;
     private String recipeTipo;
     private String recipeUri;
-    Context context;
+    private Context c;
 
+    class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        //ItemClickListener itemClickListener;
+        TextView nome = (TextView) itemView.findViewById(R.id.tv_nomeReceita_Act_telaReceita);
+        TextView tempo = (TextView) itemView.findViewById(R.id.tv_tempoReceita_Act_telaReceita);
+        TextView tipo = (TextView) itemView.findViewById(R.id.tv_tipoReceita_Act_telaReceita);
+
+        RecyclerHolder(View itemView) {
+            super(itemView);
+
+            itemView.setTag(itemView);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Context context = itemView.getContext();
+            Intent intent = new Intent(context, OpenReceitaActivity.class);
+            intent.putExtra("nome", recipeNome);
+            intent.putExtra("ingredientes", recipeIngredientes);
+            intent.putExtra("tempo", recipeTempo);
+            intent.putExtra("preparo", recipePreparo);
+            intent.putExtra("tipo", recipeTipo);
+            intent.putExtra("uri", recipeUri);
+            context.startActivity(intent);
+        }
+    }
 
     public RecyclerAdapter(ArrayList<Receita> receitaArrayList, Context c) {
         this.receitaArrayList = receitaArrayList;
-        this.context = c;
+        this.c = c;
     }
 
     @Override
@@ -52,29 +78,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
         recipeTipo = receitaArrayList.get(position).getTipo();
         recipeUri = receitaArrayList.get(position).getUrlFoto();
 
-        holder.setItemClickListener(new ItemClickListener() {
-            @Override
-            public void onItemClick(int pos) {
-                openActivity();
-                Toast.makeText(context, "Receita nº: " + pos , Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     @Override
     public int getItemCount() {
         return receitaArrayList.size();
-    }
-
-    private void openActivity(){
-        Intent intent = new Intent(context, OpenReceitaActivity.class);
-        intent.putExtra("nome", recipeNome);
-        intent.putExtra("ingredientes", recipeIngredientes);
-        intent.putExtra("tempo", recipeTempo);
-        intent.putExtra("preparo", recipePreparo);
-        intent.putExtra("tipo", recipeTipo);
-        intent.putExtra("uri", recipeUri);
-        context.startActivity(intent);
     }
 
 }

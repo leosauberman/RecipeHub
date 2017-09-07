@@ -10,7 +10,7 @@
         <item>Sem açúcar</item>
     </string-array>
     <string name="nome_receita">Nome:</string>
-    <string name="ingredientes">Ingredientes:</string>
+    <string name="ingredientes">Ingredientes: </string>
     <string name="tempo">Tempo:</string>
     <string name="sal">Salgado</string>
     <string name="doce">Doce</string>
