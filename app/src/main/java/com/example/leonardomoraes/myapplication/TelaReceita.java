@@ -110,14 +110,6 @@ public class TelaReceita extends AppCompatActivity {
             }
         });
 
-        signout = (Button) findViewById(R.id.signOut);
-        signout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.signOut();
-                startActivity(new Intent(TelaReceita.this, LoginActivity.class));
-            }
-        });
     }
 
 

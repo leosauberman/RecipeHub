@@ -3,7 +3,9 @@ package com.example.leonardomoraes.myapplication;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.MenuItemCompat;
 import android.app.Fragment;
@@ -39,7 +41,7 @@ import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 
 
-
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private RecyclerAdapter adapter;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
+    private FirebaseAuth auth = FirebaseAuth.getInstance();
 
     ListView mDrawerList;
     RelativeLayout mDrawerPane;
@@ -99,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
         mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
         mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
+        mNavItems.add(new NavItem("Sair", "Sair do seu perfil", R.drawable.ic_close));
 
         // DrawerLayout
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -275,8 +279,19 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 .replace(R.id.mainContent, fragment)
                 .commit();
 
+        if(position == 3){
+            auth.signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+        }
+
         mDrawerList.setItemChecked(position, true);
         setTitle(mNavItems.get(position).mTitle);
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt("position", position);
+        editor.commit();
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
