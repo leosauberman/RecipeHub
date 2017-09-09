@@ -54,7 +54,7 @@ public class TelaReceita extends AppCompatActivity {
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private String idReceita;
     private String idDono = auth.getCurrentUser().getUid();
-    DatabaseReference receitasRef = myRef2.child(idDono).child("receitas");
+    DatabaseReference receitasRef = myRef2.child(idDono);
 
 
 

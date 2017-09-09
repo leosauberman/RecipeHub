@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.leonardomoraes.myapplication.OpenReceitaActivity">
 
+
+
     <ImageView
         android:id="@+id/imageView_Act_openReceita"
         android:layout_width="match_parent"

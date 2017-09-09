@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_web"
+        android:icon="@drawable/recipehub_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,8 +22,8 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".OpenReceitaActivity" />
-        <activity android:name=".SearchActivity"></activity>
-        <activity android:name=".PerfilUsuarioActivity"></activity>
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".PerfilUsuarioActivity" />
     </application>
 
 </manifest>

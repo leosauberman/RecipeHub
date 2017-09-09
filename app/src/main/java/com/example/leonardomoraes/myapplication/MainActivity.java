@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
-
+    private static String TAG = MainActivity.class.getSimpleName();
     ListView mDrawerList;
     RelativeLayout mDrawerPane;
     private ActionBarDrawerToggle mDrawerToggle;
-    private DrawerLayout mDrawerLayout;
+    protected DrawerLayout mDrawerLayout;
     private TextView profile;
 
     ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("Pesquisar");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         receitaArrayList = new ArrayList<>();
 
@@ -121,9 +122,46 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+
+                invalidateOptionsMenu();
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+                Log.d(TAG, "onDrawerClosed: " + getTitle());
+
+                invalidateOptionsMenu();
+            }
+        };
+
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle
+        // If it returns true, then it has handled
+        // the nav drawer indicator touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
 
     @Override
     protected void onStart() {
@@ -153,9 +191,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
 
         recyclerView.setLayoutManager(gridLayoutManager);
-
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu) {
