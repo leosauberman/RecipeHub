@@ -26,6 +26,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     private String recipePreparo;
     private String recipeTipo;
     private String recipeUri;
+    private int posTipo;
+    private String recipeId;
     private Context c;
 
     class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -50,6 +52,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             intent.putExtra("tempo", recipeTempo);
             intent.putExtra("preparo", recipePreparo);
             intent.putExtra("tipo", recipeTipo);
+            intent.putExtra("tipoID", posTipo);
+            intent.putExtra("idProprio", recipeId);
             intent.putExtra("uri", recipeUri);
             context.startActivity(intent);
         }
@@ -76,8 +80,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         recipeTempo = receitaArrayList.get(position).getTempo();
         recipePreparo = receitaArrayList.get(position).getPreparo();
         recipeTipo = receitaArrayList.get(position).getTipo();
+        posTipo = receitaArrayList.get(position).getTipo().indexOf(recipeTipo);
         recipeUri = receitaArrayList.get(position).getUrlFoto();
-
+        recipeId = receitaArrayList.get(position).getIdProprio();
     }
 
     @Override

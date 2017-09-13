@@ -22,8 +22,9 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".OpenReceitaActivity" />
-        <activity android:name=".SearchActivity"/>
+        <activity android:name=".SearchActivity" />
         <activity android:name=".PerfilUsuarioActivity" />
+        <activity android:name=".VersionamentoActivity"></activity>
     </application>
 
 </manifest>

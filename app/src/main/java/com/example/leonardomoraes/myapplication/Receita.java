@@ -8,7 +8,7 @@ class Receita {
 
     public Receita(){}
 
-    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo, String urlFoto, String idDono) {
+    public Receita(String nome, String ingrediente, String tempo, String sabor, String tipo, String preparo, String urlFoto, String idDono, String idPai, String idProprio) {
         this.nome = nome;
         this.ingrediente = ingrediente;
         this.tempo = tempo;
@@ -17,6 +17,8 @@ class Receita {
         this.preparo = preparo;
         this.urlFoto = urlFoto;
         this.idDono = idDono;
+        this.idPai = idPai;
+        this.idProprio = idProprio;
     }
     private String nome;
     private String ingrediente;
@@ -26,6 +28,24 @@ class Receita {
     private String preparo;
     private String urlFoto;
     private String idDono;
+    private String idPai;
+    private String idProprio;
+
+    public String getIdProprio() {
+        return idProprio;
+    }
+
+    public void setIdProprio(String idProprio) {
+        this.idProprio = idProprio;
+    }
+
+    public String getIdPai() {
+        return idPai;
+    }
+
+    public void setIdPai(String idPai) {
+        this.idPai = idPai;
+    }
 
 
     public String getIdDono() {

@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         receitaArrayList = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         add1 = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_main);
         add1.setOnClickListener(new View.OnClickListener()
@@ -185,7 +186,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 // Failed to read value
             }
         });
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(false);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);

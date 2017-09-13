@@ -2,7 +2,9 @@ package com.example.leonardomoraes.myapplication;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
@@ -43,7 +45,6 @@ public class TelaReceita extends AppCompatActivity {
     private RadioButton sal, doce;
     private String sabor;
     private Uri downloadUrl;
-    private Button signout;
     private ImageView imageView;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -72,6 +73,7 @@ public class TelaReceita extends AppCompatActivity {
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
 
+
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
         tempo = (EditText) findViewById(R.id.et_tempoReceita_Act_telaReceita);
@@ -83,6 +85,10 @@ public class TelaReceita extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imageView_Act_telaReceita);
 
         idReceita = myRef.push().getKey();
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("idReceita", idReceita);
+        editor.commit();
 
         addImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,6 +116,7 @@ public class TelaReceita extends AppCompatActivity {
             }
         });
 
+
     }
 
 
@@ -121,7 +128,7 @@ public class TelaReceita extends AppCompatActivity {
 
     private String retorna()
     {
-        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
+        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono, idReceita);
         return nome.getText().toString();
     }
     /*@Override
@@ -155,8 +162,9 @@ public class TelaReceita extends AppCompatActivity {
                            String tipo,
                            String preparo,
                            String urlFoto,
-                           String idDono){
-        Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto, idDono);
+                           String idDono,
+                           String idProprio){
+        Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto, idDono, null, idProprio);
 
         myRef.child(recipeId).setValue(receita);
     }

@@ -27,8 +27,8 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
     private TextView nome, seguidores, seguindo, editar;
     private ImageView fotoPerfil;
     private FloatingActionButton add;
-    private ArrayList<Receita> receitaArrayList;
-    private RecyclerView recyclerView;
+    private ArrayList<Receita> receitaArrayList1;
+    private RecyclerView recyclerView1;
     private RecyclerAdapter adapter;
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -44,7 +44,7 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
         seguindo = (TextView) findViewById((R.id.tv_seguindo_act_perfil_usuario));
         editar = (TextView) findViewById(R.id.editar);
 
-        receitaArrayList = new ArrayList<>();
+        receitaArrayList1 = new ArrayList<>();
 
         add = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_perfil);
         add.setOnClickListener(new View.OnClickListener()
@@ -54,7 +54,7 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
             }
         });
 
-        receitaArrayList.clear();
+        receitaArrayList1.clear();
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -62,10 +62,10 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
 
-                    receitaArrayList.add(receita);
+                    receitaArrayList1.add(receita);
                 }
-                adapter = new RecyclerAdapter(receitaArrayList, PerfilUsuarioActivity.this);
-                recyclerView.setAdapter(adapter);
+                adapter = new RecyclerAdapter(receitaArrayList1, PerfilUsuarioActivity.this);
+                recyclerView1.setAdapter(adapter);
             }
 
             @Override
@@ -73,12 +73,12 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
                 // Failed to read value
             }
         });
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_usuario);
-        recyclerView.setHasFixedSize(false);
+        recyclerView1 = (RecyclerView) findViewById(R.id.recycler_view_usuario);
+        recyclerView1.setHasFixedSize(false);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
 
-        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView1.setLayoutManager(gridLayoutManager);
 
         if(!auth.getCurrentUser().getEmail().isEmpty()){
             nome.setText(auth.getCurrentUser().getEmail());
