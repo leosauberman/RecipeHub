@@ -638,7 +638,7 @@ public final class R {
         public static final int textSpacerNoButtons = 0x7f0e0062;
         public static final int textSpacerNoTitle = 0x7f0e0061;
         public static final int time = 0x7f0e00da;
-        public static final int title = 0x7f0e00c3;
+        public static final int title = 0x7f0e005a;
         public static final int titleDividerNoCustom = 0x7f0e0069;
         public static final int title_template = 0x7f0e0067;
         public static final int top = 0x7f0e0039;
