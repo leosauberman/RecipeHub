@@ -86,6 +86,11 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
         else {
             nome.setText("user");
         }
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, PerfilUsuarioActivity.class));
     }
 }

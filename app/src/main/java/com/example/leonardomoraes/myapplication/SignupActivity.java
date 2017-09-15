@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class SignupActivity extends AppCompatActivity {
 
-    private EditText inputEmail, inputPassword;
+    private EditText inputEmail, inputPassword, inputName;
     private Button bt_SignIn, bt_SignUp, bt_ResetaSenha;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
@@ -46,6 +46,7 @@ public class SignupActivity extends AppCompatActivity {
         bt_SignUp = (Button) findViewById(R.id.bt_singUp_Act_singUp);
         inputEmail = (EditText) findViewById(R.id.et_emailSingUp);
         inputPassword = (EditText) findViewById(R.id.et_senhaSingUp);
+        inputName = (EditText) findViewById(R.id.et_nomeSingUp);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         bt_ResetaSenha = (Button) findViewById(R.id.bt_resetaSenha_Act_singUp);
 
@@ -69,19 +70,32 @@ public class SignupActivity extends AppCompatActivity {
 
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
+                String name = inputName.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Entre com seu email!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else if(!isValidEmail(email)){
+                    Toast.makeText(getApplicationContext(), "Email inválido!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
+                if(TextUtils.isEmpty(name)){
+                    Toast.makeText(getApplicationContext(), "Entre com seu nome!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else{
+                    myRef.child("nome").child(name);
+                }
+
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Entre com sua senha!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Senha muito curta, mínimo de 6 caracteres!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -126,6 +140,10 @@ public class SignupActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         progressBar.setVisibility(View.GONE);
+    }
+
+    public final static boolean isValidEmail(CharSequence target) {
+        return !TextUtils.isEmpty(target) && android.util.Patterns.EMAIL_ADDRESS.matcher(target).matches();
     }
 
 }

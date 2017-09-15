@@ -98,6 +98,7 @@ public class VersionamentoActivity extends AppCompatActivity {
                 saborV = verifySabor();
                 addRecipeNormal(idVersionada, nomeV, ingredienteV, tempoV, saborV, tipoV, preparoV, null, idDono, idPai, idVersionada);
                 addVersionRef(idVersionada, idPai);
+                startActivity(new Intent(VersionamentoActivity.this, MainActivity.class));
             }
         });
 
@@ -121,7 +122,7 @@ public class VersionamentoActivity extends AppCompatActivity {
 
     private void addVersionRef(String idVersionada,
                                String idPai){
-        normalRef.child(idPai).child(idVersionada).setValue(nomeV);
+        normalRef.child(idPai).child("filhas").child(idVersionada).setValue(nomeV);
     }
 
     private String verifySabor(){

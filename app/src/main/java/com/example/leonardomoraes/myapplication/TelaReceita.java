@@ -73,6 +73,7 @@ public class TelaReceita extends AppCompatActivity {
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
 
+        downloadUrl = Uri.parse("");
 
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
@@ -105,14 +106,17 @@ public class TelaReceita extends AppCompatActivity {
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                if(verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo())
-                {
-                    startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                    //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
-                    addUser(retorna());
+                if(downloadUrl.toString().isEmpty()){
+                    downloadUrl = Uri.parse("https://www.justexam.in/assets/blog/comments/default.jpg");
                 }
-                //startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                else {
+                    if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo()) {
+                        startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                        //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
+                        addUser(retorna());
+                    }
+                    //startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                }
             }
         });
 

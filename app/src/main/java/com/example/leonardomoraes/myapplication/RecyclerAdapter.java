@@ -45,6 +45,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         @Override
         public void onClick(View v) {
+            int pos = getAdapterPosition();
+
+            recipeNome = receitaArrayList.get(pos).getNome();
+            recipeIngredientes = receitaArrayList.get(pos).getIngrediente();
+            recipeTempo = receitaArrayList.get(pos).getTempo();
+            recipePreparo = receitaArrayList.get(pos).getPreparo();
+            recipeTipo = receitaArrayList.get(pos).getTipo();
+            posTipo = receitaArrayList.get(pos).getTipo().indexOf(recipeTipo);
+            recipeUri = receitaArrayList.get(pos).getUrlFoto();
+            recipeId = receitaArrayList.get(pos).getIdProprio();
+
             Context context = itemView.getContext();
             Intent intent = new Intent(context, OpenReceitaActivity.class);
             intent.putExtra("nome", recipeNome);
@@ -75,14 +86,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         holder.tempo.setText(receitaArrayList.get(position).getTempo());
         holder.tipo.setText(receitaArrayList.get(position).getTipo());
 
-        recipeNome = receitaArrayList.get(position).getNome();
-        recipeIngredientes = receitaArrayList.get(position).getIngrediente();
-        recipeTempo = receitaArrayList.get(position).getTempo();
-        recipePreparo = receitaArrayList.get(position).getPreparo();
-        recipeTipo = receitaArrayList.get(position).getTipo();
-        posTipo = receitaArrayList.get(position).getTipo().indexOf(recipeTipo);
-        recipeUri = receitaArrayList.get(position).getUrlFoto();
-        recipeId = receitaArrayList.get(position).getIdProprio();
     }
 
     @Override
