@@ -49,6 +49,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private ActionBarDrawerToggle mDrawerToggle;
     protected DrawerLayout mDrawerLayout;
     private TextView profile;
+    private TextView user;
 
     ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
 
@@ -100,7 +103,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
+        user = (TextView) findViewById(R.id.userName);
+
         //MENU
+        //user.setText(database.getReference("Usuario").child(auth.getCurrentUser().getUid()).child("nomeUsuario").toString());
         mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
         mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
         mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));

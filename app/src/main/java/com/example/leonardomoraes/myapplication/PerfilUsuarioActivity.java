@@ -62,7 +62,9 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
 
-                    receitaArrayList1.add(receita);
+                    if(receita.getIdDono().equals(auth.getCurrentUser().getUid())){
+                        receitaArrayList1.add(receita);
+                    }
                 }
                 adapter = new RecyclerAdapter(receitaArrayList1, PerfilUsuarioActivity.this);
                 recyclerView1.setAdapter(adapter);
@@ -91,6 +93,6 @@ public class PerfilUsuarioActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this, PerfilUsuarioActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
     }
 }

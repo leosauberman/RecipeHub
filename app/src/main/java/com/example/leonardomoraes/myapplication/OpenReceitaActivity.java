@@ -23,7 +23,7 @@ import java.net.URL;
 
 public class OpenReceitaActivity extends MainActivity {
 
-    private TextView nome, ingredientes, tempo, tipo, preparo;
+    private TextView nome, ingredientes, tempo, tipo, preparo, autor;
     private int posTipo;
     private String idProprio;
     private Uri imgUri;
@@ -65,6 +65,8 @@ public class OpenReceitaActivity extends MainActivity {
         tipo = (TextView) findViewById(R.id.tv_tipoReceita_Act_openReceita);
         preparo = (TextView) findViewById(R.id.tv_preparoReceita_Act_openReceita);
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
+        autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
+
         progress = new ProgressDialog(OpenReceitaActivity.this);
 
 
@@ -78,6 +80,7 @@ public class OpenReceitaActivity extends MainActivity {
 
         idProprio = i.getExtras().getString("idProprio");
         posTipo = i.getExtras().getInt("tipoID");
+//        String nomeUsuario = i.getExtras().getString("nomeUsuario");
 
         String image = i.getExtras().getString("uri");
         if(image!= null) {
@@ -92,6 +95,7 @@ public class OpenReceitaActivity extends MainActivity {
         tempo.setText(tempo_string);
         tipo.setText(tipo_string);
         preparo.setText(preparo_string);
+//        autor.setText(nomeUsuario);
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
     }

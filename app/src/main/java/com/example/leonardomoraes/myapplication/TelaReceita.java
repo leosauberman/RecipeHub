@@ -53,12 +53,9 @@ public class TelaReceita extends AppCompatActivity {
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
-    private String idReceita;
+    private String idReceita, autor;
     private String idDono = auth.getCurrentUser().getUid();
     DatabaseReference receitasRef = myRef2.child(idDono);
-
-
-
 
 
     @Override
@@ -84,6 +81,8 @@ public class TelaReceita extends AppCompatActivity {
         preparo = (EditText) findViewById(R.id.et_preparoReceita_Act_telaReceita);
 
         imageView = (ImageView) findViewById(R.id.imageView_Act_telaReceita);
+
+//        autor = receitasRef.child("autor").toString();
 
         idReceita = myRef.push().getKey();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -135,28 +134,6 @@ public class TelaReceita extends AppCompatActivity {
         addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono, idReceita);
         return nome.getText().toString();
     }
-    /*@Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Voltar?");
-        builder.setMessage("Deseja abandonar sua receita?");
-        builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                startActivity(new Intent(TelaReceita.this, MainActivity.class));
-            }
-        });
-        builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog alertDialog;
-        alertDialog = builder.create();
-        alertDialog.show();
-    }*/
 
     private void addRecipe(String recipeId,
                            String nome,
@@ -206,6 +183,7 @@ public class TelaReceita extends AppCompatActivity {
 
     private void changeImageStatus(){
         if(downloadUrl == null){
+            Toast.makeText(this, "Espere a imagem ser carregada", Toast.LENGTH_SHORT).show();
             addImage.setVisibility(View.GONE);
             imageView.setVisibility(View.VISIBLE);
             Glide.with(imageView.getContext()).load(downloadUrl).into(imageView);

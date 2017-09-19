@@ -28,8 +28,8 @@ public class SignupActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("Usuario");
-    private String id;
+    private DatabaseReference myRef = database.getReference("Receita");
+    private String id, idReceitas;
 
 
 
@@ -40,7 +40,6 @@ public class SignupActivity extends AppCompatActivity {
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
-
 
         bt_SignIn = (Button) findViewById(R.id.bt_singIn_Act_singUp);
         bt_SignUp = (Button) findViewById(R.id.bt_singUp_Act_singUp);
@@ -86,7 +85,7 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
                 else{
-                    myRef.child("nome").child(name);
+                    //myRef.child().child("nomeUsuario").setValue(name);
                 }
 
                 if (TextUtils.isEmpty(password)) {

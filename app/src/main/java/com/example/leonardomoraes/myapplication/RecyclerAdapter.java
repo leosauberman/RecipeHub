@@ -8,8 +8,15 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 
@@ -26,15 +33,21 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     private String recipePreparo;
     private String recipeTipo;
     private String recipeUri;
+    private String recipeNomeUsuario;
     private int posTipo;
     private String recipeId;
     private Context c;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference myRef = database.getReference("Receita");
+    private Uri downloadUrl;
 
     class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         //ItemClickListener itemClickListener;
-        TextView nome = (TextView) itemView.findViewById(R.id.tv_nomeReceita_Act_telaReceita);
-        TextView tempo = (TextView) itemView.findViewById(R.id.tv_tempoReceita_Act_telaReceita);
-        TextView tipo = (TextView) itemView.findViewById(R.id.tv_tipoReceita_Act_telaReceita);
+        TextView nome = (TextView) itemView.findViewById(R.id.tv_nomeReceita_Act_recyclerChild);
+        TextView tempo = (TextView) itemView.findViewById(R.id.tv_tempoReceita_Act_recyclerChild);
+        TextView tipo = (TextView) itemView.findViewById(R.id.tv_tipoReceita_Act_recyclerChild);
+        ImageView foto = (ImageView) itemView.findViewById(R.id.imageView_Act_recyclerChild);
+        TextView autor = (TextView) itemView.findViewById(R.id.tv_nomeAutor_Act_recyclerChild);
 
         RecyclerHolder(View itemView) {
             super(itemView);
@@ -55,6 +68,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             posTipo = receitaArrayList.get(pos).getTipo().indexOf(recipeTipo);
             recipeUri = receitaArrayList.get(pos).getUrlFoto();
             recipeId = receitaArrayList.get(pos).getIdProprio();
+//            recipeNomeUsuario = receitaArrayList.get(pos).getNomeUsuario();
 
             Context context = itemView.getContext();
             Intent intent = new Intent(context, OpenReceitaActivity.class);
@@ -66,6 +80,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             intent.putExtra("tipoID", posTipo);
             intent.putExtra("idProprio", recipeId);
             intent.putExtra("uri", recipeUri);
+//            intent.putExtra("nomeUsuario", recipeNomeUsuario);
             context.startActivity(intent);
         }
     }
@@ -85,9 +100,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         holder.nome.setText(receitaArrayList.get(position).getNome());
         holder.tempo.setText(receitaArrayList.get(position).getTempo());
         holder.tipo.setText(receitaArrayList.get(position).getTipo());
+//        holder.autor.setText(receitaArrayList.get(position).getNomeUsuario());
+        recipeUri = receitaArrayList.get(position).getUrlFoto();
 
+        if (recipeUri != null) {
+            downloadUrl = Uri.parse(recipeUri);
+        }
+        else{
+            holder.foto.setImageResource(R.drawable.no_image);
+        }
+        Glide.with(c).load(downloadUrl).placeholder(R.drawable.no_image).into(holder.foto);
     }
-
     @Override
     public int getItemCount() {
         return receitaArrayList.size();
