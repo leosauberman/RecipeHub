@@ -52,7 +52,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class MainActivity extends MenuActivity implements SearchView.OnQueryTextListener{
 
     private ArrayList<Receita> receitaArrayList;
     private FloatingActionButton add1;
@@ -62,18 +62,19 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private DatabaseReference myRef = database.getReference("Receita");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private static String TAG = MainActivity.class.getSimpleName();
-    ListView mDrawerList;
+    /*ListView mDrawerList;
     RelativeLayout mDrawerPane;
     private ActionBarDrawerToggle mDrawerToggle;
-    protected DrawerLayout mDrawerLayout;
+    protected DrawerLayout mDrawerLayout;*/
     private TextView profile;
 
-    ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
+    //ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        super.onCreateDrawer();
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -85,9 +86,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         add1 = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_main);
-        add1.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v){
+        add1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TelaReceita.class));
             }
         });
@@ -99,7 +99,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 startActivity(new Intent(MainActivity.this, PerfilUsuarioActivity.class));
             }
         });
+    }
 
+        /*
         //MENU
         mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
         mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
@@ -162,9 +164,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         mDrawerToggle.syncState();
-    }
+    }*/
 
-    @Override
     protected void onStart() {
         super.onStart();
         receitaArrayList.clear();
@@ -217,7 +218,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recyclerView.setAdapter(adapter);
         return false;*/
 
-        Query busca = myRef.orderByChild("nome").startAt(query);
+        Query busca = myRef.orderByChild("nome").equalTo(query);
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -249,7 +250,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public void onBackPressed() {
     }
 
-    class NavItem {
+    /*class NavItem {
         String mTitle;
         String mSubtitle;
         int mIcon;
@@ -332,5 +333,5 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
-    }
+    }*/
 }
