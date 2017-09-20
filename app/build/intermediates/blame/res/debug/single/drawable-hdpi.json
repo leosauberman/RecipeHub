@@ -1,34 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub_V1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
-        "source": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub_V1\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_image.png",
-        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\src\\main\\res\\drawable-hdpi\\no_image.png"
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
-        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
-    },
-    {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
-        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_image.png",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\src\\main\\res\\drawable-hdpi\\no_image.png"
-    },
-    {
-        "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub_V1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
-        "source": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub_V1\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1909\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\no_image.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\src\\main\\res\\drawable-hdpi\\no_image.png"
     }
 ]

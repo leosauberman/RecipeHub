@@ -53,7 +53,7 @@ public class TelaReceita extends AppCompatActivity {
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
-    private String idReceita, autor;
+    private String idReceita;
     private String idDono = auth.getCurrentUser().getUid();
     DatabaseReference receitasRef = myRef2.child(idDono);
 
@@ -82,7 +82,6 @@ public class TelaReceita extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.imageView_Act_telaReceita);
 
-//        autor = receitasRef.child("autor").toString();
 
         idReceita = myRef.push().getKey();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
