@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:3:5-55
 		INJECTED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml
@@ -21,7 +21,7 @@ MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\Pedro\.android\bu
 	android:name
 		ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:7:5-29:19
+ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:7:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pedro\.android\build-cache\04dc3d99c686793c2cdb2ea3c59b2721241bfff0\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\Pedro\.android\build-cache\968b8f84b46813a47cc904e12ff36da0ecd4a64e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Pedro\.android\build-cache\c0a377e0e0eb32074707621035f52da22ce26b7c\output\AndroidManifest.xml:29:5-20
@@ -100,10 +100,6 @@ activity#com.example.leonardomoraes.myapplication.VersionamentoActivity
 ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:27:9-59
 	android:name
 		ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:27:19-56
-activity#com.example.leonardomoraes.myapplication.MenuActivity
-ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:28:9-59
-	android:name
-		ADDED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml:28:19-47
 uses-sdk
 INJECTED from C:\Users\Pedro\AndroidStudioProjects\RecipeHub1709\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Pedro\.android\build-cache\04dc3d99c686793c2cdb2ea3c59b2721241bfff0\output\AndroidManifest.xml:5:5-7:41

@@ -1,9 +1,11 @@
 package com.example.leonardomoraes.myapplication;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -20,13 +22,12 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class SearchActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class SearchActivity extends AppCompatActivity{
 
-    private ArrayList<Receita> receitaArrayList;
-    private RecyclerView recyclerView;
-    private RecyclerAdapter adapter;
+    private RecyclerView recyclerViewSearch;
+    private RecyclerAdapter adapterSearch;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("Receita");
+    private DatabaseReference searchRef = database.getReference("Receita");
 
 
     @Override
@@ -34,32 +35,20 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-    }
+        recyclerViewSearch = (RecyclerView) findViewById(R.id.recycler_view_search);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+        recyclerViewSearch.setLayoutManager(gridLayoutManager);
 
-    @Override
-    public boolean onCreateOptionsMenu (Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_item, menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
-        searchView.setOnQueryTextListener(this);
-        return true;
-    }
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("Pesquisar");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        /*query = query.toLowerCase();
-        ArrayList<Receita> newList = new ArrayList<>();
-        for (Receita receita : receitaArrayList){
-            String nome = receita.getNome().toLowerCase();
-            if (nome.contains(query)){
-                newList.add(receita);
-            }
-        }
-        adapter = new RecyclerAdapter(newList, MainActivity.this);
-        recyclerView.setAdapter(adapter);
-        return false; */
 
-        Query busca = myRef.orderByChild("nome").equalTo(query);
+        Intent intent = getIntent();
+        String query = intent.getExtras().getString("query");
+
+        Query busca = searchRef.orderByChild("nome").equalTo(query);
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -70,8 +59,8 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
                     newList.add(receita);
 
                 }
-                adapter = new RecyclerAdapter(newList, SearchActivity.this);
-                recyclerView.setAdapter(adapter);
+                adapterSearch = new RecyclerAdapter(newList, SearchActivity.this);
+                recyclerViewSearch.setAdapter(adapterSearch);
             }
 
             @Override
@@ -79,48 +68,5 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
             }
         });
-
-        return false;
-
     }
-
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        /*newText = newText.toLowerCase();
-        ArrayList<Receita> newList = new ArrayList<>();
-        for (Receita receita : receitaArrayList){
-            String nome = receita.getNome().toLowerCase();
-            if (nome.contains(newText)){
-                newList.add(receita);
-            }
-        }
-        adapter = new RecyclerAdapter(newList, MainActivity.this);
-        recyclerView.setAdapter(adapter);
-
-        Query query = myRef.orderByChild("nome").equalTo(newText);
-        query.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
-
-                    if(!searchArrayList.contains(receita)){
-                        searchArrayList.add(receita);
-                    }
-                }
-                adapter = new RecyclerAdapter(searchArrayList, MainActivity.this);
-                recyclerView.setAdapter(adapter);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });*/
-
-        return false;
-    }
-
-
-
 }

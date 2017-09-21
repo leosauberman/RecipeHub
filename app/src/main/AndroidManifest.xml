@@ -25,7 +25,6 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".PerfilUsuarioActivity" />
         <activity android:name=".VersionamentoActivity" />
-        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>
