@@ -40,7 +40,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     private String recipeTipo;
     private String recipeUri;
     //private ArrayList<String> recipeNomeUsuario = new ArrayList<>();
-    private String recipeNomeUsuario;
+    private String recipeIdPai;
     private String recipeIdDono;
     private int posTipo;
     private String recipeId;
@@ -79,7 +79,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             posTipo = receitaArrayList.get(pos).getTipo().indexOf(recipeTipo);
             recipeUri = receitaArrayList.get(pos).getUrlFoto();
             recipeId = receitaArrayList.get(pos).getIdProprio();
-
+            recipeIdDono = receitaArrayList.get(pos).getIdDono();
+            recipeIdPai = receitaArrayList.get(pos).getIdPai();
 
             Context context = itemView.getContext();
             Intent intent = new Intent(context, OpenReceitaActivity.class);
@@ -91,6 +92,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             intent.putExtra("tipoID", posTipo);
             intent.putExtra("idProprio", recipeId);
             intent.putExtra("uri", recipeUri);
+            intent.putExtra("idDono", recipeIdDono);
+            intent.putExtra("idPai", recipeIdPai);
             context.startActivity(intent);
         }
     }

@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         //MENU
         //user.setText(database.getReference("Usuario").child(auth.getCurrentUser().getUid()).child("nomeUsuario").toString());
-        mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
+        mNavItems.add(new NavItem("Feed de receitas", "Onde estão todas as receitas", R.drawable.ic_home));
         mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
         mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
         mNavItems.add(new NavItem("Sair", "Sair do seu perfil", R.drawable.ic_close));
@@ -315,14 +315,14 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         }
     }
     private void selectItemFromDrawer(int position) {
-        Fragment fragment = new PreferencesFragment();
 
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.mainContent, fragment)
-                .commit();
-
-        if(position == 3){
+        if(position == 0){
+            startActivity(new Intent(this, MainActivity.class));
+        }
+        else if(position == 2){
+            startActivity(new Intent(this, SobreActivity.class));
+        }
+        else if(position == 3){
             auth.signOut();
             startActivity(new Intent(this, LoginActivity.class));
         }
@@ -330,11 +330,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         mDrawerList.setItemChecked(position, true);
         setTitle(mNavItems.get(position).mTitle);
 
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        editor.putInt("position", position);
-        editor.commit();
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);

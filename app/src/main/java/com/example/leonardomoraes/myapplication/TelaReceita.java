@@ -70,7 +70,7 @@ public class TelaReceita extends AppCompatActivity {
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
 
-        downloadUrl = Uri.parse("");
+        //downloadUrl = Uri.parse("");
 
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);

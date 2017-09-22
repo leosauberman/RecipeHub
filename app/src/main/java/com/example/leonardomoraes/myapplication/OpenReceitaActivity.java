@@ -16,6 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -25,10 +29,14 @@ public class OpenReceitaActivity extends MainActivity {
 
     private TextView nome, ingredientes, tempo, tipo, preparo, autor;
     private int posTipo;
-    private String idProprio;
+    private String idProprio, idDono, idPai;
     private Uri imgUri;
     private ProgressDialog progress;
     private ImageView img;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference receitaRef, usuarioRef, paiRef;
+    private FirebaseStorage storage = FirebaseStorage.getInstance();
+    private StorageReference storageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +49,9 @@ public class OpenReceitaActivity extends MainActivity {
         View contentView = inflater.inflate(R.layout.activity_open_receita, null, false);
         mDrawerLayout.addView(contentView, 0);
 
+
         Button version = (Button) findViewById(R.id.version);
+        Button delete = (Button) findViewById(R.id.delete);
 
         version.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,9 +77,6 @@ public class OpenReceitaActivity extends MainActivity {
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
         autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
 
-        progress = new ProgressDialog(OpenReceitaActivity.this);
-
-
 
         Intent i = getIntent();
         String nome_string = i.getExtras().getString("nome");
@@ -80,14 +87,71 @@ public class OpenReceitaActivity extends MainActivity {
 
         idProprio = i.getExtras().getString("idProprio");
         posTipo = i.getExtras().getInt("tipoID");
+        idDono = i.getExtras().getString("idDono");
+        idPai = i.getExtras().getString("idPai");
+        String image = i.getExtras().getString("uri");
 //        String nomeUsuario = i.getExtras().getString("nomeUsuario");
 
-        String image = i.getExtras().getString("uri");
+
         if(image!= null) {
             imgUri = Uri.parse(image);
+            storageRef = storage.getReferenceFromUrl(imgUri.toString());
         }
         else{
             Toast.makeText(this, "Receita sem imagem", Toast.LENGTH_SHORT).show();
+        }
+
+        receitaRef = database.getReference("Receita").child(idProprio);
+        usuarioRef = database.getReference("Usuario").child(idDono).child(idProprio);
+
+        if(idPai == null) {
+            if(imgUri != null) {
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
+                        receitaRef.removeValue();
+                        usuarioRef.removeValue();
+                        storageRef.delete();
+                    }
+                });
+            }
+            else{
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
+                        receitaRef.removeValue();
+                        usuarioRef.removeValue();
+                    }
+                });
+            }
+        }
+        else{
+            paiRef = database.getReference("Receita").child(idPai).child("filhas").child(idProprio);
+            if(imgUri != null) {
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
+                        receitaRef.removeValue();
+                        usuarioRef.removeValue();
+                        paiRef.removeValue();
+                        storageRef.delete();
+                    }
+                });
+            }
+            else{
+                delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
+                        receitaRef.removeValue();
+                        usuarioRef.removeValue();
+                        paiRef.removeValue();
+                    }
+                });
+            }
         }
 
         nome.setText(nome_string);

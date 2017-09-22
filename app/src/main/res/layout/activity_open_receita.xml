@@ -78,8 +78,7 @@
         android:layout_width="210dp"
         android:layout_height="110dp"
         android:layout_alignTop="@+id/ingredientes"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="130dp"
         android:text="TextView"
         android:textAlignment="viewStart"
         android:textColor="#000000"
@@ -149,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/version"
         android:layout_toStartOf="@+id/tv_tempoReceita_Act_openReceita"
-        android:text="Autor:"
+        android:text="Autor: "
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -159,11 +158,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/autor"
-        android:layout_toStartOf="@+id/tipo"
+        android:layout_toEndOf="@+id/autor"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:layout_alignTop="@+id/autor" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEL"
+        android:layout_alignBaseline="@+id/version"
+        android:layout_alignBottom="@+id/version"
+        android:layout_toStartOf="@+id/version" />
 
 
 </RelativeLayout>

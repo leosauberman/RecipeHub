@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_2009\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_2109\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9d1df5a4fae07bcc3130894ddc540805b533643b">
+        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_2109\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a01c6da30118e15ee601a368aecf7f0a050428e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_2109\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_2009\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5b11ccf7ad8401d40b1e06d8a8bd53a9a3b3948f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_2009\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e4c387fef0848d13c891868a048023a9aae69bc3">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_2009\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_39119dc99c1e47d3be5f7c2dee4ca96ca013ac2d\classes.dex" />
+        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_2109\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2e5b46b925bee19c7f4f055fdae9d3a01f2ef488\classes.dex" />
     </item>
 
 </items>

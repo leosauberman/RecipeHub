@@ -45,6 +45,7 @@
         <activity android:name="com.example.leonardomoraes.myapplication.SearchActivity" />
         <activity android:name="com.example.leonardomoraes.myapplication.PerfilUsuarioActivity" />
         <activity android:name="com.example.leonardomoraes.myapplication.VersionamentoActivity" />
+        <activity android:name="com.example.leonardomoraes.myapplication.SobreActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
