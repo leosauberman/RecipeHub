@@ -1,19 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-v21\\avd_show_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
@@ -28,10 +16,6 @@
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\8f28fe056ca9555635d5d253bf8f4237bb89bec4\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
@@ -40,27 +24,11 @@
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\8f28fe056ca9555635d5d253bf8f4237bb89bec4\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-v21\\avd_hide_password.xml"
-    },
-    {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     }
 ]

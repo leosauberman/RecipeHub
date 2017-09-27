@@ -1,13 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -18,9 +10,5 @@
     {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     }
 ]

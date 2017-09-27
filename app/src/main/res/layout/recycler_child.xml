@@ -10,39 +10,55 @@
     card_view:contentPadding="20dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="351dp"
+        android:layout_height="93dp">
+
+        <ImageView
+            android:id="@+id/imageView_Act_recyclerChild"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="35dp"
+            />
 
         <TextView
-            android:id="@+id/tv_nomeReceita_Act_telaReceita"
+            android:id="@+id/tv_nomeReceita_Act_recyclerChild"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome"
             android:textColor="@android:color/black"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/imageView_Act_recyclerChild"/>
 
         <TextView
-            android:id="@+id/tv_tempoReceita_Act_telaReceita"
+            android:id="@+id/tv_tempoReceita_Act_recyclerChild"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/tv_nomeReceita_Act_telaReceita"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_alignStart="@id/tv_nomeReceita_Act_recyclerChild"
+            android:layout_below="@id/tv_nomeReceita_Act_recyclerChild"
+            android:layout_marginTop="10dp"
             android:text="Tempo"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/tv_tipoReceita_Act_telaReceita"
+            android:id="@+id/tv_tipoReceita_Act_recyclerChild"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/tv_tempoReceita_Act_telaReceita"
-            android:layout_alignBottom="@+id/tv_tempoReceita_Act_telaReceita"
+            android:layout_alignBaseline="@+id/tv_tempoReceita_Act_recyclerChild"
+            android:layout_alignBottom="@+id/tv_tempoReceita_Act_recyclerChild"
             android:layout_marginStart="65dp"
-            android:layout_toEndOf="@+id/tv_tempoReceita_Act_telaReceita"
+            android:layout_toEndOf="@+id/tv_tempoReceita_Act_recyclerChild"
             android:text="Tipo"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_nomeAutor_Act_recyclerChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_Act_recyclerChild"
+            android:text="Autor"
+            android:layout_alignParentBottom="true"
             android:textSize="18sp" />
 
     </RelativeLayout>

@@ -1,7 +1,9 @@
 package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -29,7 +31,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Usuario");
-    private String id;
+    private String id, idReceitas;
 
 
 
@@ -40,7 +42,6 @@ public class SignupActivity extends AppCompatActivity {
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
-
 
         bt_SignIn = (Button) findViewById(R.id.bt_singIn_Act_singUp);
         bt_SignUp = (Button) findViewById(R.id.bt_singUp_Act_singUp);
@@ -70,7 +71,7 @@ public class SignupActivity extends AppCompatActivity {
 
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
-                String name = inputName.getText().toString().trim();
+                final String name = inputName.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(getApplicationContext(), "Entre com seu email!", Toast.LENGTH_SHORT).show();
@@ -84,9 +85,6 @@ public class SignupActivity extends AppCompatActivity {
                 if(TextUtils.isEmpty(name)){
                     Toast.makeText(getApplicationContext(), "Entre com seu nome!", Toast.LENGTH_SHORT).show();
                     return;
-                }
-                else{
-                    myRef.child("nome").child(name);
                 }
 
                 if (TextUtils.isEmpty(password)) {
@@ -115,8 +113,13 @@ public class SignupActivity extends AppCompatActivity {
                                     Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
-                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
-                                    addUser(null);
+                                    myRef.child(id).child("nome").setValue(name);
+//                                    SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(SignupActivity.this);
+//                                    SharedPreferences.Editor editor = shared.edit();
+//                                    editor.putString("nomeUsuario", name);
+//                                    editor.commit();
+                                    Intent i = new Intent(SignupActivity.this, MainActivity.class);
+                                    startActivity(i);
                                     finish();
                                 }
                             }
@@ -129,11 +132,6 @@ public class SignupActivity extends AppCompatActivity {
         });
 
 
-    }
-    private void addUser(String nomeReceita){
-        Usuario usuario = new Usuario(nomeReceita);
-
-        myRef.child(id).setValue(usuario);
     }
 
     @Override

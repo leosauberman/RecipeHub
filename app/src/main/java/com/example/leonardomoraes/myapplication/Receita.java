@@ -19,7 +19,9 @@ class Receita {
         this.idDono = idDono;
         this.idPai = idPai;
         this.idProprio = idProprio;
+        //this.nomeUsuario = nomeUsuario;
     }
+
     private String nome;
     private String ingrediente;
     private String tempo;
@@ -30,6 +32,16 @@ class Receita {
     private String idDono;
     private String idPai;
     private String idProprio;
+
+    /*public String getNomeUsuario() {
+        return nomeUsuario;
+    }
+
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }*/
+
+    private String nomeUsuario;
 
     public String getIdProprio() {
         return idProprio;

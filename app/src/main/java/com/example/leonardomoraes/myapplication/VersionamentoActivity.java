@@ -43,7 +43,7 @@ public class VersionamentoActivity extends AppCompatActivity {
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference normalRef = database.getReference("Receita"); //addRecipe normal
     private String idVersionada = normalRef.push().getKey();
-    private DatabaseReference paiRef = database.getReference("idPai").child("filhas");
+    private DatabaseReference userRef = database.getReference("Usuario");
 
     private FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
@@ -118,6 +118,7 @@ public class VersionamentoActivity extends AppCompatActivity {
         Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto, idDono, idPai, idProprio);
 
         normalRef.child(recipeId).setValue(receita);
+        userRef.child(idDono).child(recipeId).setValue(nomeV);
     }
 
     private void addVersionRef(String idVersionada,

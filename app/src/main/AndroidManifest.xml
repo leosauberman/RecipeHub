@@ -24,7 +24,8 @@
         <activity android:name=".OpenReceitaActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".PerfilUsuarioActivity" />
-        <activity android:name=".VersionamentoActivity"></activity>
+        <activity android:name=".VersionamentoActivity" />
+        <activity android:name=".SobreActivity"/>
     </application>
 
 </manifest>
