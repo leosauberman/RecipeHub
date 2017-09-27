@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2709\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_add.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2709\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
+    },
+    {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_add.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2009\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
     },
