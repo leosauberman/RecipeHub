@@ -1,4 +1,4 @@
-#Wed Sep 27 11:43:04 BRT 2017
+#Wed Sep 27 16:49:00 BRT 2017
 base.0=C\:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2709\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_97b0f46f0b711b02ca9f3932283ebb5e8102f536
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -54,6 +54,7 @@ public class TelaReceita extends AppCompatActivity {
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private String idReceita;
+    private String url;
     private String idDono = auth.getCurrentUser().getUid();
     DatabaseReference receitasRef = myRef2.child(idDono);
 
@@ -70,7 +71,13 @@ public class TelaReceita extends AppCompatActivity {
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
 
-        downloadUrl = Uri.parse("");
+
+        if(downloadUrl != null) {
+             url = downloadUrl.toString();
+        }
+        else{
+            url = "";
+        }
 
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
@@ -104,8 +111,9 @@ public class TelaReceita extends AppCompatActivity {
         criar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(downloadUrl.toString().isEmpty()){
-                    downloadUrl = Uri.parse("https://www.justexam.in/assets/blog/comments/default.jpg");
+                if(url.isEmpty()){
+                    Glide.with(TelaReceita.this).load(R.drawable.no_image).into(imageView); //consertar ISSO
+                    addImage.setVisibility(View.GONE);
                 }
                 else {
                     if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo()) {
@@ -130,7 +138,7 @@ public class TelaReceita extends AppCompatActivity {
 
     private String retorna()
     {
-        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono, idReceita);
+        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), url.toString(), idDono, idReceita);
         return nome.getText().toString();
     }
 
