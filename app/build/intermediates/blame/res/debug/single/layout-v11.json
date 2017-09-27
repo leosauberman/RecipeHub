@@ -1,15 +1,35 @@
 [
     {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
@@ -18,6 +38,10 @@
     {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\gabriela.barbosa\\.android\\build-cache\\1bd0038dae20d0763dab23346df98def2b140c15\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",

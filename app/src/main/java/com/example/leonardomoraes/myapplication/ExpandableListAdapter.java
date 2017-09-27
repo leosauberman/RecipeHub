@@ -30,6 +30,9 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         this.listDataChild = listDataChild2;
     }
 
+    public ExpandableListAdapter(List<String> Versoes, OpenReceitaActivity openReceitaActivity) {
+    }
+
     @Override
     public int getGroupCount() {
         return this.listDataHeader.size();

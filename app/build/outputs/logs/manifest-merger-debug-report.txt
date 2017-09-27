@@ -1,289 +1,289 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:3:5-55
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:3:5-55
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:20:5-66
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:7:5-28:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gapeb\.android\build-cache\62d533bd91e1aec850f0f7510a76b437508bce86\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gapeb\.android\build-cache\b647938426ebffa7d1adbe29c611542ecb5a8164\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\6a0fc57eaa3f58a8436cbaf255e1f184e789e477\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\d1ec4f5152ca717a160d0f2a331644b528c1c6eb\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\gapeb\.android\build-cache\5d6be7ee01223f9aa4418696f1ccc009f7ce6189\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gapeb\.android\build-cache\0b617aacc5296ee38dd8ecf354174d1a2965c9e2\output\AndroidManifest.xml:26:5-20
-MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\gapeb\.android\build-cache\2ff58d9ff8a995db3b95dee135a9d87e553a6059\output\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\gapeb\.android\build-cache\4d48b233d3b828a364aff69489df74d1f4ae7fb4\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:24:5-34:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:28:5-49:19
-MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\gapeb\.android\build-cache\9cd06c5fdd7b6259dee6d217b066fc2729073f10\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gapeb\.android\build-cache\e3b7f26b7aa14af8279e035344162596c13adee2\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gapeb\.android\build-cache\4df941b80408a627b95d095394061dd32afcb269\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gapeb\.android\build-cache\7a27a6d3309ddad8c226ed3775362e3f24b8aaf3\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gapeb\.android\build-cache\ccc138a75173c12317744be0f81ff708caf3927c\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gapeb\.android\build-cache\4e8a3ef0f606773022f02e90ba22fd812ef663af\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gapeb\.android\build-cache\420008de36b1a44aa2c332148b4020e2a54707ec\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gapeb\.android\build-cache\2b3c981519e9b79ed093981b246c631c5c1b57ec\output\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:7:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gabriela.barbosa\.android\build-cache\a447328985fce4b36a573b317ebc42ea43ff2126\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\1bd0038dae20d0763dab23346df98def2b140c15\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\af5b0eeb566562e38d642ee4616b6e24f0acd735\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\11636ec44323f9d185f1a3f3c75a17cc280d4382\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\30a2071f6ff86747a71c82508e3855fd78f4ee84\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4fa3408f1d6b482c65578b764d73e5761ff694c5\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\f464ee8a088854fc4ec7bf87e1ef28a5c221a108\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\1e77a12462133b18f0b6d217f351b88fa93b5945\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\853dfe532e3d8ea969e17c10bd090f45fc762bd8\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82295dabd88c523bf80de079072fe34f47426cbd\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\43261fde2671b5987d0492e3cf10eb18f3bad37e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\50f9ee04f6f61bb45ab1bdc58e12ef7255a8c0ce\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4138a7fc610572bffd3c9b8ac1eb816fa0777965\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e2d1ad82c34e7f9114c77c379890d59448acf7f1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\b53ccd54fa9fda25be6ce1b192a87b3dc28de232\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e07d5663af47f877ebe21d0ca6e1845c090923f9\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:9:9-48
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:9:9-48
 	android:theme
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.example.leonardomoraes.myapplication.MainActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:13:9-50
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.example.leonardomoraes.myapplication.TelaReceita
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:14:9-49
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:14:9-49
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:14:19-46
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:14:19-46
 activity#com.example.leonardomoraes.myapplication.LoginActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:15:19-48
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:15:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.leonardomoraes.myapplication.SignupActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:22:9-52
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:22:9-52
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:22:19-49
 activity#com.example.leonardomoraes.myapplication.ResetPasswordActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:23:9-59
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:23:9-59
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:23:19-56
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:23:19-56
 activity#com.example.leonardomoraes.myapplication.OpenReceitaActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:24:9-57
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:24:9-57
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:24:19-54
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:24:19-54
 activity#com.example.leonardomoraes.myapplication.SearchActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:25:9-52
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:25:9-52
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:25:19-49
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:25:19-49
 activity#com.example.leonardomoraes.myapplication.PerfilUsuarioActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:26:9-59
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:26:9-59
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:26:19-56
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:26:19-56
 activity#com.example.leonardomoraes.myapplication.VersionamentoActivity
-ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:27:9-68
+ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:27:9-68
 	android:name
-		ADDED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml:27:19-56
+		ADDED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml:27:19-56
 uses-sdk
-INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gapeb\.android\build-cache\62d533bd91e1aec850f0f7510a76b437508bce86\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gapeb\.android\build-cache\b647938426ebffa7d1adbe29c611542ecb5a8164\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\6a0fc57eaa3f58a8436cbaf255e1f184e789e477\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\d1ec4f5152ca717a160d0f2a331644b528c1c6eb\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\gapeb\.android\build-cache\5d6be7ee01223f9aa4418696f1ccc009f7ce6189\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gapeb\.android\build-cache\0b617aacc5296ee38dd8ecf354174d1a2965c9e2\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\gapeb\.android\build-cache\4d0e1bbb221165df270c478835b66338bac6e875\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-database:11.0.1] C:\Users\gapeb\.android\build-cache\df3e6e77047893717cb48a514632b57e69638c92\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:11.0.1] C:\Users\gapeb\.android\build-cache\28d815a1ca83550819453e312037fa60d4d270ed\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-storage:11.0.1] C:\Users\gapeb\.android\build-cache\1c4febf5bdfbc81d7f00e602f1dc20c51a031664\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-storage-common:11.0.1] C:\Users\gapeb\.android\build-cache\ec4f0fa1e4a173c30dd6c3da9f92e280f240a1c9\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\gapeb\.android\build-cache\2ff58d9ff8a995db3b95dee135a9d87e553a6059\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\gapeb\.android\build-cache\4d48b233d3b828a364aff69489df74d1f4ae7fb4\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\gapeb\.android\build-cache\9cd06c5fdd7b6259dee6d217b066fc2729073f10\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gapeb\.android\build-cache\e3b7f26b7aa14af8279e035344162596c13adee2\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gapeb\.android\build-cache\4df941b80408a627b95d095394061dd32afcb269\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gapeb\.android\build-cache\7a27a6d3309ddad8c226ed3775362e3f24b8aaf3\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gapeb\.android\build-cache\ccc138a75173c12317744be0f81ff708caf3927c\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gapeb\.android\build-cache\4e8a3ef0f606773022f02e90ba22fd812ef663af\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gapeb\.android\build-cache\420008de36b1a44aa2c332148b4020e2a54707ec\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gapeb\.android\build-cache\2b3c981519e9b79ed093981b246c631c5c1b57ec\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gabriela.barbosa\.android\build-cache\a447328985fce4b36a573b317ebc42ea43ff2126\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\1bd0038dae20d0763dab23346df98def2b140c15\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\af5b0eeb566562e38d642ee4616b6e24f0acd735\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\11636ec44323f9d185f1a3f3c75a17cc280d4382\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\30a2071f6ff86747a71c82508e3855fd78f4ee84\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4fa3408f1d6b482c65578b764d73e5761ff694c5\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\506e120211047610f21bdb215b8e1bc36b6c55f3\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\1d4efe6c8a2739e81c5b2bd1620e0a44897785fe\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\9bc29ddd5228e1ea2b637675cad40c823f20e488\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\5a49e14ff4f4900f31b12f2c8eaa611b0d3daac5\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\ef9b7f117b9887346f0c8f5f6d82ba3e2a50a3dc\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\f464ee8a088854fc4ec7bf87e1ef28a5c221a108\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\1e77a12462133b18f0b6d217f351b88fa93b5945\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\853dfe532e3d8ea969e17c10bd090f45fc762bd8\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82295dabd88c523bf80de079072fe34f47426cbd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\43261fde2671b5987d0492e3cf10eb18f3bad37e\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\50f9ee04f6f61bb45ab1bdc58e12ef7255a8c0ce\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4138a7fc610572bffd3c9b8ac1eb816fa0777965\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e2d1ad82c34e7f9114c77c379890d59448acf7f1\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\b53ccd54fa9fda25be6ce1b192a87b3dc28de232\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e07d5663af47f877ebe21d0ca6e1845c090923f9\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gabriela.barbosa\.AndroidStudio2.2\RecipeHub2009\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gapeb\.android\build-cache\b647938426ebffa7d1adbe29c611542ecb5a8164\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\6a0fc57eaa3f58a8436cbaf255e1f184e789e477\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gapeb\.android\build-cache\d1ec4f5152ca717a160d0f2a331644b528c1c6eb\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\gapeb\.android\build-cache\5d6be7ee01223f9aa4418696f1ccc009f7ce6189\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gapeb\.android\build-cache\0b617aacc5296ee38dd8ecf354174d1a2965c9e2\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\gapeb\.android\build-cache\4d0e1bbb221165df270c478835b66338bac6e875\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gapeb\.android\build-cache\4df941b80408a627b95d095394061dd32afcb269\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gapeb\.android\build-cache\7a27a6d3309ddad8c226ed3775362e3f24b8aaf3\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gapeb\.android\build-cache\ccc138a75173c12317744be0f81ff708caf3927c\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gapeb\.android\build-cache\4e8a3ef0f606773022f02e90ba22fd812ef663af\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gapeb\.android\build-cache\420008de36b1a44aa2c332148b4020e2a54707ec\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gapeb\.android\build-cache\2b3c981519e9b79ed093981b246c631c5c1b57ec\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\1bd0038dae20d0763dab23346df98def2b140c15\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\af5b0eeb566562e38d642ee4616b6e24f0acd735\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\11636ec44323f9d185f1a3f3c75a17cc280d4382\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\30a2071f6ff86747a71c82508e3855fd78f4ee84\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4fa3408f1d6b482c65578b764d73e5761ff694c5\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\506e120211047610f21bdb215b8e1bc36b6c55f3\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\43261fde2671b5987d0492e3cf10eb18f3bad37e\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\50f9ee04f6f61bb45ab1bdc58e12ef7255a8c0ce\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\4138a7fc610572bffd3c9b8ac1eb816fa0777965\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e2d1ad82c34e7f9114c77c379890d59448acf7f1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\b53ccd54fa9fda25be6ce1b192a87b3dc28de232\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\e07d5663af47f877ebe21d0ca6e1845c090923f9\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\gapeb\.android\build-cache\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\gabriela.barbosa\.android\build-cache\8f28fe056ca9555635d5d253bf8f4237bb89bec4\output\AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gapeb\.android\build-cache\9222ff0629685a78ab05ee9d1271c1a0fa732938\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\3576b593450ee075b49a4b95b4134ebccdd79a65\output\AndroidManifest.xml:19:19-85
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:27:162-184
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:27:185-208
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:27:185-208
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gapeb\.android\build-cache\b4c3bfe4bafef248f783d392d08bf00b56e3f7eb\output\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82cfe4a327085d469120927ee52600313162c1e1\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:32:16-87
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:33:7-197
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:33:7-197
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:33:148-170
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:33:148-170
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:33:171-195
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:33:171-195
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:33:91-147
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:33:91-147
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gapeb\.android\build-cache\0e9b790e6526d570b4afb960ae81ba802e65e9a1\output\AndroidManifest.xml:33:16-90
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\37f0d66055a6d2385885a3d9b9da06862efc62a4\output\AndroidManifest.xml:33:16-90
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:30:9-35:20
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:30:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:31:13-34:29
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:31:13-34:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:32:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:33:17-60
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:33:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:33:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:33:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:39:9-119
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:39:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:39:93-117
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:39:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:39:19-92
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:39:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:43:9-47:19
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:43:9-47:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:43:83-106
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:43:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:43:18-82
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:43:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:44:13-46:29
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:44:13-46:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:44:28-51
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:44:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:45:17-79
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:45:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gapeb\.android\build-cache\5db176c99df46c2fc92a0b6b68d437569d9632bc\output\AndroidManifest.xml:45:25-77
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\891e89f92009f69b02aad09f277f43be26b47079\output\AndroidManifest.xml:45:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gapeb\.android\build-cache\9f9e437fd83937591b3d5df3368d95eabc354c0b\output\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\a0e3ce86bca15aba66dcd2c17e976754c4eb0825\output\AndroidManifest.xml:6:79-143
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gapeb\.android\build-cache\e3b7f26b7aa14af8279e035344162596c13adee2\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82295dabd88c523bf80de079072fe34f47426cbd\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gapeb\.android\build-cache\e3b7f26b7aa14af8279e035344162596c13adee2\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82295dabd88c523bf80de079072fe34f47426cbd\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gapeb\.android\build-cache\e3b7f26b7aa14af8279e035344162596c13adee2\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\gabriela.barbosa\.android\build-cache\82295dabd88c523bf80de079072fe34f47426cbd\output\AndroidManifest.xml:20:20-65
