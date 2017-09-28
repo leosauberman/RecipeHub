@@ -128,7 +128,7 @@ public class OpenReceitaActivity extends MainActivity {
 //        String nomeUsuario = i.getExtras().getString("nomeUsuario");
 
 
-        if(image!= null) {
+        if(image != null && !image.equals("no_image")) {
             imgUri = Uri.parse(image);
             storageRef = storage.getReferenceFromUrl(imgUri.toString());
         }
@@ -191,7 +191,7 @@ public class OpenReceitaActivity extends MainActivity {
 
         nome.setText(nome_string);
         ingredientes.setText(ingredientes_string);
-        tempo.setText(tempo_string);
+        tempo.setText(tempo_string + " min");
         tipo.setText(tipo_string);
         preparo.setText(preparo_string);
 //        autor.setText(nomeUsuario);
@@ -313,7 +313,7 @@ public class OpenReceitaActivity extends MainActivity {
         }
 
         mDrawerList.setItemChecked(position, true);
-        setTitle(mNavItems.get(position).mTitle);
+        //setTitle(mNavItems.get(position).mTitle);
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
