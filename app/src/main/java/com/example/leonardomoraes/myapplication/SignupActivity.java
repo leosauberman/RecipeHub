@@ -77,7 +77,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void saveNewUser(String userId, String name, String email, String imageUrl) {
-        User user = new User(userId, name, email, imageUrl);
+        User user = new User(userId, name, email, imageUrl, null);
 
         myRef.child(userId).child("nome").setValue(user.getName());
     }

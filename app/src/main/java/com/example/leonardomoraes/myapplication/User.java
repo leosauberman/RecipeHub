@@ -10,15 +10,17 @@ public class User {
     private String name;
     private String email;
     private String imageUrl;
+    private String nomeReceita;
 
     public User() {
     }
 
-    public User(String id, String name, String email, String imageUrl) {
+    public User(String id, String name, String email, String imageUrl, String nomeReceita) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.imageUrl = imageUrl;
+        this.nomeReceita = nomeReceita;
     }
 
     public String getId() {
@@ -53,4 +55,11 @@ public class User {
         this.imageUrl = imageUrl;
     }
 
+    public String getNomeReceita() {
+        return nomeReceita;
+    }
+
+    public void setNomeReceita(String nomeReceita) {
+        this.nomeReceita = nomeReceita;
+    }
 }

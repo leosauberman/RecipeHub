@@ -52,23 +52,23 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(!task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Auth Failed", Toast.LENGTH_SHORT).show();
-                        }else{
+                        if(task.isSuccessful()){
                             String uid = task.getResult().getUser().getUid();
                             String name = task.getResult().getUser().getDisplayName();
                             String email = task.getResult().getUser().getEmail();
                             String image = task.getResult().getUser().getPhotoUrl().toString();
 
-                            User user = new User(uid, name, email, image);
+                            User user = new User(uid, name, email, image, null);
 
-                            mRef.child(user.getId()).setValue(user.getName());
+                            mRef.child(user.getId()).child("nome").setValue(user.getName());
 
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("user_id",uid);
                             intent.putExtra("profile_picture",image);
                             startActivity(intent);
-                            finish();
+                            //finish();
+                        }else{
+                            Toast.makeText(LoginActivity.this, "Auth Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(auth.getCurrentUser()!= null) {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
-            Toast.makeText(this, "Bem-vindo "+auth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Bem-vindo "+auth.getCurrentUser().getDisplayName(), Toast.LENGTH_SHORT).show();
         }
         else{}
 
@@ -97,24 +97,24 @@ public class LoginActivity extends AppCompatActivity {
 
 
         callbackManager = CallbackManager.Factory.create();
- //       loginButton.setReadPermissions("email", "public_profile");
-            LoginManager.getInstance().registerCallback(callbackManager,
-                new FacebookCallback<LoginResult>() {
-                    @Override
-                    public void onSuccess(LoginResult loginResult) {
-                        signInWithFacebook(loginResult.getAccessToken());
-                    }
+        loginButton.setReadPermissions("email", "public_profile");
+        LoginManager.getInstance().registerCallback(callbackManager,
+            new FacebookCallback<LoginResult>() {
+                @Override
+                public void onSuccess(LoginResult loginResult) {
+                    signInWithFacebook(loginResult.getAccessToken());
+                }
 
-                    @Override
-                    public void onCancel() {
+                @Override
+                public void onCancel() {
 
-                    }
+                }
 
-                    @Override
-                    public void onError(FacebookException error) {
+                @Override
+                public void onError(FacebookException error) {
 
-                    }
-                });
+                }
+            });
 
 
         bt_Signup.setOnClickListener(new View.OnClickListener() {

@@ -20,32 +20,66 @@
         tools:context="com.example.leonardomoraes.myapplication.PerfilUsuarioActivity">
 
 
-        <TextView
-            android:id="@+id/tv_nome_act_perfil_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:text="TextView"
-            android:textColor="@android:color/black" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp">
 
-        <TextView
-            android:id="@+id/tv_seguidores_act_perfil_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="90dp"
-            android:text="@string/seguidores"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/tv_nome_act_perfil_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:text="TextView"
+                android:textColor="@android:color/black" />
 
-        <TextView
-            android:id="@+id/tv_seguindo_act_perfil_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="90dp"
-            android:text="@string/seguindo"
-            android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/tv_seguidores_act_perfil_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/seguidores"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_seguindo_act_perfil_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/seguindo"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/editar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="@string/editar"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="46dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/googleg_standard_color_18" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:layout_marginTop="139dp"
+            android:scrollbars="vertical" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_adicionarReceita_Act_perfil"
@@ -58,35 +92,6 @@
             app:fabSize="normal"
             app:layout_anchor="@+id/recycler_view_usuario"
             app:layout_anchorGravity="bottom|right" />
-
-        <TextView
-            android:id="@+id/editar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:text="@string/editar"
-            android:textColor="@android:color/holo_blue_dark" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="46dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/googleg_standard_color_18" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view_usuario"
-            android:layout_width="match_parent"
-            android:layout_height="385dp"
-            android:layout_gravity="bottom"
-            android:scrollbars="vertical" />
 
     </android.support.design.widget.CoordinatorLayout>
 
@@ -110,8 +115,8 @@
                 android:id="@+id/avatar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_android"
-                android:layout_marginTop="15dp" />
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_android" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

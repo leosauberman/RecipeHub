@@ -49,7 +49,7 @@
             android:padding="8dp" >
 
             <ImageView
-                android:id="@+id/avatar"
+                android:id="@+id/profileImage"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/ic_android"
@@ -60,7 +60,7 @@
                 android:layout_height="42dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                android:layout_toRightOf="@+id/avatar"
+                android:layout_toRightOf="@+id/profileImage"
                 android:orientation="vertical" >
 
                 <TextView

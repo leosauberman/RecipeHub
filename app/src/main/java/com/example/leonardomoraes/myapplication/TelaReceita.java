@@ -56,7 +56,7 @@ public class TelaReceita extends AppCompatActivity {
     private String idReceita;
     private String url;
     private String idDono = auth.getCurrentUser().getUid();
-    DatabaseReference receitasRef = myRef2.child(idDono);
+    DatabaseReference userRecRef = myRef2.child(idDono);
     private int boleana;
 
     @Override
@@ -70,14 +70,6 @@ public class TelaReceita extends AppCompatActivity {
         //endregion
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
-
-/*
-        if(downloadUrl != null) {
-             url = downloadUrl.toString();
-        }
-        else{
-            url = "";
-        }*/
 
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
@@ -113,9 +105,7 @@ public class TelaReceita extends AppCompatActivity {
             public void onClick(View v) {
                 if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo() && verifyPhotoURL()) {
                     startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                    //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
-                    //addUser(retorna());
-                    retorna();
+                    addUser(retorna());
                 }
             }
         });
@@ -124,11 +114,10 @@ public class TelaReceita extends AppCompatActivity {
     }
 
 
-    /*private void addUser(String nomeReceita) {
-        User user = new User(null, null, null, null, nomeReceita);
+    private void addUser(String nomeReceita) {
 
-        receitasRef.child(idReceita).setValue(user);
-    }*/
+        userRecRef.child(idReceita).child("nomeReceita").setValue(nomeReceita);
+    }
 
     private String retorna() {
         addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), url, idDono, idReceita);

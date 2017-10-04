@@ -39,7 +39,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     private String recipePreparo;
     private String recipeTipo;
     private String recipeUri;
-    //private ArrayList<String> recipeNomeUsuario = new ArrayList<>();
+    private String recipeAutor;
     private String recipeIdPai;
     private String recipeIdDono;
     private int posTipo;
@@ -82,6 +82,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             recipeIdDono = receitaArrayList.get(pos).getIdDono();
             recipeIdPai = receitaArrayList.get(pos).getIdPai();
 
+
             Context context = itemView.getContext();
             Intent intent = new Intent(context, OpenReceitaActivity.class);
             intent.putExtra("nome", recipeNome);
@@ -94,6 +95,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             intent.putExtra("uri", recipeUri);
             intent.putExtra("idDono", recipeIdDono);
             intent.putExtra("idPai", recipeIdPai);
+            intent.putExtra("autor", recipeAutor);
             context.startActivity(intent);
         }
     }
@@ -117,10 +119,20 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         recipeIdDono = receitaArrayList.get(position).getIdDono();
 
-//        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(c);
-//        recipeNomeUsuario = sharedPreferences.getString("nomeUsuario","default_string");
-        //recipeNomeUsuario = myRef.child(recipeIdDono).child();
-        //holder.autor.setText(recipeNomeUsuario);
+        myRef.child(recipeIdDono).child("nome").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                recipeAutor = dataSnapshot.getValue(String.class);
+                holder.autor.setText(recipeAutor);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
 
         if (recipeUri != null) {
             downloadUrl = Uri.parse(recipeUri);

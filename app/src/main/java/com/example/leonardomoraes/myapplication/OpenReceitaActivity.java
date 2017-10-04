@@ -1,23 +1,14 @@
 package com.example.leonardomoraes.myapplication;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.preference.PreferenceManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,9 +28,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 public class OpenReceitaActivity extends MainActivity {
@@ -119,6 +107,7 @@ public class OpenReceitaActivity extends MainActivity {
         String tempo_string = i.getExtras().getString("tempo");
         String tipo_string = i.getExtras().getString("tipo");
         String preparo_string = i.getExtras().getString("preparo");
+        String nomeUsuario = i.getExtras().getString("autor");
 
         idProprio = i.getExtras().getString("idProprio");
         posTipo = i.getExtras().getInt("tipoID");
@@ -194,7 +183,7 @@ public class OpenReceitaActivity extends MainActivity {
         tempo.setText(tempo_string + " min");
         tipo.setText(tipo_string);
         preparo.setText(preparo_string);
-//        autor.setText(nomeUsuario);
+        autor.setText(nomeUsuario);
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
 
@@ -223,7 +212,11 @@ public class OpenReceitaActivity extends MainActivity {
             }
         });
 
+        ImageView avatar = (ImageView) findViewById(R.id.profileImage);
+        Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
+
         user = (TextView) findViewById(R.id.userName);
+        user.setText(auth.getCurrentUser().getDisplayName());
 
         // Drawer Item click listeners
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
