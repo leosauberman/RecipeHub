@@ -114,7 +114,8 @@ public class TelaReceita extends AppCompatActivity {
                 if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo() && verifyPhotoURL()) {
                     startActivity(new Intent(TelaReceita.this, MainActivity.class));
                     //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
-                    addUser(retorna());
+                    //addUser(retorna());
+                    retorna();
                 }
             }
         });
@@ -123,11 +124,11 @@ public class TelaReceita extends AppCompatActivity {
     }
 
 
-    private void addUser(String nomeReceita) {
-        Usuario usuario = new Usuario(nomeReceita);
+    /*private void addUser(String nomeReceita) {
+        User user = new User(null, null, null, null, nomeReceita);
 
-        receitasRef.child(idReceita).setValue(usuario);
-    }
+        receitasRef.child(idReceita).setValue(user);
+    }*/
 
     private String retorna() {
         addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), url, idDono, idReceita);

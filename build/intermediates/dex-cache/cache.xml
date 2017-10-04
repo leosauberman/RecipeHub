@@ -2,85 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_0310\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_7f0168ece68d92a495e39b037e34cd85de6e5446.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\core-3.3.0_3fec0554b9901877e1579204827240d77c914286.jar" />
+        sha1="9a00f798310f1d7e9b085bad13d055baaccaa53c">
+        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_0310\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a02b5f13a682c02a84eabfc2944d5c62a8423bbd\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_0310\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6ad77726bfbf29f4c854172a3b9edac6822c4fac\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.android\build-cache\96bbaf09d58e6b4a44eb73a7aa6b0aaed80c1525\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e09663005d70dcedff0bb77211b9ac52d8b69421">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\classes_13d3995aa7f5dd9bbda935f5f1f1e3ec1052a612.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.android\build-cache\b5645fd9618bd5ade8d170e593b495b9ae30110f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="90095b555b72205db6f9b93aca3cb9978d1e3344">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\classes_a1271eb94437b254f0780cee0e349c4ceb62a339.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_f0ca310d99d55be11f85f1589ee47ec074961048.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="49b39b23a49255d62254f860a5bcbc6f96f8a4d3">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7aa22083e3c860f6ede3f0a823672e1f6e5d2fe5\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.android\build-cache\ce27fc9fec443d18da01b0b493ba874bab3c9dae\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="807751a24cf96566fd8675517c94d8463cf364db">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\classes_15ba9d9226c637f8127d446cb027241d06f766d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\aiko2\.android\build-cache\9cdb589b98b8d86a8cb79beb9c94d20eb323b194\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d4ba7399a1a4f5c998b5ce4f6bf33a2e8347820c">
-        <dex dex="C:\Users\aiko2\Documents\projetos\RecipeHub\app\build\intermediates\pre-dexed\debug\classes_64fa2217f4dbf140405ff0857df57a9e67d37c95.jar" />
+        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_0310\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cbc62fce7960abd3a470af15ed28076425e3f9e0\classes.dex" />
     </item>
 
 </items>
