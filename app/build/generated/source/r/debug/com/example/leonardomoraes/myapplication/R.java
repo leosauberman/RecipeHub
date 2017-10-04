@@ -3391,7 +3391,7 @@ containing a value of this type.
         public static final int all=0x7f0e0016;
         public static final int always=0x7f0e0045;
         public static final int auto=0x7f0e002f;
-        public static final int autor=0x7f0e0098;
+        public static final int autor=0x7f0e0099;
         public static final int avatar=0x7f0e009e;
         public static final int basic=0x7f0e0017;
         public static final int beginning=0x7f0e0041;
@@ -3420,7 +3420,7 @@ containing a value of this type.
         public static final int dark=0x7f0e004d;
         public static final int decor_content_parent=0x7f0e0072;
         public static final int default_activity_button=0x7f0e0057;
-        public static final int delete=0x7f0e009a;
+        public static final int delete=0x7f0e009b;
         public static final int desc=0x7f0e00a0;
         public static final int design_bottom_sheet=0x7f0e00dd;
         public static final int design_menu_item_action_area=0x7f0e00e4;
@@ -3452,7 +3452,7 @@ containing a value of this type.
         public static final int et_tempoReceita_Act_versionamento=0x7f0e00cc;
         public static final int exitUntilCollapsed=0x7f0e0025;
         public static final int expand_activities_button=0x7f0e0055;
-        public static final int expand_lv=0x7f0e009b;
+        public static final int expand_lv=0x7f0e0098;
         public static final int expanded_menu=0x7f0e006a;
         public static final int fab_adicionarReceita_Act_main=0x7f0e00e9;
         public static final int fab_adicionarReceita_Act_perfil=0x7f0e00a6;
@@ -3588,7 +3588,7 @@ containing a value of this type.
         public static final int touch_outside=0x7f0e00dc;
         public static final int transition_current_scene=0x7f0e000c;
         public static final int transition_scene_layoutid_cache=0x7f0e000d;
-        public static final int tv_autor_Act_openReceita=0x7f0e0099;
+        public static final int tv_autor_Act_openReceita=0x7f0e009a;
         public static final int tv_esqueceuSenha_Act_resetpassword=0x7f0e00ab;
         public static final int tv_informeEmail_Act_resetpassword=0x7f0e00ac;
         public static final int tv_ingredientesReceita_Act_openReceita=0x7f0e0090;

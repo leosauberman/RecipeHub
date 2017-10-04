@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/AppTheme">
 
-    <include layout="@layout/toolbar"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.leonardomoraes.myapplication.OpenReceitaActivity">
-
+        <include layout="@layout/toolbar"/>
 
         <ImageView
             android:id="@+id/imageView_Act_openReceita"
@@ -90,23 +95,12 @@
             android:id="@+id/tv_ingredientesReceita_Act_openReceita"
             android:layout_width="210dp"
             android:layout_height="110dp"
-            android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/ingredientes"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="130dp"
             android:text="TextView"
             android:textAlignment="viewStart"
             android:textColor="#000000"
             android:textSize="18sp" />
-    <TextView
-        android:id="@+id/tv_ingredientesReceita_Act_openReceita"
-        android:layout_width="210dp"
-        android:layout_height="110dp"
-        android:layout_alignTop="@+id/ingredientes"
-        android:layout_marginStart="130dp"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_tempoReceita_Act_openReceita"
@@ -161,51 +155,53 @@
             android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="13dp"
-            android:text="version" />
+            android:layout_marginBottom="20dp"
+            android:text="version"
+            android:layout_above="@+id/expand_lv"
+            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita" />
 
-    <TextView
-        android:id="@+id/autor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/version"
-        android:layout_toStartOf="@+id/tv_tempoReceita_Act_openReceita"
-        android:text="Autor: "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/autor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor: "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/nome"
+            android:layout_alignStart="@+id/ingredientes" />
 
-    <TextView
-        android:id="@+id/tv_autor_Act_openReceita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/autor"
-        android:layout_toEndOf="@+id/autor"
-        android:text="TextView"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_alignTop="@+id/autor" />
+        <TextView
+            android:id="@+id/tv_autor_Act_openReceita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/autor"
+            android:layout_toEndOf="@+id/autor"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/autor" />
 
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DEL"
-        android:layout_alignBaseline="@+id/version"
-        android:layout_alignBottom="@+id/version"
-        android:layout_toStartOf="@+id/version" />
 
-            <ExpandableListView
-                android:id="@+id/expand_lv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_preparoReceita_Act_openReceita"
-                android:paddingTop="50dp"
-                android:visibility="visible" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEL"
+            android:layout_alignBaseline="@+id/version"
+            android:layout_alignBottom="@+id/version"
+            android:layout_toStartOf="@+id/version" />
 
-</RelativeLayout>
+        <ExpandableListView
+            android:id="@+id/expand_lv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/tv_preparoReceita_Act_openReceita"
+            android:paddingTop="50dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</ScrollView>
 
     <RelativeLayout
         android:layout_width="280dp"

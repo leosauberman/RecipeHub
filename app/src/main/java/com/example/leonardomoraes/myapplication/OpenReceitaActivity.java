@@ -70,7 +70,9 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     private ImageView img;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
+
     private DatabaseReference receitaRef, usuarioRef, paiRef;
+    private DatabaseReference filhaRef;
     private FirebaseStorage storage = FirebaseStorage.getInstance();
     private StorageReference storageRef;
 
@@ -97,11 +99,11 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         //getSupportActionBar().setTitle("Pesquisar");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         //inflate your activity layout here!
-        View contentView = inflater.inflate(R.layout.activity_open_receita, null, false);
-        mDrawerLayout.addView(contentView, 0);
+        //View contentView = inflater.inflate(R.layout.activity_open_receita, null, false);
+        //mDrawerLayout.addView(contentView, 0);
 
         Button version = (Button) findViewById(R.id.version);
         Button delete = (Button) findViewById(R.id.delete);
@@ -148,6 +150,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         idPai = i.getExtras().getString("idPai");
         String image = i.getExtras().getString("uri");
 //        String nomeUsuario = i.getExtras().getString("nomeUsuario");
+
 
 
         if(image!= null) {
@@ -330,7 +333,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
 
+
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        filhaRef = database.getReference("Receita").child(idProprio).child("filhas");
     }
 
     @Override
@@ -398,20 +404,21 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     }
 
 
-    @Override
+
+    /*@Override
     protected void onStart() {
         super.onStart();
 
         listDataHeader.add("Versões");
         Versoes.clear();
         // Read from the database
-        myRef.addValueEventListener(new ValueEventListener() {
+        filhaRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
+                for (DataSnapshot filhaSnapshot : dataSnapshot.getChildren()) {
+                    Receita filha = filhaSnapshot.getValue(Receita.class);
 
-                    Versoes.add(receita.getNome());
+                    //Versoes.add(String.valueOf(filha));
                 }
                 listDataChild.put(listDataHeader.get(0), Versoes);
                 listAdapter = new ExpandableListAdapter(Versoes, OpenReceitaActivity.this);
@@ -422,10 +429,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                 // Failed to read value
             }
         });
-    }
-
+    }*/
     @Override
     public void onClick(View view) {
 
     }
+
 }
