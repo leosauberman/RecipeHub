@@ -109,6 +109,11 @@
             android:textColor="@color/colorAccent2"
             android:textSize="15sp"
             tools:ignore="HardcodedText" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </RelativeLayout>
