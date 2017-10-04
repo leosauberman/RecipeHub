@@ -54,9 +54,10 @@ public class TelaReceita extends AppCompatActivity {
     private StorageReference storageRef = firebaseStorage.getReference().child("recipes_photos");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private String idReceita;
+    private String url;
     private String idDono = auth.getCurrentUser().getUid();
-    DatabaseReference receitasRef = myRef2.child(idDono);
-
+    DatabaseReference userRecRef = myRef2.child(idDono);
+    private int boleana;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +70,6 @@ public class TelaReceita extends AppCompatActivity {
         //endregion
 
         addImage = (ImageButton) findViewById(R.id.imageButton_Act_telaReceita);
-
-        downloadUrl = Uri.parse("");
 
         nome = (EditText) findViewById(R.id.et_nomeReceita_Act_telaReceita);
         ingrediente = (EditText) findViewById(R.id.et_ingredientesReceita_Act_telaReceita);
@@ -101,19 +100,12 @@ public class TelaReceita extends AppCompatActivity {
 
 
         criar = (FloatingActionButton) findViewById(R.id.fab_criarReceita_Act_telaReceita);
-        criar.setOnClickListener(new View.OnClickListener(){
+        criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(downloadUrl.toString().isEmpty()){
-                    downloadUrl = Uri.parse("https://www.justexam.in/assets/blog/comments/default.jpg");
-                }
-                else {
-                    if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo()) {
-                        startActivity(new Intent(TelaReceita.this, MainActivity.class));
-                        //addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono);
-                        addUser(retorna());
-                    }
-                    //startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                if (verifyNome() && verifyIngred() && verifyTempo() && !verifySabor().isEmpty() && verifyTipo() && verifyPreparo() && verifyPhotoURL()) {
+                    startActivity(new Intent(TelaReceita.this, MainActivity.class));
+                    addUser(retorna());
                 }
             }
         });
@@ -122,15 +114,13 @@ public class TelaReceita extends AppCompatActivity {
     }
 
 
-    private void addUser(String nomeReceita){
-        Usuario usuario = new Usuario(nomeReceita);
+    private void addUser(String nomeReceita) {
 
-        receitasRef.child(idReceita).setValue(usuario);
+        userRecRef.child(idReceita).child("nomeReceita").setValue(nomeReceita);
     }
 
-    private String retorna()
-    {
-        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), downloadUrl.toString(), idDono, idReceita);
+    private String retorna() {
+        addRecipe(idReceita, nome.getText().toString(), ingrediente.getText().toString(), tempo.getText().toString(), sabor, tipo.getSelectedItem().toString(), preparo.getText().toString(), url, idDono, idReceita);
         return nome.getText().toString();
     }
 
@@ -143,7 +133,7 @@ public class TelaReceita extends AppCompatActivity {
                            String preparo,
                            String urlFoto,
                            String idDono,
-                           String idProprio){
+                           String idProprio) {
         Receita receita = new Receita(nome, ingrediente, tempo, sabor, tipo, preparo, urlFoto, idDono, null, idProprio);
 
         myRef.child(recipeId).setValue(receita);
@@ -153,16 +143,14 @@ public class TelaReceita extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == RC_NICE){
-            if(resultCode == RESULT_OK){
+        if (requestCode == RC_NICE) {
+            if (resultCode == RESULT_OK) {
                 Toast.makeText(this, "Show", Toast.LENGTH_SHORT).show();
-            }
-            else if(resultCode == RESULT_CANCELED){
+            } else if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "Cancelado", Toast.LENGTH_SHORT).show();
                 finish();
             }
-        }
-        else if(resultCode == RESULT_OK && requestCode == RC_PHOTO_PICKER) {
+        } else if (resultCode == RESULT_OK && requestCode == RC_PHOTO_PICKER) {
             selectedImageUri = data.getData();
             // Get a reference to store file at chat_photos/<FILENAME>
             StorageReference photoRef = storageRef.child(selectedImageUri.getLastPathSegment());
@@ -180,80 +168,120 @@ public class TelaReceita extends AppCompatActivity {
         }
     }
 
-    private void changeImageStatus(){
-        if(downloadUrl == null){
-            Toast.makeText(this, "Espere a imagem ser carregada", Toast.LENGTH_SHORT).show();
+    private void changeImageStatus() {
+        if (downloadUrl == null) {
             addImage.setVisibility(View.GONE);
             imageView.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Espere a imagem ser carregada", Toast.LENGTH_SHORT).show();
             Glide.with(imageView.getContext()).load(downloadUrl).into(imageView);
-        }
-        else{
-            Toast.makeText(this, "Espere a imagem ser carregada", Toast.LENGTH_LONG).show();
-            changeImageStatus();
+        } else {
+            Toast.makeText(this, "Sua receita não vai ter uma imagem??", Toast.LENGTH_LONG).show();
+            //changeImageStatus();
             addImage.setVisibility(View.VISIBLE);
             imageView.setVisibility(View.GONE);
         }
     }
+
     //region Verifying
-    private boolean verifyNome(){
-        if(nome.getText().toString().isEmpty()){
+    private boolean verifyNome() {
+        if (nome.getText().toString().isEmpty()) {
             Toast.makeText(TelaReceita.this, "Dê um nome à sua receita", Toast.LENGTH_SHORT).show();
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
-    private boolean verifyIngred(){
-        if(ingrediente.getText().toString().isEmpty()){
+
+    private boolean verifyIngred() {
+        if (ingrediente.getText().toString().isEmpty()) {
             Toast.makeText(TelaReceita.this, "Quais são os ingredientes da sua receita?", Toast.LENGTH_SHORT).show();
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
-    private boolean verifyTempo(){
-        if(tempo.getText().toString().isEmpty()){
+
+    private boolean verifyTempo() {
+        if (tempo.getText().toString().isEmpty()) {
             Toast.makeText(TelaReceita.this, "Quanto tempo demora para fazer esta receita?", Toast.LENGTH_SHORT).show();
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
-    private boolean verifyTipo(){
-        if(tipo.getSelectedItem().toString().equalsIgnoreCase("Tipo")){
+
+    private boolean verifyTipo() {
+        if (tipo.getSelectedItem().toString().equalsIgnoreCase("Tipo")) {
             Toast.makeText(TelaReceita.this, "Sua receita tem alguma especificidade?", Toast.LENGTH_SHORT).show();
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
-    private boolean verifyPreparo(){
-        if(preparo.getText().toString().isEmpty()){
+
+    private boolean verifyPreparo() {
+        if (preparo.getText().toString().isEmpty()) {
             Toast.makeText(TelaReceita.this, "Como se faz esta receita?", Toast.LENGTH_SHORT).show();
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
-    private String verifySabor(){
-        if(sal.isChecked()) {
+
+    private String verifySabor() {
+        if (sal.isChecked()) {
             sabor = sal.getText().toString();
             return sabor;
-        }
-        else if(doce.isChecked()){
+        } else if (doce.isChecked()) {
             sabor = doce.getText().toString();
             return sabor;
-        }
-        else{
+        } else {
             Toast.makeText(TelaReceita.this, "Selecione doce ou salgado", Toast.LENGTH_SHORT).show();
             return "";
         }
     }
+
+    private boolean verifyPhotoURL() {
+        if (downloadUrl != null) {
+            url = downloadUrl.toString();
+            return true;
+        }
+        else if(url != null){
+            return true;
+        }
+        else {
+            final AlertDialog alertDialog = new AlertDialog.Builder(
+                    TelaReceita.this).create();
+
+            // Setting Dialog Title
+            alertDialog.setTitle("E a foto?");
+
+            // Setting Dialog Message
+            alertDialog.setMessage("Sua receita vai ter uma foto??");
+
+            // Setting OK Button
+            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Sim", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.cancel();
+                    boleana = 0;
+                    Toast.makeText(getApplicationContext(), "Então clique no camera para adicioná-la!!", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Não", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    addImage.setVisibility(View.GONE);
+                    Glide.with(TelaReceita.this).load(R.drawable.noimage).into(imageView);
+                    url = "no_image";
+                    boleana = 1;
+                }
+            });
+            // Showing Alert Message
+            alertDialog.show();
+            return boleana == 1;
+        }
+    }
     //endregion
 }
-

@@ -105,6 +105,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         //View contentView = inflater.inflate(R.layout.activity_open_receita, null, false);
         //mDrawerLayout.addView(contentView, 0);
 
+
         Button version = (Button) findViewById(R.id.version);
         Button delete = (Button) findViewById(R.id.delete);
 
@@ -122,8 +123,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                 intent.putExtra("img", imgUri);
                 startActivity(intent);
             }
-
-
         });
 
         nome = (TextView) findViewById(R.id.tv_nomeReceita_Act_openReceita);
@@ -149,11 +148,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         idDono = i.getExtras().getString("idDono");
         idPai = i.getExtras().getString("idPai");
         String image = i.getExtras().getString("uri");
-//        String nomeUsuario = i.getExtras().getString("nomeUsuario");
+        String nomeUsuario = i.getExtras().getString("autor");
 
 
-
-        if(image!= null) {
+        if(image != null && !image.equals("no_image")) {
             imgUri = Uri.parse(image);
             storageRef = storage.getReferenceFromUrl(imgUri.toString());
         }
@@ -216,10 +214,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         nome.setText(nome_string);
         ingredientes.setText(ingredientes_string);
-        tempo.setText(tempo_string);
+        tempo.setText(tempo_string + " min");
         tipo.setText(tipo_string);
         preparo.setText(preparo_string);
-//        autor.setText(nomeUsuario);
+        autor.setText(nomeUsuario);
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
 
@@ -304,7 +302,11 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
             }
         });
 
+        ImageView avatar = (ImageView) findViewById(R.id.avatar);
+        Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
+
         user = (TextView) findViewById(R.id.userName);
+        user.setText(auth.getCurrentUser().getDisplayName());
 
         // Drawer Item click listeners
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -332,7 +334,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         };
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
-
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -378,7 +379,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     }
 
     @Override
-    public void onBackPressed () {
+    public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(this, MainActivity.class));
     }
@@ -397,7 +398,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         }
 
         mDrawerList.setItemChecked(position, true);
-        setTitle(mNavItems.get(position).mTitle);
+        //setTitle(mNavItems.get(position).mTitle);
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);

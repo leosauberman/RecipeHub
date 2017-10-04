@@ -5,17 +5,31 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.telecom.Call;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -24,6 +38,41 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private ProgressBar progressBar;
     private Button bt_Signup, bt_Login, bt_Reset;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mRef = database.getReference("Usuario");
+    private static final String TAG = "AndroidBash";
+
+    private CallbackManager callbackManager;
+
+    private void signInWithFacebook(AccessToken token){
+        Log.d(TAG, "signInWithFacebook: " + token);
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        auth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            String uid = task.getResult().getUser().getUid();
+                            String name = task.getResult().getUser().getDisplayName();
+                            String email = task.getResult().getUser().getEmail();
+                            String image = task.getResult().getUser().getPhotoUrl().toString();
+
+                            User user = new User(uid, name, email, image, null);
+
+                            mRef.child(user.getId()).child("nome").setValue(user.getName());
+
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("user_id",uid);
+                            intent.putExtra("profile_picture",image);
+                            startActivity(intent);
+                            //finish();
+                        }else{
+                            Toast.makeText(LoginActivity.this, "Auth Failed", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(auth.getCurrentUser()!= null) {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
-            Toast.makeText(this, "Bem-vindo "+auth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Bem-vindo "+auth.getCurrentUser().getDisplayName(), Toast.LENGTH_SHORT).show();
         }
         else{}
 
@@ -44,7 +93,28 @@ public class LoginActivity extends AppCompatActivity {
         bt_Signup = (Button) findViewById(R.id.bt_signUp_Act_login);
         bt_Login = (Button) findViewById(R.id.bt_login_Act_login);
         bt_Reset = (Button) findViewById(R.id.bt_resetaSenha_Act_login);
+        LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
 
+
+        callbackManager = CallbackManager.Factory.create();
+        loginButton.setReadPermissions("email", "public_profile");
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        signInWithFacebook(loginResult.getAccessToken());
+                    }
+
+                    @Override
+                    public void onCancel() {
+
+                    }
+
+                    @Override
+                    public void onError(FacebookException error) {
+
+                    }
+                });
 
 
         bt_Signup.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +179,10 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 }

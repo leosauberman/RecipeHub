@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -32,7 +34,91 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Usuario");
     private String id, idReceitas;
+    private User user;
+    private static final String TAG = "Android Bash";
 
+    protected void setUpUser(){
+        user = new User();
+        user.setName(inputName.getText().toString());
+        user.setEmail(inputEmail.getText().toString());
+    }
+
+    private void createNewAccount(String email, String password){
+        Log.d(TAG, "createNewAccount: " + email);
+        if(!validateForm()){
+            return;
+        }
+        setUpUser(); //create user.Name and user.Email
+        auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        Log.d(TAG, "createUserWithEmail:onComplete: " + task.isSuccessful());
+
+                        if(!task.isSuccessful()){
+                            Toast.makeText(SignupActivity.this, "Auth Failed. Maybe you're already registered.", Toast.LENGTH_SHORT).show();
+                        }else{
+                            onAuthenticationSuccess(task.getResult().getUser());
+                        }
+                    }
+                });
+    }
+
+    private void onAuthenticationSuccess(FirebaseUser myUser){
+        saveNewUser(myUser.getUid(), user.getName(), user.getEmail(), null);
+
+        startActivity(new Intent(SignupActivity.this, MainActivity.class));
+        finish();
+    }
+
+    private void signOut() {
+        auth.signOut();
+    }
+
+    private void saveNewUser(String userId, String name, String email, String imageUrl) {
+        User user = new User(userId, name, email, imageUrl, null);
+
+        myRef.child(userId).child("nome").setValue(user.getName());
+    }
+
+    private boolean validateForm() {
+        boolean valid = true;
+
+        String userEmail = inputEmail.getText().toString();
+        if(TextUtils.isEmpty(userEmail)){
+            inputEmail.setError("Required");
+            valid = false;
+        }else if(!isValidEmail(userEmail)){
+            inputEmail.setError("E-mail invalido");
+            valid = false;
+        }else{
+            inputEmail.setError(null);
+        }
+
+        String userName = inputName.getText().toString();
+        if(TextUtils.isEmpty(userName)){
+            inputName.setError("Required");
+            valid = false;
+        }else{
+            inputName.setError(null);
+        }
+
+
+
+        String userPassword = inputPassword.getText().toString();
+        if(TextUtils.isEmpty(userPassword)) {
+            inputPassword.setError("Required");
+            valid = false;
+        }else if(userPassword.length() < 6){
+            inputPassword.setError("Senha muito curta");
+            valid = false;
+        }else{
+            inputPassword.setError(null);
+        }
+
+        return valid;
+    }
 
 
     @Override
@@ -69,65 +155,9 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = inputEmail.getText().toString().trim();
-                String password = inputPassword.getText().toString().trim();
-                final String name = inputName.getText().toString().trim();
-
-                if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Entre com seu email!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(!isValidEmail(email)){
-                    Toast.makeText(getApplicationContext(), "Email inválido!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if(TextUtils.isEmpty(name)){
-                    Toast.makeText(getApplicationContext(), "Entre com seu nome!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Entre com sua senha!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Senha muito curta, mínimo de 6 caracteres!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
                 progressBar.setVisibility(View.VISIBLE);
                 //create user
-                auth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                Toast.makeText(SignupActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
-                                progressBar.setVisibility(View.GONE);
-                                id = auth.getCurrentUser().getUid();
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
-                                if (!task.isSuccessful()) {
-                                    Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
-                                            Toast.LENGTH_SHORT).show();
-                                } else {
-                                    myRef.child(id).child("nome").setValue(name);
-//                                    SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(SignupActivity.this);
-//                                    SharedPreferences.Editor editor = shared.edit();
-//                                    editor.putString("nomeUsuario", name);
-//                                    editor.commit();
-                                    Intent i = new Intent(SignupActivity.this, MainActivity.class);
-                                    startActivity(i);
-                                    finish();
-                                }
-                            }
-                        });
-
-
-
-
+                createNewAccount(inputEmail.getText().toString(), inputPassword.getText().toString());
             }
         });
 
