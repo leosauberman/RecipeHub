@@ -192,13 +192,13 @@
             android:layout_alignBottom="@+id/version"
             android:layout_toStartOf="@+id/version" />
 
-        <ExpandableListView
-            android:id="@+id/expand_lv"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_filhas"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_below="@id/tv_preparoReceita_Act_openReceita"
-            android:paddingTop="50dp"
-            android:visibility="visible" />
+            android:layout_height="649dp"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/tv_preparoReceita_Act_openReceita"
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 </ScrollView>

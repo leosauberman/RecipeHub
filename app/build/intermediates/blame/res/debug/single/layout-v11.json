@@ -4,8 +4,28 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
@@ -14,6 +34,10 @@
     {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",

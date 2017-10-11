@@ -4,6 +4,14 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\968b8f84b46813a47cc904e12ff36da0ecd4a64e\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },
@@ -20,8 +28,20 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
@@ -32,6 +52,10 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
@@ -40,7 +64,27 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\color-v23\\abc_tint_default.xml"
     }
 ]

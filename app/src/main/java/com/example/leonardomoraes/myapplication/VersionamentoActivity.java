@@ -123,7 +123,7 @@ public class VersionamentoActivity extends AppCompatActivity {
 
     private void addVersionRef(String idVersionada,
                                String idPai){
-        normalRef.child(idPai).child("filhas").child(idVersionada).setValue(nomeV);
+        normalRef.child(idPai).child("filhas").child(idVersionada).child("idFilha").setValue(idVersionada);
     }
 
     private String verifySabor(){

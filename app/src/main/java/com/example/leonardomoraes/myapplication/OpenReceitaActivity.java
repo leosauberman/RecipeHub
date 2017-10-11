@@ -15,6 +15,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -37,6 +39,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
@@ -72,7 +75,12 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     private DatabaseReference myRef = database.getReference("Receita");
 
     private DatabaseReference receitaRef, usuarioRef, paiRef;
-    private DatabaseReference filhaRef;
+
+    private DatabaseReference filhaRef = database.getReference("Receita");
+    private RecyclerView recyclerViewFilhas;
+    private RecyclerAdapter adapterFilhas;
+
+
     private FirebaseStorage storage = FirebaseStorage.getInstance();
     private StorageReference storageRef;
 
@@ -98,6 +106,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("Pesquisar");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+        recyclerViewFilhas.setLayoutManager(gridLayoutManager);
 
         //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -221,7 +233,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
 
-        listDataHeader = new ArrayList<String>();
+        /*listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
         //pegando a list view
@@ -275,7 +287,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
-        });
+        });*/
 
 
         //MENU
@@ -335,9 +347,26 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Query busca = filhaRef.orderByChild("idPai").equalTo(idProprio);
+        busca.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<Receita> newList = new ArrayList<>();
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
 
-        filhaRef = database.getReference("Receita").child(idProprio).child("filhas");
+                    newList.add(receita);
+
+                }
+                adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
+                recyclerViewFilhas.setAdapter(adapterFilhas);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
@@ -410,24 +439,27 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     protected void onStart() {
         super.onStart();
 
-        listDataHeader.add("Versões");
-        Versoes.clear();
+        /*listDataHeader.add("Versões");
+        Versoes.clear();*//*
         // Read from the database
-        filhaRef.addValueEventListener(new ValueEventListener() {
+        Query busca = filhaRef.orderByChild("idProprio").equalTo(idProprio);
+        busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot filhaSnapshot : dataSnapshot.getChildren()) {
-                    Receita filha = filhaSnapshot.getValue(Receita.class);
+                ArrayList<Receita> newList = new ArrayList<>();
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
 
-                    //Versoes.add(String.valueOf(filha));
+                    newList.add(receita);
+
                 }
-                listDataChild.put(listDataHeader.get(0), Versoes);
-                listAdapter = new ExpandableListAdapter(Versoes, OpenReceitaActivity.this);
+                adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
+                recyclerViewFilhas.setAdapter(adapterFilhas);
             }
 
             @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
+            public void onCancelled(DatabaseError databaseError) {
+
             }
         });
     }*/
