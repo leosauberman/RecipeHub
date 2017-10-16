@@ -37,7 +37,8 @@
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:id="@+id/drawerPane"
-        android:layout_gravity="start">
+        android:layout_gravity="start"
+        android:elevation="16dp">
 
         <!--Profile Box-->
 

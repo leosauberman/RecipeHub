@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +30,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword, inputName;
     private Button bt_SignIn, bt_SignUp, bt_ResetaSenha;
+    private TextView titulo;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -136,6 +138,7 @@ public class SignupActivity extends AppCompatActivity {
         inputName = (EditText) findViewById(R.id.et_nomeSingUp);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         bt_ResetaSenha = (Button) findViewById(R.id.bt_resetaSenha_Act_singUp);
+        titulo = (TextView) findViewById(R.id.tv_titulo_Act_singup);
 
         bt_ResetaSenha.setOnClickListener(new View.OnClickListener() {
             @Override

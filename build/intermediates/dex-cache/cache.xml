@@ -3,21 +3,84 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Pedro\AndroidStudioProjects\RecipeHub0910\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\gapeb\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="969976feb94fe00c5edbd422535f5b0842c50210">
-        <dex dex="C:\Users\Pedro\AndroidStudioProjects\RecipeHub0910\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e05069b6c6ab8df60dbf31641d2c0c56dd59660e\classes.dex" />
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_cd22cac7ea05b9d9f658a1dc61c834f4a81f185e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Pedro\AndroidStudioProjects\RecipeHub0910\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\gapeb\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_50d97bfd4db6453ae3f3a2b09ef62f1cfbc4f090\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_4f350e5b33b979657f812156b5f78df43ad39f88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Pedro\AndroidStudioProjects\RecipeHub0910\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_dd34b75ad4d7dee17573cdc54c874d6bebeb48bf\classes.dex" />
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_79d571070191a33e4c5d7cae471329ed6f64e690\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0a5b4bc03436272bd767916c55197dfd53958b7d">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8114c82d1347514f678f0d0bf083b0799e153fbb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\.android\build-cache\305245e9c072ed64bd271dbf97ff9a37a4bb5691\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_631fc6ca52588a012222bc935f3523c7cb7a1c5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\.android\build-cache\6dab100432f6f2595c460b47745f78845c87eb2c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e09663005d70dcedff0bb77211b9ac52d8b69421">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ef598ab261281a0137e1f83ae9277026d95e7da6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\.android\build-cache\99d4a8abe1dc06e7f2fcf20d22061ed5f194cbc2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="90095b555b72205db6f9b93aca3cb9978d1e3344">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_85c5ae92380fbfbfcfc983a521158d005beb60ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gapeb\.android\build-cache\443965cb3f7ba9fcd1d2a231238a3e6d756fc1b4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4ba7399a1a4f5c998b5ce4f6bf33a2e8347820c">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8de0f69902be343a22fbdfe78e444679db2f7f97\classes.dex" />
     </item>
 
 </items>

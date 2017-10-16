@@ -12,6 +12,14 @@
         "source": "C:\\Users\\Pedro\\.android\\build-cache\\968b8f84b46813a47cc904e12ff36da0ecd4a64e\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
+        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\gapeb\\.android\\build-cache\\6489d6d7547ca2ec3fffbcc359c615754d3f9d83\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub04\\10\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\c074f660a0d37de0bc2ab6f1234ad29da8498acc\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     }

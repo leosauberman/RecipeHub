@@ -12,35 +12,32 @@
     android:theme="@style/criarReceita"
     >
 
-    <TextView
-        android:id="@+id/tv_nomeReceita_Act_versionamento"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txinput_nome_Act_versionamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/et_nomeReceita_Act_versionamento"
-        android:layout_alignBottom="@+id/et_nomeReceita_Act_versionamento"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="12dp"
-        android:text="@string/nome_receita"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        android:theme="@style/criarReceita">
 
-    <EditText
-        android:id="@+id/et_nomeReceita_Act_versionamento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/et_tempoReceita_Act_versionamento" />
+        <EditText
+            android:id="@+id/et_nomeReceita_Act_versionamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/et_tempoReceita_Act_versionamento" />
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <TextView
         android:id="@+id/tv_ingredientesReceita_Act_versionamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tv_nomeReceita_Act_versionamento"
-        android:layout_below="@+id/et_nomeReceita_Act_versionamento"
         android:layout_marginTop="22dp"
         android:text="@string/ingredientes"
+        android:layout_alignBottom="@+id/imageView_Act_versionamento"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
 
@@ -48,7 +45,6 @@
         android:id="@+id/et_ingredientesReceita_Act_versionamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tv_ingredientesReceita_Act_versionamento"
         android:layout_below="@+id/tv_ingredientesReceita_Act_versionamento"
         android:layout_marginTop="10dp"
         android:ems="10"
@@ -61,7 +57,6 @@
         android:id="@+id/tv_tempoReceita_Act_versionamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_ingredientesReceita_Act_versionamento"
         android:layout_below="@+id/et_ingredientesReceita_Act_versionamento"
         android:layout_marginTop="44dp"
         android:text="@string/tempo"
@@ -71,12 +66,11 @@
         android:id="@+id/et_tempoReceita_Act_versionamento"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_alignBaseline="@id/tv_tempoReceita_Act_versionamento"
-        android:layout_alignTop="@+id/tv_tempoReceita_Act_versionamento"
-        android:layout_marginStart="7dp"
-        android:layout_toEndOf="@+id/tv_nomeReceita_Act_versionamento"
+        android:layout_below="@+id/tv_tempoReceita_Act_versionamento"
+        android:layout_alignEnd="@+id/tv_tempoReceita_Act_versionamento"
         android:inputType="time"
-        android:textAppearance="@style/TextAppearance.AppCompat" />
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="14dp"/>
 
     <RadioGroup
         android:layout_width="200dp"
@@ -118,7 +112,8 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:elevation="6dp"/>
 
     <TextView
         android:id="@+id/tv_preparoReceita_Act_versionamento"
@@ -156,7 +151,7 @@
         android:id="@+id/imageView_Act_versionamento"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_above="@+id/et_tempoReceita_Act_versionamento"
+        android:layout_alignRight="@id/txinput_nome_Act_versionamento"
         android:layout_alignParentEnd="true" />
 
     <ImageButton
@@ -165,7 +160,7 @@
         android:layout_height="50dp"
         android:layout_alignEnd="@+id/fab_versionarReceita_Act_versionamento"
         android:layout_alignStart="@+id/fab_versionarReceita_Act_versionamento"
-        android:layout_below="@+id/tv_ingredientesReceita_Act_versionamento"
+        android:layout_alignRight="@id/txinput_nome_Act_versionamento"
         android:background="@drawable/ic_add_a_photo_black_24dp" />
 
 

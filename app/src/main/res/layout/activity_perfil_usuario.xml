@@ -91,7 +91,8 @@
             android:src="@drawable/ic_add"
             app:fabSize="normal"
             app:layout_anchor="@+id/recycler_view_usuario"
-            app:layout_anchorGravity="bottom|right" />
+            app:layout_anchorGravity="bottom|right"
+            android:elevation="6dp"/>
 
     </android.support.design.widget.CoordinatorLayout>
 
@@ -100,7 +101,8 @@
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:id="@+id/drawerPane"
-        android:layout_gravity="start">
+        android:layout_gravity="start"
+        android:elevation="16dp">
 
         <!--Profile Box-->
 

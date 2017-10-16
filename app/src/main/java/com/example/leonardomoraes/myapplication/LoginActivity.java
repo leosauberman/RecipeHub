@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -35,6 +36,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
+    private TextView titulo;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
     private Button bt_Signup, bt_Login, bt_Reset;
@@ -94,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         bt_Login = (Button) findViewById(R.id.bt_login_Act_login);
         bt_Reset = (Button) findViewById(R.id.bt_resetaSenha_Act_login);
         LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
+        titulo = (TextView) findViewById(R.id.tv_titulo_Act_login);
 
 
         callbackManager = CallbackManager.Factory.create();
