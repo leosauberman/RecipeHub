@@ -113,7 +113,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     @Override
     public void onBindViewHolder(final RecyclerHolder holder, final int position) {
         holder.nome.setText(receitaArrayList.get(position).getNome());
-        holder.tempo.setText(receitaArrayList.get(position).getTempo());
+        holder.tempo.setText(receitaArrayList.get(position).getTempo() + " min");
         holder.tipo.setText(receitaArrayList.get(position).getTipo());
         recipeUri = receitaArrayList.get(position).getUrlFoto();
 

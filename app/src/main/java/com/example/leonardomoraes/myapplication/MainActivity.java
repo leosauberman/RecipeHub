@@ -25,6 +25,7 @@ import android.widget.SearchView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -86,10 +87,18 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         });
 
         avatar = (ImageView) findViewById(R.id.avatar);
-        Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
-
         user = (TextView) findViewById(R.id.userName);
-        user.setText(auth.getCurrentUser().getDisplayName());
+
+        for(UserInfo profile: auth.getCurrentUser().getProviderData()){
+            if(profile.getProviderId().equals("facebook.com")) {
+                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
+                user.setText(auth.getCurrentUser().getDisplayName());
+            }
+            else {
+                Glide.with(this).load(R.drawable.profilepic).into(avatar);
+                user.setText(auth.getCurrentUser().getEmail());
+            }
+        }
 
         //MENU
         //user.setText(database.getReference("Usuario").child(auth.getCurrentUser().getUid()).child("nomeUsuario").toString());

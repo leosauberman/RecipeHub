@@ -31,7 +31,7 @@
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="ingredient_description">Ex.: 1kg de feijão;</string>
 
-    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="auth_failed">Email/senha incorreto(a)</string>
 
     <string name="minimum_password">Mínimo de 6 caracteres na senha</string>
 
@@ -76,4 +76,5 @@
     <string name="editar">Editar</string>
 
     <string name="sobre_title">Sobre os desenvolvedores:</string>
+    <string name="minutes">min</string>
 </resources>
