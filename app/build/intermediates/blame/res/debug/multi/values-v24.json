@@ -119,7 +119,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "outputFile": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
         "map": [
             {
                 "to": {
@@ -130,7 +130,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -149,7 +149,7 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -168,7 +168,7 @@
                     "endOffset": 411
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -187,7 +187,7 @@
                     "endOffset": 475
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -206,7 +206,7 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -225,7 +225,7 @@
                     "endOffset": 614
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

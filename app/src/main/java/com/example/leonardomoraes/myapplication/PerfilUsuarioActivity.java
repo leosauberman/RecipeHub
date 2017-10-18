@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -69,7 +70,16 @@ public class PerfilUsuarioActivity extends MainActivity {
         editar = (TextView) findViewById(R.id.editar);
 
         ImageView profileImage = (ImageView) findViewById(R.id.profileImage);
-        Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(profileImage);
+        for(UserInfo profile: auth.getCurrentUser().getProviderData()){
+            if(profile.getProviderId().equals("facebook.com")) {
+                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(profileImage);
+                nome.setText(auth.getCurrentUser().getDisplayName());
+            }
+            else {
+                Glide.with(this).load(R.drawable.profilepic).into(profileImage);
+                nome.setText(auth.getCurrentUser().getEmail());
+            }
+        }
 
         receitaArrayList1 = new ArrayList<>();
 
@@ -109,7 +119,7 @@ public class PerfilUsuarioActivity extends MainActivity {
 
         recyclerView1.setLayoutManager(gridLayoutManager);
 
-        nome.setText(auth.getCurrentUser().getDisplayName());
+
 
 
         //MENU
@@ -138,10 +148,18 @@ public class PerfilUsuarioActivity extends MainActivity {
         });
 
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
-        Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
-
         user = (TextView) findViewById(R.id.userName);
-        user.setText(auth.getCurrentUser().getDisplayName());
+
+        for(UserInfo profile: auth.getCurrentUser().getProviderData()){
+            if(profile.getProviderId().equals("facebook.com")) {
+                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
+                user.setText(auth.getCurrentUser().getDisplayName());
+            }
+            else {
+                Glide.with(this).load(R.drawable.profilepic).into(avatar);
+                user.setText(auth.getCurrentUser().getEmail());
+            }
+        }
 
         // Drawer Item click listeners
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {

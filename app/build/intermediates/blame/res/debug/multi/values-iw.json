@@ -1164,7 +1164,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+        "outputFile": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
         "map": [
             {
                 "to": {
@@ -1175,7 +1175,7 @@
                     "endOffset": 204
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1194,7 +1194,7 @@
                     "endOffset": 314
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1213,7 +1213,7 @@
                     "endOffset": 440
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1232,7 +1232,7 @@
                     "endOffset": 539
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1251,7 +1251,7 @@
                     "endOffset": 647
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1270,7 +1270,7 @@
                     "endOffset": 731
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1289,7 +1289,7 @@
                     "endOffset": 831
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1308,7 +1308,7 @@
                     "endOffset": 945
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1327,7 +1327,7 @@
                     "endOffset": 1023
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1346,7 +1346,7 @@
                     "endOffset": 1101
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1365,7 +1365,7 @@
                     "endOffset": 1180
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1384,7 +1384,7 @@
                     "endOffset": 1282
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1403,7 +1403,7 @@
                     "endOffset": 1386
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1422,7 +1422,7 @@
                     "endOffset": 1482
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1441,7 +1441,7 @@
                     "endOffset": 1585
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1460,7 +1460,7 @@
                     "endOffset": 1686
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1479,7 +1479,7 @@
                     "endOffset": 1786
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1498,7 +1498,7 @@
                     "endOffset": 1902
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1517,7 +1517,7 @@
                     "endOffset": 1998
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1536,7 +1536,7 @@
                     "endOffset": 2156
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1555,7 +1555,7 @@
                     "endOffset": 2277
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1574,7 +1574,7 @@
                     "endOffset": 2405
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1593,7 +1593,7 @@
                     "endOffset": 2517
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1612,7 +1612,7 @@
                     "endOffset": 2599
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1631,7 +1631,7 @@
                     "endOffset": 2685
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1650,7 +1650,7 @@
                     "endOffset": 2759
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1669,7 +1669,7 @@
                     "endOffset": 2845
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1688,7 +1688,7 @@
                     "endOffset": 2933
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1707,7 +1707,7 @@
                     "endOffset": 3047
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1726,7 +1726,7 @@
                     "endOffset": 3158
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1745,7 +1745,7 @@
                     "endOffset": 3249
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1764,7 +1764,7 @@
                     "endOffset": 3340
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1783,7 +1783,7 @@
                     "endOffset": 3440
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1802,7 +1802,7 @@
                     "endOffset": 3557
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1821,7 +1821,7 @@
                     "endOffset": 3638
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1840,7 +1840,7 @@
                     "endOffset": 3723
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1859,7 +1859,7 @@
                     "endOffset": 3891
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1878,7 +1878,7 @@
                     "endOffset": 3985
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1897,7 +1897,7 @@
                     "endOffset": 4084
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1916,7 +1916,7 @@
                     "endOffset": 4201
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1935,7 +1935,7 @@
                     "endOffset": 4308
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -1954,7 +1954,7 @@
                     "endOffset": 4439
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\6dab100432f6f2595c460b47745f78845c87eb2c\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -1973,7 +1973,7 @@
                     "endOffset": 4544
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1992,7 +1992,7 @@
                     "endOffset": 4730
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -2011,7 +2011,7 @@
                     "endOffset": 4857
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -2030,7 +2030,7 @@
                     "endOffset": 4963
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -2049,7 +2049,7 @@
                     "endOffset": 5161
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -2068,7 +2068,7 @@
                     "endOffset": 5288
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -2087,7 +2087,7 @@
                     "endOffset": 5420
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -2106,7 +2106,7 @@
                     "endOffset": 5597
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\e3b7f26b7aa14af8279e035344162596c13adee2\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\07f7fdd6b36ae733693502b3a4e46f2b423d0ce9\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -2125,7 +2125,7 @@
                     "endOffset": 5792
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -2144,7 +2144,7 @@
                     "endOffset": 5897
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -2163,7 +2163,7 @@
                     "endOffset": 6073
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -2182,7 +2182,7 @@
                     "endOffset": 6198
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -2201,7 +2201,7 @@
                     "endOffset": 6391
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -2220,7 +2220,7 @@
                     "endOffset": 6566
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -2239,7 +2239,7 @@
                     "endOffset": 6656
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -2258,7 +2258,7 @@
                     "endOffset": 6746
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -2277,7 +2277,7 @@
                     "endOffset": 6856
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-iw\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-iw\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -2296,7 +2296,7 @@
                     "endOffset": 6935
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -2315,7 +2315,7 @@
                     "endOffset": 7038
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-iw\\values-iw.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

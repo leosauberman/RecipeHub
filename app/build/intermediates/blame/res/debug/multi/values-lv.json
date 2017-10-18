@@ -1454,7 +1454,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+        "outputFile": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
         "map": [
             {
                 "to": {
@@ -1465,7 +1465,7 @@
                     "endOffset": 220
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1484,7 +1484,7 @@
                     "endOffset": 328
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1503,7 +1503,7 @@
                     "endOffset": 451
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1522,7 +1522,7 @@
                     "endOffset": 559
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1541,7 +1541,7 @@
                     "endOffset": 668
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1560,7 +1560,7 @@
                     "endOffset": 754
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1579,7 +1579,7 @@
                     "endOffset": 858
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1598,7 +1598,7 @@
                     "endOffset": 980
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1617,7 +1617,7 @@
                     "endOffset": 1062
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1636,7 +1636,7 @@
                     "endOffset": 1144
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1655,7 +1655,7 @@
                     "endOffset": 1229
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1674,7 +1674,7 @@
                     "endOffset": 1338
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1693,7 +1693,7 @@
                     "endOffset": 1450
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1712,7 +1712,7 @@
                     "endOffset": 1549
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1731,7 +1731,7 @@
                     "endOffset": 1660
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1750,7 +1750,7 @@
                     "endOffset": 1769
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1769,7 +1769,7 @@
                     "endOffset": 1874
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1788,7 +1788,7 @@
                     "endOffset": 1993
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1807,7 +1807,7 @@
                     "endOffset": 2092
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1826,7 +1826,7 @@
                     "endOffset": 2201
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1845,7 +1845,7 @@
                     "endOffset": 2394
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1864,7 +1864,7 @@
                     "endOffset": 2529
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -1883,7 +1883,7 @@
                     "endOffset": 2639
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -1902,7 +1902,7 @@
                     "endOffset": 2840
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -1921,7 +1921,7 @@
                     "endOffset": 2973
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -1940,7 +1940,7 @@
                     "endOffset": 3108
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -1959,7 +1959,7 @@
                     "endOffset": 3333
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\e3b7f26b7aa14af8279e035344162596c13adee2\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\07f7fdd6b36ae733693502b3a4e46f2b423d0ce9\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1978,7 +1978,7 @@
                     "endOffset": 3567
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -1997,7 +1997,7 @@
                     "endOffset": 3678
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -2016,7 +2016,7 @@
                     "endOffset": 3878
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -2035,7 +2035,7 @@
                     "endOffset": 4015
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -2054,7 +2054,7 @@
                     "endOffset": 4243
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -2073,7 +2073,7 @@
                     "endOffset": 4428
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -2092,7 +2092,7 @@
                     "endOffset": 4522
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -2111,7 +2111,7 @@
                     "endOffset": 4620
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -2130,7 +2130,7 @@
                     "endOffset": 4738
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\9222ff0629685a78ab05ee9d1271c1a0fa732938\\output\\res\\values-lv\\values.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\3f907efb11b2f6e63941c8db9889b3b168078f1b\\output\\res\\values-lv\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -2149,7 +2149,7 @@
                     "endOffset": 4820
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -2168,7 +2168,7 @@
                     "endOffset": 4921
                 },
                 "from": {
-                    "file": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\values-lv\\values-lv.xml",
+                    "file": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
