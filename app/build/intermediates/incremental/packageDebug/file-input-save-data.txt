@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 18 14:09:46 BRST 2017
+#Wed Oct 18 14:40:38 BRST 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\gabriela.barbosa.AD.001\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png
 14.set=ANDROID_RESOURCE
