@@ -66,20 +66,20 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     List<String> Versoes = new ArrayList<String>();
 
     private ScrollView scroll;
-    private TextView nome, ingredientes, tempo, tipo, preparo, autor;
+    private TextView nome, ingredientes, tempo, tipo, preparo, autor, receitaOriginal, receitasFilhas;
     private int posTipo;
     private String idProprio, idDono, idPai;
     private Uri imgUri;
     private ProgressDialog progress;
     private ImageView img;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("Receita");
+    private DatabaseReference receitasRef = database.getReference("Receita");
 
     private DatabaseReference receitaRef, usuarioRef, paiRef;
 
     private DatabaseReference filhaRef = database.getReference("Receita");
-    private RecyclerView recyclerViewFilhas;
-    private RecyclerAdapter adapterFilhas;
+    private RecyclerView recyclerViewFilhas, recyclerViewPai;
+    private RecyclerAdapter adapterFilhas, adapterPai;
 
 
     private FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -111,6 +111,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
         recyclerViewFilhas.setLayoutManager(gridLayoutManager);
+
+        recyclerViewPai = (RecyclerView) findViewById(R.id.recycler_view_pai);
+        GridLayoutManager gridLayoutManager1 = new GridLayoutManager(this, 1);
+        recyclerViewPai.setLayoutManager(gridLayoutManager1);
 
 
         //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -146,6 +150,9 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         preparo = (TextView) findViewById(R.id.tv_preparoReceita_Act_openReceita);
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
         autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
+        receitaOriginal = (TextView) findViewById(R.id.receita_pai_text);
+        receitasFilhas = (TextView) findViewById(R.id.receitas_filhas_text);
+
 
 
         progress = new ProgressDialog(OpenReceitaActivity.this);
@@ -357,15 +364,36 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
 
-        Query busca = filhaRef.orderByChild("idPai").equalTo(idProprio);
-        busca.addValueEventListener(new ValueEventListener() {
+        Query buscaPai = receitasRef.orderByChild("idProprio").equalTo(idPai);
+        buscaPai.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ArrayList<Receita> newList = new ArrayList<>();
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
-
                     newList.add(receita);
+                    receitaOriginal.setText("Receita Original:");
+
+                }
+                adapterPai = new RecyclerAdapter(newList, OpenReceitaActivity.this);
+                recyclerViewPai.setAdapter(adapterPai);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        Query buscaFilhas = receitasRef.orderByChild("idPai").equalTo(idProprio);
+        buscaFilhas.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<Receita> newList = new ArrayList<>();
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
+                    newList.add(receita);
+                    receitasFilhas.setText("aaa:");
 
                 }
                 adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
@@ -445,34 +473,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
 
 
-    /*@Override
-    protected void onStart() {
-        super.onStart();
 
-        /*listDataHeader.add("Versões");
-        Versoes.clear();*//*
-        // Read from the database
-        Query busca = filhaRef.orderByChild("idProprio").equalTo(idProprio);
-        busca.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                ArrayList<Receita> newList = new ArrayList<>();
-                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
-
-                    newList.add(receita);
-
-                }
-                adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
-                recyclerViewFilhas.setAdapter(adapterFilhas);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }*/
     @Override
     public void onClick(View view) {
 
