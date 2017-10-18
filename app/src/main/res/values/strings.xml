@@ -77,4 +77,10 @@
 
     <string name="sobre_title">Sobre os desenvolvedores:</string>
     <string name="minutes">min</string>
+    <string name="title_activity_new_menu">NewMenuActivity</string>
+    <string name="feed">Feed de Notícias</string>
+    <string name="preferencias">Preferências</string>
+    <string name="tabela">Tabela de época</string>
+    <string name="sair">Sair</string>
+    <string name="salvar">Salvar</string>
 </resources>

@@ -1,7 +1,9 @@
 package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -34,6 +36,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
+import static com.example.leonardomoraes.myapplication.R.layout.menu_header;
+
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
     private ArrayList<Receita> receitaArrayList;
@@ -49,9 +55,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     RelativeLayout mDrawerPane;
     private ActionBarDrawerToggle mDrawerToggle;
     protected DrawerLayout mDrawerLayout;
-    private TextView profile;
     private TextView user;
-    private ImageView avatar;
+    private TextView profileTV;
+    private CircleImageView avatar;
 
     ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
 
@@ -60,11 +66,16 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        NavigationView navView = (NavigationView) findViewById(R.id.navView);
+        View headerView = navView.getHeaderView(0);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("Pesquisar");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         receitaArrayList = new ArrayList<>();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -77,8 +88,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        profile = (TextView) findViewById(R.id.desc);
-        profile.setOnClickListener(new View.OnClickListener() {
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        profileTV = (TextView) headerView.findViewById(R.id.profileTV);
+        profileTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PerfilUsuarioActivity.class));
@@ -86,8 +101,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        avatar = (ImageView) findViewById(R.id.avatar);
-        user = (TextView) findViewById(R.id.userName);
+        avatar = (CircleImageView) headerView.findViewById(R.id.avatar);
+        user = (TextView) headerView.findViewById(R.id.userName);
 
         for(UserInfo profile: auth.getCurrentUser().getProviderData()){
             if(profile.getProviderId().equals("facebook.com")) {
@@ -100,50 +115,30 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         }
 
-        //MENU
-        //user.setText(database.getReference("Usuario").child(auth.getCurrentUser().getUid()).child("nomeUsuario").toString());
-        mNavItems.add(new NavItem("Feed de receitas", "Onde estão todas as receitas", R.drawable.ic_home));
-        mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
-        mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
-        mNavItems.add(new NavItem("Sair", "Sair do seu perfil", R.drawable.ic_close));
 
-        // DrawerLayout
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-
-        // Populate the Navigtion Drawer with options
-        mDrawerPane = (RelativeLayout) findViewById(R.id.drawerPane);
-        mDrawerList = (ListView) findViewById(R.id.navList);
-        DrawerListAdapter adapter = new DrawerListAdapter(this, mNavItems);
-        mDrawerList.setAdapter(adapter);
-
-        // Drawer Item click listeners
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                selectItemFromDrawer(position);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int pos = item.getItemId();
+                if(pos == R.id.feed){
+                    //startActivity(new Intent(MainActivity.this, MainActivity.class));
+                    return true;
+                }
+                else if(pos == R.id.preferences){
+                    startActivity(new Intent(MainActivity.this, SobreActivity.class));
+                }
+                else if(pos == R.id.salvar){
+                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
+                }
+                else if(pos == R.id.sair){
+                    auth.signOut();
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }
+                return false;
             }
         });
 
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
-            @Override
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-
-                invalidateOptionsMenu();
-            }
-
-            @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-                Log.d(TAG, "onDrawerClosed: " + getTitle());
-
-                invalidateOptionsMenu();
-            }
-        };
-
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
     }
 
     @Override
@@ -223,7 +218,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public void onBackPressed() {
     }
 
-
+/*
     private void selectItemFromDrawer(int position) {
 
         if(position == 0){
@@ -243,5 +238,5 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
-    }
+    }*/
 }

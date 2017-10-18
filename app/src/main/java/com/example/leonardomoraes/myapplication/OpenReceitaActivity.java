@@ -54,7 +54,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import static com.example.leonardomoraes.myapplication.R.id.parent;
+//import static com.example.leonardomoraes.myapplication.R.id.parent;
 import static com.example.leonardomoraes.myapplication.R.id.version;
 
 public class OpenReceitaActivity extends MainActivity implements View.OnClickListener {

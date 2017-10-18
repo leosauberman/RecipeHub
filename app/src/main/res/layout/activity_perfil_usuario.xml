@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:theme="@style/AppTheme">
 
-    <include layout="@layout/toolbar"/>
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,13 +15,15 @@
         android:id="@+id/profileContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
         tools:context="com.example.leonardomoraes.myapplication.PerfilUsuarioActivity">
 
+        <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="129dp">
+            android:layout_height="129dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/relative">
 
             <TextView
                 android:id="@+id/tv_nome_act_perfil_usuario"
@@ -62,7 +63,8 @@
                 android:text="@string/editar"
                 android:textColor="@android:color/holo_blue_dark" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profileImage"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -70,16 +72,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="46dp"
-                android:layout_weight="1"
                 app:srcCompat="@drawable/googleg_standard_color_18" />
         </RelativeLayout>
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view_usuario"
-            android:layout_width="match_parent"
-            android:layout_height="385dp"
-            android:layout_marginTop="139dp"
-            android:scrollbars="vertical" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_adicionarReceita_Act_perfil"
@@ -94,71 +88,24 @@
             app:layout_anchorGravity="bottom|right"
             android:elevation="6dp"/>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:layout_gravity="bottom"
+            android:scrollbars="vertical" />
+
     </android.support.design.widget.CoordinatorLayout>
 
-    <!--The navigation drawer-->
-    <RelativeLayout
-        android:layout_width="280dp"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/drawerPane"
+        app:menu="@menu/menu_nav"
         android:layout_gravity="start"
-        android:elevation="16dp">
+        app:headerLayout="@layout/menu_header">
 
-        <!--Profile Box-->
+    </android.support.design.widget.NavigationView>
 
-        <RelativeLayout
-            android:id="@+id/profileBox"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/material_blue_grey_800"
-            android:padding="8dp" >
-
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_android" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
-                android:layout_toRightOf="@+id/avatar"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/userName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="User"
-                    android:textColor="#fff"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/desc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginTop="4dp"
-                    android:clickable="true"
-                    android:text="Ver perfil"
-                    android:textColor="#fff"
-                    android:textSize="12sp"
-                    tools:clickable="false" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <ListView
-            android:id="@+id/navList"
-            android:layout_width="280dp"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/profileBox"
-            android:choiceMode="singleChoice"
-            android:background="#ffffffff" />
-
-    </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>
