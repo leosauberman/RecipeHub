@@ -1,6 +1,7 @@
 package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -37,6 +38,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
     private RecyclerAdapter adapterSearch;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference searchRef = database.getReference("Receita");
+    private DatabaseReference userRef = database.getReference("Usuario");
 
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     ListView mDrawerList;
@@ -87,6 +89,26 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
             }
         });
+
+        Query buscanome = userRef.orderByChild("nome").equalTo(query);
+        buscanome.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<User> userList = new ArrayList();
+                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                    User user = userSnapshot.getValue(User.class);
+
+                    userList.add(user);
+                }
+                //adapterSearch = new UserAdapter(userList, SearchActivity.class);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
         //MENU
         mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
