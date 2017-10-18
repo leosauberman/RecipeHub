@@ -24,8 +24,16 @@
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1509\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
     },
     {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
+    },
+    {
         "merged": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add.png",
         "source": "C:\\Users\\gabriela.barbosa\\.AndroidStudio2.2\\RecipeHub2009\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\src\\main\\res\\drawable-hdpi\\recipehub_icon.png"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_2709\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\recipehub_icon.png",
