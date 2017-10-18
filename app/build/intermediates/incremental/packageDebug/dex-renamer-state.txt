@@ -1,7 +1,7 @@
-#Tue Oct 17 17:32:16 BRST 2017
-base.0=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eac198997bfac43fa7a87950dda9563822dd37b5
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ff150950720c8d4b6a936cd1bde60e049524bedc\\classes.dex
-base.1=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ff150950720c8d4b6a936cd1bde60e049524bedc
-file.0=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eac198997bfac43fa7a87950dda9563822dd37b5\\classes.dex
+#Wed Oct 18 14:09:46 BRST 2017
+base.0=C\:\\Users\\gabriela.barbosa.AD.001\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_4a419ad922b52d5061ea3147949f151278496315
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\gabriela.barbosa.AD.001\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_16e27a2811898812da54d60a280708ddf3e17d67\\classes.dex
+base.1=C\:\\Users\\gabriela.barbosa.AD.001\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_16e27a2811898812da54d60a280708ddf3e17d67
+file.0=C\:\\Users\\gabriela.barbosa.AD.001\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_4a419ad922b52d5061ea3147949f151278496315\\classes.dex
