@@ -50,21 +50,21 @@
             android:textColor="@color/white"
             android:textSize="50dp" />
 
-        <EditText
-            android:id="@+id/et_emailLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/colorAccent2"
-            tools:ignore="HardcodedText" />
-
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme">
 
+            <EditText
+                android:id="@+id/et_emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorAccent2"
+                tools:ignore="HardcodedText" />
         </android.support.design.widget.TextInputLayout>
 
 

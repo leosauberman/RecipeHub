@@ -150,8 +150,8 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         preparo = (TextView) findViewById(R.id.tv_preparoReceita_Act_openReceita);
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
         autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
-        receitaOriginal = (TextView) findViewById(R.id.receita_pai_text);
-        receitasFilhas = (TextView) findViewById(R.id.receitas_filhas_text);
+        receitaOriginal = (TextView) findViewById(R.id.receita_original);
+        receitasFilhas = (TextView) findViewById(R.id.receitas_filhas);
 
 
 
@@ -393,7 +393,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
                     newList.add(receita);
-                    receitasFilhas.setText("aaa:");
+                    receitasFilhas.setText("Receitas Filhas:");
 
                 }
                 adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);

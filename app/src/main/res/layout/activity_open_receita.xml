@@ -164,14 +164,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/version"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="version"
-            android:layout_alignBaseline="@+id/delete"
-            android:layout_alignBottom="@+id/delete"
-            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita" />
         <!--android:layout_above="@+id/expand_lv"-->
         <TextView
             android:id="@+id/autor"
@@ -206,21 +198,51 @@
             android:layout_alignBottom="@+id/tv_autor_Act_openReceita"
             android:layout_toStartOf="@+id/version" />
 
-        <TextView
-            android:id="@+id/receitas_filhas_text"
+        <Button
+            android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/ingredientes"
+            android:layout_alignBaseline="@+id/delete"
+            android:layout_alignBottom="@+id/delete"
+            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita"
+            android:text="version" />
+
+        <TextView
+            android:id="@+id/receita_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/autor"
+            android:layout_below="@+id/delete" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_pai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/delete"
-            android:layout_marginTop="300dp" />
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/receitas_filhas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view_pai"
+            android:layout_alignStart="@+id/autor"
+            android:layout_marginTop="13dp" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_filhas"
             android:layout_width="match_parent"
-            android:layout_height="649dp"
-            android:layout_below="@+id/receitas_filhas_text"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view_pai"
+            android:layout_alignStart="@+id/autor"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="37dp" >
+
+        </android.support.v7.widget.RecyclerView>
+
     </RelativeLayout>
 
 </ScrollView>
