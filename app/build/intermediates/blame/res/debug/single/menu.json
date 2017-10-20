@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\src\\main\\res\\menu\\menu_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
         "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub0910\\app\\src\\main\\res\\menu\\menu_item.xml"
     },
