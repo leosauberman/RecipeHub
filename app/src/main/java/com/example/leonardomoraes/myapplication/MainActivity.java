@@ -26,6 +26,8 @@ import android.widget.SearchView;
 
 
 import com.bumptech.glide.Glide;
+import com.facebook.CallbackManager;
+import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.DataSnapshot;
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private TextView profileTV;
     private CircleImageView avatar;
 
+    private CallbackManager callbackManager;
+
     ArrayList<NavItem> mNavItems = new ArrayList<NavItem>();
 
     @Override
@@ -75,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setTitle("Pesquisar");
-
 
         receitaArrayList = new ArrayList<>();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -127,11 +130,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 else if(pos == R.id.preferences){
                     startActivity(new Intent(MainActivity.this, SobreActivity.class));
                 }
-                else if(pos == R.id.salvar){
+                else if(pos == R.id.salvas){
                     //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.sair){
                     auth.signOut();
+                    LoginManager.getInstance().logOut();
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 }
                 return false;

@@ -165,7 +165,7 @@ public class PerfilUsuarioActivity extends MainActivity {
                 else if(pos == R.id.preferences){
                     startActivity(new Intent(PerfilUsuarioActivity.this, SobreActivity.class));
                 }
-                else if(pos == R.id.salvar){
+                else if(pos == R.id.salvas){
                     //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.sair){
