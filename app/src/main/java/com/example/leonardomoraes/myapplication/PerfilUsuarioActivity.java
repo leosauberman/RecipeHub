@@ -1,7 +1,9 @@
 package com.example.leonardomoraes.myapplication;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -31,6 +33,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class PerfilUsuarioActivity extends MainActivity {
 
     private TextView nome, seguidores, seguindo, editar;
@@ -48,7 +52,8 @@ public class PerfilUsuarioActivity extends MainActivity {
     RelativeLayout mDrawerPane;
     private ActionBarDrawerToggle mDrawerToggle;
     protected DrawerLayout mDrawerLayout;
-    private TextView profile;
+    private TextView profileTV;
+    private CircleImageView avatar;
     private TextView user;
     private static String TAG = MainActivity.class.getSimpleName();
 
@@ -59,20 +64,24 @@ public class PerfilUsuarioActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_usuario);
 
+        NavigationView navView = (NavigationView) findViewById(R.id.navView);
+        View headerView = navView.getHeaderView(0);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setTitle("Pesquisar");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         nome = (TextView) findViewById(R.id.tv_nome_act_perfil_usuario);
         seguidores = (TextView) findViewById((R.id.tv_seguidores_act_perfil_usuario));
         seguindo = (TextView) findViewById((R.id.tv_seguindo_act_perfil_usuario));
         editar = (TextView) findViewById(R.id.editar);
 
-        ImageView profileImage = (ImageView) findViewById(R.id.profileImage);
+        CircleImageView profileImage = (CircleImageView) findViewById(R.id.profileImage);
         for(UserInfo profile: auth.getCurrentUser().getProviderData()){
             if(profile.getProviderId().equals("facebook.com")) {
-                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(profileImage);
+                Glide.with(PerfilUsuarioActivity.this).load(auth.getCurrentUser().getPhotoUrl()).into(profileImage);
                 nome.setText(auth.getCurrentUser().getDisplayName());
             }
             else {
@@ -119,36 +128,20 @@ public class PerfilUsuarioActivity extends MainActivity {
 
         recyclerView1.setLayoutManager(gridLayoutManager);
 
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
-        //MENU
-        mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
-        mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
-        mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
-        mNavItems.add(new NavItem("Sair", "Sair do seu perfil", R.drawable.ic_close));
-
-        // DrawerLayout
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-
-        // Populate the Navigtion Drawer with options
-        mDrawerPane = (RelativeLayout) findViewById(R.id.drawerPane);
-        mDrawerList = (ListView) findViewById(R.id.navList);
-        DrawerListAdapter adapter = new DrawerListAdapter(this, mNavItems);
-        mDrawerList.setAdapter(adapter);
-
-        profile = (TextView) findViewById(R.id.desc);
-        profile.setOnClickListener(new View.OnClickListener() {
+        profileTV = (TextView) headerView.findViewById(R.id.profileTV);
+        profileTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(PerfilUsuarioActivity.this, PerfilUsuarioActivity.class));
                 return;
-
             }
         });
 
-        ImageView avatar = (ImageView) findViewById(R.id.avatar);
-        user = (TextView) findViewById(R.id.userName);
+        avatar = (CircleImageView) headerView.findViewById(R.id.avatar);
+        user = (TextView) headerView.findViewById(R.id.userName);
 
         for(UserInfo profile: auth.getCurrentUser().getProviderData()){
             if(profile.getProviderId().equals("facebook.com")) {
@@ -161,34 +154,27 @@ public class PerfilUsuarioActivity extends MainActivity {
             }
         }
 
-        // Drawer Item click listeners
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                selectItemFromDrawer(position);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int pos = item.getItemId();
+                if(pos == R.id.feed){
+                    startActivity(new Intent(PerfilUsuarioActivity.this, MainActivity.class));
+                }
+                else if(pos == R.id.preferences){
+                    startActivity(new Intent(PerfilUsuarioActivity.this, SobreActivity.class));
+                }
+                else if(pos == R.id.salvar){
+                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
+                }
+                else if(pos == R.id.sair){
+                    auth.signOut();
+                    startActivity(new Intent(PerfilUsuarioActivity.this, LoginActivity.class));
+                }
+                return false;
             }
         });
-
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
-            @Override
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-
-                invalidateOptionsMenu();
-            }
-
-            @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-                Log.d(TAG, "onDrawerClosed: " + getTitle());
-
-                invalidateOptionsMenu();
-            }
-        };
-
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-
-
 
     }
 
@@ -197,32 +183,6 @@ public class PerfilUsuarioActivity extends MainActivity {
         super.onBackPressed();
         startActivity(new Intent(this, MainActivity.class));
     }
-
-    /*private void selectItemFromDrawer(int position) {
-        Fragment fragment = new PreferencesFragment();
-
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.openContent, fragment)
-                .commit();
-
-        if(position == 3){
-            auth.signOut();
-            startActivity(new Intent(this, LoginActivity.class));
-        }
-
-        mDrawerList.setItemChecked(position, true);
-        setTitle(mNavItems.get(position).mTitle);
-
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        editor.putInt("position", position);
-        editor.commit();
-
-        // Close the drawer
-        mDrawerLayout.closeDrawer(mDrawerPane);
-    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -262,25 +222,6 @@ public class PerfilUsuarioActivity extends MainActivity {
         return false;
     }
 
-    private void selectItemFromDrawer(int position) {
-
-        if(position == 0){
-            startActivity(new Intent(this, MainActivity.class));
-        }
-        else if(position == 2){
-            startActivity(new Intent(this, SobreActivity.class));
-        }
-        else if(position == 3){
-            auth.signOut();
-            startActivity(new Intent(this, LoginActivity.class));
-        }
-
-        mDrawerList.setItemChecked(position, true);
-        //setTitle(mNavItems.get(position).mTitle);
-
-        // Close the drawer
-        mDrawerLayout.closeDrawer(mDrawerPane);
-    }
 
 
 }

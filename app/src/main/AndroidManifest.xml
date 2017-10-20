@@ -34,7 +34,6 @@
         <activity android:name=".PerfilUsuarioActivity" />
         <activity android:name=".VersionamentoActivity" />
         <activity android:name=".SobreActivity" />
-
     </application>
 
 </manifest>

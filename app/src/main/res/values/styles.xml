@@ -16,7 +16,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name= "criarReceita" parent="AppTheme">
+    <style name="criarReceita" parent="AppTheme">
         <item name="colorControlActivated">#000000</item>
         <item name="colorControlNormal">#000000</item>
         <item name="android:textColorHint">#000000</item>

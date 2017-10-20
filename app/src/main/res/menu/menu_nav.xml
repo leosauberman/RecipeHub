@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feed"
+        android:title="@string/feed"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/preferences"
+        android:title="@string/preferencias"
+        android:icon="@drawable/ic_action_settings"/>
+    <item
+        android:id="@+id/salvar"
+        android:title="@string/salvar"
+        android:icon="@drawable/ic_star"/>
+    <item
+        android:id="@+id/sair"
+        android:title="@string/sair"
+        android:icon="@drawable/ic_close"/>
+
+</menu>
