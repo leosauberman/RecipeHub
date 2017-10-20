@@ -58,6 +58,7 @@ public class SignupActivity extends AppCompatActivity {
 
                         if(!task.isSuccessful()){
                             Toast.makeText(SignupActivity.this, "Auth Failed. Maybe you're already registered.", Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
                         }else{
                             onAuthenticationSuccess(task.getResult().getUser());
                         }

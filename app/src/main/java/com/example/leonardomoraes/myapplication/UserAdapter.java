@@ -40,13 +40,17 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference mref = database.getReference("Seguidas");
     String user;
+    String userName;
+    String userId;
+    String userEmail;
+    String userImage;
+    String userNomeEmail;
 
     public UserAdapter(ArrayList<User> users, Context context) {
         list = users;
         this.context = context;
     }
 
-    @Override
     public UserAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_perfil_usuario, parent, false));
     }

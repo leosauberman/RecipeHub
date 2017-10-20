@@ -32,12 +32,12 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\554ddaa1217ea9a1fc3859e0aaae8af8e8b782fc\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\ddda69af777482fa5e0e6e14daaf51ec2865abff\\output\\res\\color\\com_facebook_button_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\color\\design_error.xml"
-    },
-    {
         "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
         "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\color\\design_error.xml"
     },
     {
         "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
