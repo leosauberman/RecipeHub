@@ -142,7 +142,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
     }
 
     @Override

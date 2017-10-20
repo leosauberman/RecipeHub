@@ -291,7 +291,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
             }
         });
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         /*listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
@@ -348,8 +348,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                 return false;
             }
         });*/
-
-
 
 
         Query busca = filhaRef.orderByChild("idPai").equalTo(idProprio);

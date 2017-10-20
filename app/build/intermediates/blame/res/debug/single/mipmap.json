@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\recipehub_icon.png",
+        "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\src\\main\\res\\mipmap\\recipehub_icon.png"
+    },
+    {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\mipmap\\ic_launcher_web.png",
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\src\\main\\res\\mipmap\\ic_launcher_web.png"
     }
