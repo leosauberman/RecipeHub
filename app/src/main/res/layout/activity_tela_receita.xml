@@ -35,6 +35,7 @@
             android:id="@+id/et_nomeReceita_Act_telaReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:ems="10"
             android:textColorHint="#c4c4c4"
             android:hint="Nome" />
@@ -60,6 +61,7 @@
         android:ems="10"
         android:hint="@string/ingredient_description"
         android:inputType="textMultiLine"
+        android:textColor="@color/black"
         android:textColorHint="@color/input_login_hint"
         android:textSize="18sp" />
 
@@ -81,6 +83,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_below="@+id/tv_tempoReceita_Act_telaReceita"
         android:layout_alignEnd="@+id/tv_tempoReceita_Act_telaReceita"
+        android:textColor="@color/black"
         android:layout_marginTop="14dp" />
 
     <RadioGroup
@@ -145,6 +148,7 @@
         android:layout_below="@+id/tv_preparoReceita_Act_telaReceita"
         android:layout_margin="12dp"
         android:gravity="top"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="textMultiLine"
         android:scrollbarAlwaysDrawVerticalTrack="true" />

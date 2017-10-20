@@ -250,8 +250,7 @@ public class TelaReceita extends AppCompatActivity {
             return true;
         }
         else {
-            final AlertDialog alertDialog = new AlertDialog.Builder(
-                    TelaReceita.this).create();
+            final AlertDialog alertDialog = new AlertDialog.Builder(TelaReceita.this, R.style.alertDialog).create();
 
             // Setting Dialog Title
             alertDialog.setTitle("E a foto?");
