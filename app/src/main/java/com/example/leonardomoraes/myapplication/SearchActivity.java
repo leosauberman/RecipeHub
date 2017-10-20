@@ -36,6 +36,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
     private RecyclerView recyclerViewSearch;
     private RecyclerAdapter adapterSearch;
+    private UserAdapter adapterUserSearch;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference searchRef = database.getReference("Receita");
     private DatabaseReference userRef = database.getReference("Usuario");
@@ -70,6 +71,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         String query = intent.getExtras().getString("query");
 
         Query busca = searchRef.orderByChild("nome").equalTo(query);
+        System.out.println(query);
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -100,7 +102,8 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
                     userList.add(user);
                 }
-                //adapterSearch = new UserAdapter(userList, SearchActivity.class);
+                adapterUserSearch = new UserAdapter(userList, SearchActivity.this);
+                recyclerViewSearch.setAdapter(adapterUserSearch);
             }
 
             @Override

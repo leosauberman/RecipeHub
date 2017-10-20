@@ -1,4 +1,7 @@
-#Wed Oct 18 11:17:18 BRST 2017
-base.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Thu Oct 19 23:56:13 BRST 2017
+base.0=C\:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6ad77726bfbf29f4c854172a3b9edac6822c4fac
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7aa22083e3c860f6ede3f0a823672e1f6e5d2fe5\\classes.dex
+base.1=C\:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7aa22083e3c860f6ede3f0a823672e1f6e5d2fe5
+file.0=C\:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6ad77726bfbf29f4c854172a3b9edac6822c4fac\\classes.dex
