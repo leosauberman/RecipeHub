@@ -20,12 +20,12 @@
         "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_0310\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
-        "source": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\layout\\messenger_button_send_white_small.xml"
-    },
-    {
         "merged": "C:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
         "source": "C:\\Users\\aiko.oliveira\\.android\\build-cache\\ddda69af777482fa5e0e6e14daaf51ec2865abff\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_0310\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\layout\\messenger_button_send_white_small.xml"
     },
     {
         "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_0310\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
@@ -60,16 +60,16 @@
         "source": "C:\\Users\\ADM\\.android\\build-cache\\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\\output\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
-        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
         "source": "C:\\Users\\aiko2\\.android\\build-cache\\96bbaf09d58e6b4a44eb73a7aa6b0aaed80c1525\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
@@ -108,12 +108,12 @@
         "source": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_0310\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\ADM\\.android\\build-cache\\53d80233b63cd62dfccc478ae61dc0e80ee08a96\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_0310\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -152,12 +152,12 @@
         "source": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\src\\main\\res\\layout\\main.xml"
     },
     {
-        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\aiko2\\Documents\\projetos\\RecipeHub\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\aiko2\\.android\\build-cache\\66be7fe327b36cbc03dba696fc4d2e13bdd7f70b\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_0410\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
