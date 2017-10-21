@@ -54,8 +54,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+/*
 import static com.example.leonardomoraes.myapplication.R.id.parent;
 import static com.example.leonardomoraes.myapplication.R.id.version;
+*/
 
 public class OpenReceitaActivity extends MainActivity implements View.OnClickListener {
 
@@ -325,6 +327,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
         user = (TextView) findViewById(R.id.userName);
+        user.setText(auth.getCurrentUser().getDisplayName());
 
         for(UserInfo profile: auth.getCurrentUser().getProviderData()){
             if(profile.getProviderId().equals("facebook.com")) {
@@ -470,9 +473,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
     }
-
-
-
 
     @Override
     public void onClick(View view) {

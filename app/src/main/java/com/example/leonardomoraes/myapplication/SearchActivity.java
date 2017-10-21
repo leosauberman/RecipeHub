@@ -41,8 +41,10 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
     private RecyclerView recyclerViewSearch;
     private RecyclerAdapter adapterSearch;
+    private UserAdapter adapterUserSearch;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference searchRef = database.getReference("Receita");
+    private DatabaseReference userRef = database.getReference("Usuario");
 
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     ListView mDrawerList;
@@ -80,6 +82,8 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         String query = intent.getExtras().getString("query");
 
         Query busca = searchRef.orderByChild("nome").startAt(query).endAt(query + "\uf8ff");
+        //Query busca = searchRef.orderByChild("nome").equalTo(query);
+        System.out.println(query);
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -99,6 +103,27 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
             }
         });
+
+        Query buscanome = userRef.orderByChild("nome").equalTo(query);
+        buscanome.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<User> userList = new ArrayList();
+                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                    User user = userSnapshot.getValue(User.class);
+
+                    userList.add(user);
+                }
+                adapterUserSearch = new UserAdapter(userList, SearchActivity.this);
+                recyclerViewSearch.setAdapter(adapterUserSearch);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
         //MENU
         mDrawerLayout.addDrawerListener(mDrawerToggle);

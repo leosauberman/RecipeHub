@@ -118,7 +118,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         }
 
-
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -142,6 +141,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
