@@ -71,6 +71,18 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_tempoReceita_Act_openReceita"
+            android:layout_toEndOf="@+id/tv_tempoReceita_Act_openReceita"
+            android:paddingStart="1dp"
+            android:text="@string/minutes"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/preparo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,28 +209,53 @@
             android:layout_alignBottom="@+id/version"
             android:layout_toStartOf="@+id/version" />
 
+        <Button
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/delete"
+            android:layout_alignBottom="@+id/delete"
+            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita"
+            android:text="version" />
+
+        <TextView
+            android:id="@+id/receita_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/autor"
+            android:layout_below="@+id/delete" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_pai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/receitas_filhas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view_pai"
+            android:layout_alignStart="@+id/autor"
+            android:layout_marginTop="13dp" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_filhas"
             android:layout_width="match_parent"
-            android:layout_height="649dp"
-            android:layout_below="@+id/tv_preparoReceita_Act_openReceita"
-            android:layout_alignParentStart="true" />
-
-<!--android:scrollbars="vertical"-->
-
-        <TextView
-            android:id="@+id/minutes"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/tv_tempoReceita_Act_openReceita"
-            android:layout_toEndOf="@+id/tv_tempoReceita_Act_openReceita"
-            android:text="@string/minutes"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingStart="1dp"/>
+            android:layout_below="@+id/recycler_view_pai"
+            android:layout_alignStart="@+id/autor"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp" >
+
+        </android.support.v7.widget.RecyclerView>
 
     </RelativeLayout>
+
 </ScrollView>
 
     <android.support.design.widget.NavigationView

@@ -1,110 +1,110 @@
 [
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_btn_checkable.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_spinner.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_default.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\3b91e27c071ab63c0815e41f29e5b0ebcd1ef5f2\\output\\res\\color\\com_facebook_send_button_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\6ca6974e8f61d02f8625b2a4124b12f948e328ea\\output\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_btn_colored_text_material.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c8eb2778c1090281b8431a42b0665347190a33e8\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_edittext.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\color\\design_tint_password_toggle.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\3b91e27c071ab63c0815e41f29e5b0ebcd1ef5f2\\output\\res\\color\\com_facebook_button_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c8eb2778c1090281b8431a42b0665347190a33e8\\output\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_switch_thumb.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\f62a5e85fc184de0256411cd22bb622330b7ed23\\output\\res\\color\\com_facebook_send_button_text_color.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\f62a5e85fc184de0256411cd22bb622330b7ed23\\output\\res\\color\\com_facebook_button_text_color.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\01491fb7ec441021a2aecaba77cf966eb86395c3\\output\\res\\color\\design_error.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\01491fb7ec441021a2aecaba77cf966eb86395c3\\output\\res\\color\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\1d71d3b389ce6470edd1e2072bd7fc193d78a8a8\\output\\res\\color\\design_error.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\6ca6974e8f61d02f8625b2a4124b12f948e328ea\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\6ca6974e8f61d02f8625b2a4124b12f948e328ea\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c8eb2778c1090281b8431a42b0665347190a33e8\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "C:\\Users\\leonardo.moraes\\AndroidStudioProjects\\RecipeHub_1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "C:\\Users\\leonardo.moraes\\.android\\build-cache\\d2c47915e4b8e217fc67df5c850bcc2eaffefad1\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "C:\\Users\\pedro.kuchpil\\AndroidStudioProjects\\RecipeHub1810\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\pedro.kuchpil\\.android\\build-cache\\c705934bc4e72de28c703c77fa67b1ef5e09352c\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     }
 ]

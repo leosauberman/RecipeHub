@@ -10,8 +10,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -56,9 +54,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-//import static com.example.leonardomoraes.myapplication.R.id.parent;
-import de.hdodenhof.circleimageview.CircleImageView;
-
+import static com.example.leonardomoraes.myapplication.R.id.parent;
 import static com.example.leonardomoraes.myapplication.R.id.version;
 
 public class OpenReceitaActivity extends MainActivity implements View.OnClickListener {
@@ -70,20 +66,20 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
     List<String> Versoes = new ArrayList<String>();
 
     private ScrollView scroll;
-    private TextView nome, ingredientes, tempo, tipo, preparo, autor;
+    private TextView nome, ingredientes, tempo, tipo, preparo, autor, receitaOriginal, receitasFilhas;
     private int posTipo;
     private String idProprio, idDono, idPai;
     private Uri imgUri;
     private ProgressDialog progress;
     private ImageView img;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference("Receita");
+    private DatabaseReference receitasRef = database.getReference("Receita");
 
     private DatabaseReference receitaRef, usuarioRef, paiRef;
 
     private DatabaseReference filhaRef = database.getReference("Receita");
-    private RecyclerView recyclerViewFilhas;
-    private RecyclerAdapter adapterFilhas;
+    private RecyclerView recyclerViewFilhas, recyclerViewPai;
+    private RecyclerAdapter adapterFilhas, adapterPai;
 
 
     private FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -107,18 +103,18 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_receita);
 
-        NavigationView navView = (NavigationView) findViewById(R.id.navView);
-        View headerView = navView.getHeaderView(0);
-
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("Pesquisar");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
         recyclerViewFilhas.setLayoutManager(gridLayoutManager);
+
+        recyclerViewPai = (RecyclerView) findViewById(R.id.recycler_view_pai);
+        GridLayoutManager gridLayoutManager1 = new GridLayoutManager(this, 1);
+        recyclerViewPai.setLayoutManager(gridLayoutManager1);
 
 
         //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -154,6 +150,9 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         preparo = (TextView) findViewById(R.id.tv_preparoReceita_Act_openReceita);
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
         autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
+        receitaOriginal = (TextView) findViewById(R.id.receita_original);
+        receitasFilhas = (TextView) findViewById(R.id.receitas_filhas);
+
 
 
         progress = new ProgressDialog(OpenReceitaActivity.this);
@@ -243,56 +242,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
 
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-        mDrawerToggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        profile = (TextView) headerView.findViewById(R.id.profileTV);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(OpenReceitaActivity.this, PerfilUsuarioActivity.class));;
-            }
-        });
-
-        CircleImageView avatar = (CircleImageView) headerView.findViewById(R.id.avatar);
-        user = (TextView) headerView.findViewById(R.id.userName);
-
-        for(UserInfo profile: auth.getCurrentUser().getProviderData()){
-            if(profile.getProviderId().equals("facebook.com")) {
-                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
-                user.setText(auth.getCurrentUser().getDisplayName());
-            }
-            else {
-                Glide.with(this).load(R.drawable.profilepic).into(avatar);
-                user.setText(auth.getCurrentUser().getEmail());
-            }
-        }
-
-
-        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int pos = item.getItemId();
-                if(pos == R.id.feed){
-                    startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
-                }
-                else if(pos == R.id.preferences){
-                    startActivity(new Intent(OpenReceitaActivity.this, SobreActivity.class));
-                }
-                else if(pos == R.id.salvas){
-                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
-                }
-                else if(pos == R.id.sair){
-                    auth.signOut();
-                    startActivity(new Intent(OpenReceitaActivity.this, LoginActivity.class));
-                }
-                return false;
-            }
-        });
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         /*listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
@@ -350,15 +299,101 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         });*/
 
 
-        Query busca = filhaRef.orderByChild("idPai").equalTo(idProprio);
-        busca.addValueEventListener(new ValueEventListener() {
+        //MENU
+        mNavItems.add(new NavItem("Feed de receitas", "Onde estão toas as receitas", R.drawable.ic_home));
+        mNavItems.add(new NavItem("Preferências", "Altere suas preferências", R.drawable.ic_action_settings));
+        mNavItems.add(new NavItem("Sobre", "Conheça os desenvolvedores", R.drawable.ic_action_about));
+        mNavItems.add(new NavItem("Sair", "Sair do seu perfil", R.drawable.ic_close));
+
+        // DrawerLayout
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+
+        // Populate the Navigtion Drawer with options
+        mDrawerPane = (RelativeLayout) findViewById(R.id.drawerPane);
+        mDrawerList = (ListView) findViewById(R.id.navList);
+        DrawerListAdapter adapter = new DrawerListAdapter(this, mNavItems);
+        mDrawerList.setAdapter(adapter);
+
+        profile = (TextView) findViewById(R.id.desc);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OpenReceitaActivity.this, PerfilUsuarioActivity.class));
+
+            }
+        });
+
+        ImageView avatar = (ImageView) findViewById(R.id.avatar);
+        user = (TextView) findViewById(R.id.userName);
+
+        for(UserInfo profile: auth.getCurrentUser().getProviderData()){
+            if(profile.getProviderId().equals("facebook.com")) {
+                Glide.with(this).load(auth.getCurrentUser().getPhotoUrl()).into(avatar);
+                user.setText(auth.getCurrentUser().getDisplayName());
+            }
+            else {
+                Glide.with(this).load(R.drawable.profilepic).into(avatar);
+                user.setText(auth.getCurrentUser().getEmail());
+            }
+        }
+
+        // Drawer Item click listeners
+        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                selectItemFromDrawer(position);
+            }
+        });
+
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+
+                invalidateOptionsMenu();
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+                Log.d(TAG, "onDrawerClosed: " + getTitle());
+
+                invalidateOptionsMenu();
+            }
+        };
+
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+
+        Query buscaPai = receitasRef.orderByChild("idProprio").equalTo(idPai);
+        buscaPai.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ArrayList<Receita> newList = new ArrayList<>();
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
-
                     newList.add(receita);
+                    receitaOriginal.setText("Receita Original:");
+
+                }
+                adapterPai = new RecyclerAdapter(newList, OpenReceitaActivity.this);
+                recyclerViewPai.setAdapter(adapterPai);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        Query buscaFilhas = receitasRef.orderByChild("idPai").equalTo(idProprio);
+        buscaFilhas.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<Receita> newList = new ArrayList<>();
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
+                    newList.add(receita);
+                    receitasFilhas.setText("Receitas Filhas:");
 
                 }
                 adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
@@ -438,34 +473,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
 
 
-    /*@Override
-    protected void onStart() {
-        super.onStart();
 
-        /*listDataHeader.add("Versões");
-        Versoes.clear();*//*
-        // Read from the database
-        Query busca = filhaRef.orderByChild("idProprio").equalTo(idProprio);
-        busca.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                ArrayList<Receita> newList = new ArrayList<>();
-                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
-
-                    newList.add(receita);
-
-                }
-                adapterFilhas = new RecyclerAdapter(newList, OpenReceitaActivity.this);
-                recyclerViewFilhas.setAdapter(adapterFilhas);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }*/
     @Override
     public void onClick(View view) {
 

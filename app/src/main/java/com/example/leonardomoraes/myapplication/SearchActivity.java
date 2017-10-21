@@ -79,7 +79,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         Intent intent = getIntent();
         String query = intent.getExtras().getString("query");
 
-        Query busca = searchRef.orderByChild("nome").equalTo(query);
+        Query busca = searchRef.orderByChild("nome").startAt(query).endAt(query + "\uf8ff");
         busca.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

@@ -3,111 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\df7891e665f2a30d573f3bec5984521392a93726\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b38d9bc4fc9a4f8674864caecc0034bc85e2865\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\f62a5e85fc184de0256411cd22bb622330b7ed23\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e09663005d70dcedff0bb77211b9ac52d8b69421">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_f4bd422dea24800c94106aed367634f5a06d05d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\6f0ce61616fb4396a1931d10f07bbcf52ffbf969\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="183fcbfcca75b095b63125f5e31ebd8b5f5f3216">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_7b40884bb7f528427eb952d03f75db383cdf0a27.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_ca3ac6be273dea68ca7bc67aed33bc2716272765.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\pedro.kuchpil\AndroidStudioProjects\RecipeHub1810\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_12100bfcc908d0c1b452fc46d2c989db32c32e7a\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\7d1e175cc49d0d2679e4fc5ff8660232ab4a1ce2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_8a409132bb8426c018bb65cfa198f3d80a6dd8a0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_41e75dc7afcd76fcf5dbffbce9ab1194858d5646.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\829223a05a6a5db60aaa9cce985106289b16f465\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d4ba7399a1a4f5c998b5ce4f6bf33a2e8347820c">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_156696e86146230d756d4a521d88b3303ee4c46b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\core-3.3.0_9bb106d5d161b416233f10ec157f3a71d954618e.jar" />
+        <dex dex="C:\Users\pedro.kuchpil\AndroidStudioProjects\RecipeHub1810\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_86f9a28a7058a910fd4b89c595d2d0d64170fc3f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\pedro.kuchpil\AndroidStudioProjects\RecipeHub1810\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="356bc06ae9ae3b3b37975addd324fff8f0c6d8c7">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_979fece7f59d3b532c8240be209bd82ca6073070\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\1ffb41c6b87ad629d21c54e212c88795922538e0\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="90095b555b72205db6f9b93aca3cb9978d1e3344">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_474dfa195c9ea06bdf3ef12140ce20c0f49a14c7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\leonardo.moraes\.android\build-cache\c3c9a1004bcf706f9dd62035c245ff0c51953155\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="807751a24cf96566fd8675517c94d8463cf364db">
-        <dex dex="C:\Users\leonardo.moraes\AndroidStudioProjects\RecipeHub_1810\app\build\intermediates\pre-dexed\debug\classes_f0a8f30e55b4cbabacd7bf9748186354ffb1657f.jar" />
+        sha1="cb22066c615aeccedf8165679e8d2fea26838d5a">
+        <dex dex="C:\Users\pedro.kuchpil\AndroidStudioProjects\RecipeHub1810\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2756e18f44ce1f4ad416a2ca1d6b35593baecb82\classes.dex" />
     </item>
 
 </items>
