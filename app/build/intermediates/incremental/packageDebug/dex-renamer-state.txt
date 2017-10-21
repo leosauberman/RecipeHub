@@ -1,4 +1,7 @@
-#Fri Oct 20 15:14:59 BRST 2017
-base.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\aiko.oliveira\\projeto\\RecipeHub77\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Sat Oct 21 15:35:33 BRST 2017
+base.0=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eac198997bfac43fa7a87950dda9563822dd37b5
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ff150950720c8d4b6a936cd1bde60e049524bedc\\classes.dex
+base.1=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ff150950720c8d4b6a936cd1bde60e049524bedc
+file.0=C\:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eac198997bfac43fa7a87950dda9563822dd37b5\\classes.dex

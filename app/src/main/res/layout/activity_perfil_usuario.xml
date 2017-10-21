@@ -88,14 +88,13 @@
             app:layout_anchorGravity="bottom|right"
             android:elevation="6dp"/>
 
-            <Button
+        <Button
                 android:id="@+id/tv_botao_seguir_act_perfil_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/editar"
                 android:layout_centerVertical="true"
                 android:text="Seguir" />
-        </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_usuario"
