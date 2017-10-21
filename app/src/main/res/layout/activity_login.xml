@@ -24,22 +24,22 @@
         android:padding="@dimen/activity_horizontal_margin"
         tools:ignore="RtlHardcoded"
         android:weightSum="1"
-        android:layout_below="@+id/progressBar"
-        android:layout_alignParentStart="true">
+        android:layout_below="@+id/progressBar">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true">
 
-                <ImageView
-                    android:id="@+id/logo"
-                    android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:layout_centerHorizontal="true"
-                    app:srcCompat="@mipmap/ic_launcher2" />
 
-                <TextView
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/ic_launcher2" />
+
+            <TextView
                     android:id="@+id/tv_titulo_Act_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -139,13 +139,13 @@
                 android:id="@+id/login_button"
                 android:padding="8dp"
                 android:gravity="bottom"
+                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="11dp" />
+                android:layout_below="@+id/bt_signUp_Act_login"/>
 
         </RelativeLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

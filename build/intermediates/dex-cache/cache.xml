@@ -3,39 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="51011c0e3fbaccabff5e00d3408489cad8b3c9fa">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ff150950720c8d4b6a936cd1bde60e049524bedc\classes.dex" />
+        sha1="975627b7092e5f1948289c6b87da40d4a8a497a8">
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8114c82d1347514f678f0d0bf083b0799e153fbb\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_eac198997bfac43fa7a87950dda9563822dd37b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\fd8a25fcaefc2e6d21180a9c7d326eb20ba145cb\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="183fcbfcca75b095b63125f5e31ebd8b5f5f3216">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a8ebba99f9ac5bc00b1a558e9f9c74c8ebfbb66e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ADM\.android\build-cache\bda9485216c03f202315c448606ab16fc6a8c29d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
-        <dex dex="C:\Users\ADM\Documents\Android_Projects\RecipeHub_1710\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1b43f112a96779ffa12cd6f1ceb119ff3a871322\classes.dex" />
+        <dex dex="C:\Users\gapeb\Downloads\RecipeHub-alternative\RecipeHub1610\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_79d571070191a33e4c5d7cae471329ed6f64e690\classes.dex" />
     </item>
 
 </items>

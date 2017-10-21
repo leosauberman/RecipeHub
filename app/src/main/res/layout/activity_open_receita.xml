@@ -18,79 +18,31 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/openContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scrollbars="vertical"
         tools:context="com.example.leonardomoraes.myapplication.OpenReceitaActivity">
-        <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
 
 
         <ImageView
             android:id="@+id/imageView_Act_openReceita"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="70dp"
-            app:srcCompat="@android:drawable/ic_menu_gallery"
-            android:layout_marginTop="57dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_below="@id/toolbar"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
 
         <TextView
             android:id="@+id/nome"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView_Act_openReceita"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:text="@string/nome_receita"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/ingredientes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/nome"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="18dp"
-            android:text="@string/ingredientes"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tempo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/ingredientes"
-            android:layout_below="@+id/tv_ingredientesReceita_Act_openReceita"
-            android:layout_marginTop="12dp"
-            android:text="@string/tempo"
-            android:textColor="#ff000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/minutes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/tv_tempoReceita_Act_openReceita"
-            android:layout_toEndOf="@+id/tv_tempoReceita_Act_openReceita"
-            android:paddingStart="1dp"
-            android:text="@string/minutes"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/preparo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tempo"
-            android:layout_below="@+id/tempo"
-            android:layout_marginTop="30dp"
-            android:text="@string/preparo"
-            android:textColor="#ff000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -98,42 +50,76 @@
             android:id="@+id/tv_nomeReceita_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nome"
             android:layout_alignBottom="@+id/nome"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@+id/nome"
+            android:layout_alignEnd="@+id/preparo"
             android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/ingredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nomeReceita_Act_openReceita"
+            android:layout_margin="10dp"
+            android:text="@string/ingredientes"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/tv_ingredientesReceita_Act_openReceita"
-            android:layout_width="210dp"
-            android:layout_height="110dp"
-            android:layout_alignTop="@+id/ingredientes"
-            android:layout_marginStart="130dp"
-            android:text="TextView"
-            android:textAlignment="viewStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nome"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/ingredientes"
+            android:text="texteview"
             android:textColor="#000000"
             android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredientes"
+            android:layout_margin="10dp"
+            android:text="@string/tempo"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_tempoReceita_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/tempo"
-            android:layout_marginStart="10dp"
+            android:layout_alignBaseline="@+id/tempo"
+            android:layout_alignBottom="@+id/tempo"
             android:layout_toEndOf="@+id/tempo"
             android:text="TextView"
             android:textColor="#000000"
             android:textSize="18sp" />
 
+
+        <TextView
+            android:id="@+id/preparo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempo"
+            android:layout_margin="10dp"
+            android:text="@string/preparo"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv_preparoReceita_Act_openReceita"
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:layout_alignStart="@+id/preparo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/preparo"
-            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
             android:fadeScrollbars="false"
             android:scrollbars="vertical"
             android:text="TextView"
@@ -144,10 +130,8 @@
             android:id="@+id/tipo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/tv_tempoReceita_Act_openReceita"
-            android:layout_alignBottom="@+id/tv_tempoReceita_Act_openReceita"
-            android:layout_marginStart="26dp"
-            android:layout_toEndOf="@+id/minutes"
+            android:layout_below="@+id/tv_preparoReceita_Act_openReceita"
+            android:layout_margin="10dp"
             android:text="Tipo:"
             android:textColor="#000000"
             android:textSize="18sp"
@@ -157,102 +141,89 @@
             android:id="@+id/tv_tipoReceita_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tipo"
             android:layout_alignBottom="@+id/tipo"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"
             android:layout_toEndOf="@+id/tipo"
             android:text="TextView"
             android:textColor="#000000"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/version"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:text="version"
-            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita" />
         <!--android:layout_above="@+id/expand_lv"-->
         <TextView
             android:id="@+id/autor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tipoReceita_Act_openReceita"
+            android:layout_margin="10dp"
             android:text="Autor: "
             android:textColor="#000000"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/nome"
-            android:layout_alignStart="@+id/ingredientes" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_autor_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/autor"
             android:layout_alignBottom="@+id/autor"
             android:layout_toEndOf="@+id/autor"
             android:text="TextView"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:layout_alignTop="@+id/autor" />
+            android:textSize="18sp" />
 
 
         <Button
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/version"
+            android:background="@null"
             android:text="DEL"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:layout_alignBaseline="@+id/version"
-            android:layout_alignBottom="@+id/version"
-            android:layout_toStartOf="@+id/version" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/delete"
-            android:layout_alignBottom="@+id/delete"
-            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita"
+            android:layout_alignEnd="@+id/nome"
+            android:layout_alignParentTop="true"
+            android:background="@null"
             android:text="version" />
 
-        <TextView
-            android:id="@+id/receita_original"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/autor"
-            android:layout_below="@+id/delete" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view_pai"
+        <ExpandableListView
+            android:id="@+id/expList"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/delete"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="20dp" >
+            android:layout_height="match_parent"
+            android:layout_below="@id/autor"/>
 
-        </android.support.v7.widget.RecyclerView>
+        <!--<TextView-->
+        <!--android:id="@+id/receita_original"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/version" />-->
 
-        <TextView
-            android:id="@+id/receitas_filhas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recycler_view_pai"
-            android:layout_alignStart="@+id/autor"
-            android:layout_marginTop="13dp" />
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view_pai"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/delete"-->
+        <!--android:layout_below="@+id/nome"-->
+        <!--android:layout_marginStart="15dp">-->
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view_filhas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recycler_view_pai"
-            android:layout_alignStart="@+id/autor"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="37dp" >
+        <!--</android.support.v7.widget.RecyclerView>-->
 
-        </android.support.v7.widget.RecyclerView>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view_filhas"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/autor"-->
+        <!--android:layout_alignStart="@+id/autor"-->
+        <!--android:layout_marginStart="13dp"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
 
     </RelativeLayout>
 
