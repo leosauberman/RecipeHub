@@ -10,29 +10,27 @@
     card_view:contentPadding="20dp">
 
     <RelativeLayout
-        android:layout_width="351dp"
-        android:layout_height="93dp">
+        android:layout_width="340dp"
+        android:layout_height="110dp">
 
         <ImageView
             android:id="@+id/imageView_Act_recyclerChild"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="15dp"
-            />
+            android:layout_marginEnd="15dp" />
 
         <TextView
             android:id="@+id/tv_nomeReceita_Act_recyclerChild"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome"
-            android:maxLines="1"
+            android:layout_toEndOf="@+id/imageView_Act_recyclerChild"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Nome"
             android:textColor="@android:color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_toEndOf="@+id/imageView_Act_recyclerChild"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_tempoReceita_Act_recyclerChild"
@@ -41,9 +39,9 @@
             android:layout_alignStart="@id/tv_nomeReceita_Act_recyclerChild"
             android:layout_below="@id/tv_nomeReceita_Act_recyclerChild"
             android:layout_marginTop="10dp"
-            android:text="Tempo"
-            android:maxLines="1"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Tempo"
             android:textSize="18sp" />
 
         <TextView
@@ -61,10 +59,31 @@
             android:id="@+id/tv_nomeAutor_Act_recyclerChild"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/imageView_Act_recyclerChild"
             android:text="Autor"
-            android:layout_alignParentBottom="true"
             android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/full_star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/tv_nomeReceita_Act_recyclerChild"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:visibility="gone"
+            android:background="@null"
+            card_view:srcCompat="@drawable/ic_star" />
+
+        <ImageButton
+            android:id="@+id/empty_star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/tv_nomeReceita_Act_recyclerChild"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            card_view:srcCompat="@drawable/ic_star_border_black_24dp" />
 
     </RelativeLayout>
 

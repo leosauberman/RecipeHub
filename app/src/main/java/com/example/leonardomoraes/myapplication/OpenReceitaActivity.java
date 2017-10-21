@@ -1,31 +1,20 @@
 package com.example.leonardomoraes.myapplication;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
@@ -52,10 +41,6 @@ import com.google.firebase.storage.StorageReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -346,10 +331,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                     startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
                 }
                 else if(pos == R.id.preferences){
-                    startActivity(new Intent(OpenReceitaActivity.this, SobreActivity.class));
+                    //startActivity(new Intent(OpenReceitaActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.salvas){
-                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
+                    startActivity(new Intent(OpenReceitaActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.sair){
                     auth.signOut();
@@ -467,7 +452,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
             startActivity(new Intent(this, MainActivity.class));
         }
         else if(position == 2){
-            startActivity(new Intent(this, SobreActivity.class));
+            startActivity(new Intent(this, SalvarActivity.class));
         }
         else if(position == 3){
             auth.signOut();

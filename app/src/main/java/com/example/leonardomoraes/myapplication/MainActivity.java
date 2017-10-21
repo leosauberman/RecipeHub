@@ -13,12 +13,9 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 //import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -39,8 +36,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-
-import static com.example.leonardomoraes.myapplication.R.layout.menu_header;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
@@ -127,10 +122,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                     return true;
                 }
                 else if(pos == R.id.preferences){
-                    startActivity(new Intent(MainActivity.this, SobreActivity.class));
+                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.salvas){
-                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
+                    startActivity(new Intent(MainActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.sair){
                     auth.signOut();
@@ -230,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             startActivity(new Intent(this, MainActivity.class));
         }
         else if(position == 2){
-            startActivity(new Intent(this, SobreActivity.class));
+            startActivity(new Intent(this, SalvarActivity.class));
         }
         else if(position == 3){
             auth.signOut();

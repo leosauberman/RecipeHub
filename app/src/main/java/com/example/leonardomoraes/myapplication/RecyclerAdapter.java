@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,8 +49,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private DatabaseReference myRef = database.getReference("Usuario");
-
+    private DatabaseReference myRef2;
     private Uri downloadUrl;
+    private ArrayList<String> receitaIdArray;
 
     class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         //ItemClickListener itemClickListener;
@@ -58,13 +60,110 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         TextView tipo = (TextView) itemView.findViewById(R.id.tv_tipoReceita_Act_recyclerChild);
         ImageView foto = (ImageView) itemView.findViewById(R.id.imageView_Act_recyclerChild);
         TextView autor = (TextView) itemView.findViewById(R.id.tv_nomeAutor_Act_recyclerChild);
+        ImageButton salvar = (ImageButton) itemView.findViewById(R.id.empty_star);
+        ImageButton desalvar = (ImageButton) itemView.findViewById(R.id.full_star);
 
 
         RecyclerHolder(View itemView) {
             super(itemView);
-
             itemView.setTag(itemView);
             itemView.setOnClickListener(this);
+
+            receitaIdArray = new ArrayList<>();
+
+            myRef2 = myRef.child(auth.getCurrentUser().getUid());
+
+            myRef2.child("salvas").addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot salvasSnapshot : dataSnapshot.getChildren()) {
+                        String salvas = salvasSnapshot.getValue(String.class);
+
+                        receitaIdArray.add(salvas);
+                        final int pos = getAdapterPosition();
+                        try {
+                            recipeId = receitaArrayList.get(pos).getIdProprio();
+                            recipeNome = receitaArrayList.get(pos).getNome();
+
+                            if (receitaIdArray.contains(recipeId)) {
+                                salvar.setVisibility(View.GONE);
+                                desalvar.setVisibility(View.VISIBLE);
+                            } else {
+                                salvar.setVisibility(View.VISIBLE);
+                                desalvar.setVisibility(View.GONE);
+                            }
+
+                            salvar.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    recipeId = receitaArrayList.get(pos).getIdProprio();
+                                    recipeNome = receitaArrayList.get(pos).getNome();
+                                    myRef2.child("salvas").child(recipeNome).setValue(recipeId);
+                                    salvar.setVisibility(View.GONE);
+                                    desalvar.setVisibility(View.VISIBLE);
+                                }
+                            });
+
+                            desalvar.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    recipeId = receitaArrayList.get(pos).getIdProprio();
+                                    recipeNome = receitaArrayList.get(pos).getNome();
+                                    myRef2.child("salvas").child(recipeNome).removeValue();
+                                    desalvar.setVisibility(View.GONE);
+                                    salvar.setVisibility(View.VISIBLE);
+                                }
+                            });
+                        }catch (Exception e){
+                            Toast.makeText(c, "Erro:" + e, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+            myRef2.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if(!dataSnapshot.hasChild("salvas")) {
+                        salvar.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                int pos = getAdapterPosition();
+                                recipeId = receitaArrayList.get(pos).getIdProprio();
+                                recipeNome = receitaArrayList.get(pos).getNome();
+                                myRef2.child("salvas").child(recipeNome).setValue(recipeId);
+                                salvar.setVisibility(View.GONE);
+                                desalvar.setVisibility(View.VISIBLE);
+                            }
+                        });
+
+                        desalvar.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                int pos = getAdapterPosition();
+                                recipeId = receitaArrayList.get(pos).getIdProprio();
+                                recipeNome = receitaArrayList.get(pos).getNome();
+                                myRef2.child("salvas").child(recipeNome).removeValue();
+                                desalvar.setVisibility(View.GONE);
+                                salvar.setVisibility(View.VISIBLE);
+                            }
+                        });
+                    }
+                    else{
+                        return;
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
         }
 
         @Override
@@ -131,7 +230,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
             }
         });
-
 
 
         if (recipeUri != null) {

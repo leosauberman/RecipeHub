@@ -11,12 +11,9 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
@@ -161,10 +158,10 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
                 }
                 else if(pos == R.id.preferences){
-                    startActivity(new Intent(SearchActivity.this, SobreActivity.class));
+                    //startActivity(new Intent(SearchActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.salvas){
-                    //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
+                    startActivity(new Intent(SearchActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.sair){
                     auth.signOut();

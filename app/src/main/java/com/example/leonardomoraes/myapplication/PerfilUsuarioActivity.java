@@ -11,11 +11,9 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -164,7 +162,7 @@ public class PerfilUsuarioActivity extends MainActivity {
                     startActivity(new Intent(PerfilUsuarioActivity.this, MainActivity.class));
                 }
                 else if(pos == R.id.preferences){
-                    startActivity(new Intent(PerfilUsuarioActivity.this, SobreActivity.class));
+                    startActivity(new Intent(PerfilUsuarioActivity.this, SalvarActivity.class));
                 }
                 else if(pos == R.id.salvas){
                     //startActivity(new Intent(MainActivity.this, SalvarActivity.class));
