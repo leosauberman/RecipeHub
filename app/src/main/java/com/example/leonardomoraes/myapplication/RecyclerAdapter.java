@@ -168,6 +168,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         @Override
         public void onClick(View v) {
+
+
             int pos = getAdapterPosition();
 
             recipeNome = receitaArrayList.get(pos).getNome();
@@ -194,7 +196,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             intent.putExtra("uri", recipeUri);
             intent.putExtra("idDono", recipeIdDono);
             intent.putExtra("idPai", recipeIdPai);
-            intent.putExtra("autor", recipeAutor);
+            //intent.putExtra("autor", recipeAutor);
             context.startActivity(intent);
         }
     }

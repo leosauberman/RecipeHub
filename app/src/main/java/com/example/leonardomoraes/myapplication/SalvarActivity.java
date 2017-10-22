@@ -30,7 +30,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class SalvarActivity extends AppCompatActivity {
+public class SalvarActivity extends MainActivity {
 
     private ArrayList<Receita> receitaArrayList;
     private RecyclerView recyclerView;
@@ -64,6 +64,8 @@ public class SalvarActivity extends AppCompatActivity {
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         profileTV = (TextView) headerView.findViewById(R.id.profileTV);
         profileTV.setOnClickListener(new View.OnClickListener() {
@@ -166,6 +168,41 @@ public class SalvarActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
 
         recyclerView.setLayoutManager(gridLayoutManager);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle
+        // If it returns true, then it has handled
+        // the nav drawer indicator touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
+    //@Override
+    public boolean onQueryTextSubmit(String query) {
+
+        Intent intent = new Intent (this, SearchActivity.class);
+        intent.putExtra("query", query);
+        startActivity(intent);
+
+        return false;
+
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
     }
 
     @Override

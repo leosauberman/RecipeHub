@@ -101,7 +101,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
             }
         });
 
-        Query buscanome = userRef.orderByChild("nome").equalTo(query);
+        /*Query buscanome = userRef.orderByChild("nome").equalTo(query);
         buscanome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -119,7 +119,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });*/
 
 
         //MENU

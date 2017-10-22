@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\ADM\\.android\\build-cache\\c3d912a330e903ac342feaf74e6d0ced608a6917\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Pedro\\.android\\build-cache\\699bf1a5cf92fc83856c8e24d8eaa98fbb858210\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
