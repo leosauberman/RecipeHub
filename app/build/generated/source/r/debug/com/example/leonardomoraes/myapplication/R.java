@@ -3722,7 +3722,7 @@ containing a value of this type.
         public static final int et_tempoReceita_Act_telaReceita=0x7f0e00cf;
         public static final int et_tempoReceita_Act_versionamento=0x7f0e00dc;
         public static final int exitUntilCollapsed=0x7f0e0025;
-        public static final int expList=0x7f0e00ad;
+        public static final int expList=0x7f0e00ac;
         public static final int expand_activities_button=0x7f0e0060;
         public static final int expanded_menu=0x7f0e0075;
         public static final int fab_adicionarReceita_Act_main=0x7f0e0106;
@@ -3748,7 +3748,6 @@ containing a value of this type.
         public static final int imageView_Act_recyclerChild=0x7f0e0121;
         public static final int imageView_Act_telaReceita=0x7f0e00cc;
         public static final int imageView_Act_versionamento=0x7f0e00de;
-        public static final int include=0x7f0e00ac;
         public static final int info=0x7f0e0118;
         public static final int ingredientes=0x7f0e00a2;
         public static final int inline=0x7f0e0056;
@@ -3859,6 +3858,7 @@ containing a value of this type.
         public static final int text2=0x7f0e011e;
         public static final int textSpacerNoButtons=0x7f0e006d;
         public static final int textSpacerNoTitle=0x7f0e006c;
+        public static final int textView=0x7f0e00ad;
         public static final int text_input_password_toggle=0x7f0e0102;
         public static final int textinput_counter=0x7f0e000a;
         public static final int textinput_error=0x7f0e000b;

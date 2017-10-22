@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_tela_receita"
@@ -24,6 +24,10 @@
         android:text="@string/nome_receita"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />!-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/txinput_nome"
@@ -144,14 +148,14 @@
         android:id="@+id/et_preparoReceita_Act_telaReceita"
         android:layout_width="250dp"
         android:layout_height="150dp"
-        android:layout_alignBottom="@+id/fab_criarReceita_Act_telaReceita"
-        android:layout_below="@+id/tv_preparoReceita_Act_telaReceita"
-        android:layout_margin="12dp"
         android:gravity="top"
         android:textColor="@color/black"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:scrollbarAlwaysDrawVerticalTrack="true" />
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/tv_preparoReceita_Act_telaReceita"
+        android:layout_toStartOf="@+id/imageView_Act_telaReceita" />
 
     <TextView
         android:id="@+id/tv_minutes_Act_telaReceita"
@@ -179,6 +183,6 @@
         android:background="@drawable/ic_add_a_photo_black_24dp" />
 
 
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</ScrollView>
