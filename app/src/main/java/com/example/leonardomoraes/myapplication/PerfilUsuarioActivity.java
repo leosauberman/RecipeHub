@@ -74,7 +74,6 @@ public class PerfilUsuarioActivity extends MainActivity {
         nome = (TextView) findViewById(R.id.tv_nome_act_perfil_usuario);
         seguidores = (TextView) findViewById((R.id.tv_seguidores_act_perfil_usuario));
         seguindo = (TextView) findViewById((R.id.tv_seguindo_act_perfil_usuario));
-        editar = (TextView) findViewById(R.id.editar);
 
         CircleImageView profileImage = (CircleImageView) findViewById(R.id.profileImage);
         for(UserInfo profile: auth.getCurrentUser().getProviderData()){
