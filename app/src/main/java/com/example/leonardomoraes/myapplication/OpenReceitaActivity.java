@@ -3,6 +3,7 @@ package com.example.leonardomoraes.myapplication;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
+import android.sax.StartElementListener;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.MenuItemCompat;
@@ -100,17 +101,15 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         View headerView = navView.getHeaderView(0);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close);
+        mDrawerToggle = new ActionBarDrawerToggle(OpenReceitaActivity.this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setTitle("Pesquisar");
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         expandableListView = (ExpandableListView) findViewById(R.id.expList);
 
         //recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+        //GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
         //recyclerViewFilhas.setLayoutManager(gridLayoutManager);
 
         //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -118,6 +117,10 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         //inflate your activity layout here!
         //View contentView = inflater.inflate(R.layout.activity_open_receita, null, false);
         //mDrawerLayout.addView(contentView, 0);
+
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         Button version = (Button) findViewById(R.id.version);
@@ -291,13 +294,16 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                                 + ":"
                                 + listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition),
                         Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(OpenReceitaActivity.this, FilhasActivity.class);
+                String tipoFilha = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
+                i.putExtra("tipo", tipoFilha);
+                i.putExtra("idProprio", idProprio);
+
+                startActivity(i);
                 return false;
             }
         });
 
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-        mDrawerToggle.syncState();
-       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         profileTV = (TextView) headerView.findViewById(R.id.profileTV);
         profileTV.setOnClickListener(new View.OnClickListener() {
@@ -328,7 +334,8 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int pos = item.getItemId();
                 if(pos == R.id.feed){
-                    startActivity(new Intent(OpenReceitaActivity.this, MainActivity.class));
+                    //startActivity(new Intent(MainActivity.this, MainActivity.class));
+                    return true;
                 }
                 else if(pos == R.id.preferences){
                     //startActivity(new Intent(OpenReceitaActivity.this, SalvarActivity.class));
@@ -390,6 +397,25 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 //        });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle
+        // If it returns true, then it has handled
+        // the nav drawer indicator touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
 
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
@@ -397,28 +423,20 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         //valor do pai
 
-        listDataHeader.add("numeros");
-        listDataHeader.add("letras");
+        listDataHeader.add("versoes");
 
         //valor das filhas
 
-        List<String> numeros = new ArrayList<String>();
-        numeros.add("1");
-        numeros.add("2");
-        numeros.add("3");
-        numeros.add("4");
-        numeros.add("5");
-        numeros.add("6");
+        List<String> versoes = new ArrayList<String>();
+        versoes.add("Normal");
+        versoes.add("Vegetariano");
+        versoes.add("Vegano");
+        versoes.add("Sem lactose");
+        versoes.add("Sem glúten");
+        versoes.add("Sem açúcar");
 
-        List<String> letras = new ArrayList<String>();
-        letras.add("a");
-        letras.add("b");
-        letras.add("c");
-        letras.add("d");
-        letras.add("e");
+        listDataChild.put(listDataHeader.get(0), versoes);
 
-        listDataChild.put(listDataHeader.get(0), numeros);
-        listDataChild.put(listDataHeader.get(1), letras);
 
     }
     @Override
@@ -438,6 +456,12 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         startActivity(intent);
 
         return false;
+
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
     }
 
     @Override
@@ -446,7 +470,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         startActivity(new Intent(this, MainActivity.class));
     }
 
-    private void selectItemFromDrawer(int position) {
+    /*private void selectItemFromDrawer(int position) {
 
         if(position == 0){
             startActivity(new Intent(this, MainActivity.class));
@@ -464,7 +488,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
         // Close the drawer
         mDrawerLayout.closeDrawer(mDrawerPane);
-    }
+    }*/
 
     @Override
     public void onClick(View view) {

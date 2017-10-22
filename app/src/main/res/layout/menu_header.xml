@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/avatar"
+        android:textColor="@color/white"
         android:text="TextView"
         android:textSize="18sp" />
 
@@ -36,5 +37,5 @@
         android:layout_marginTop="10dp"
         android:clickable="true"
         android:text="Ver perfil"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/white" />
 </RelativeLayout>
