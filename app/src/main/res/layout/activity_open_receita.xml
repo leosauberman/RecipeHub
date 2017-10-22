@@ -22,38 +22,28 @@
         android:scrollbars="vertical"
         tools:context="com.example.leonardomoraes.myapplication.OpenReceitaActivity">
 
-        <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/include" />
 
         <ImageView
             android:id="@+id/imageView_Act_openReceita"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="23dp"
             app:srcCompat="@android:drawable/ic_menu_gallery"
-            android:layout_marginTop="55dp"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:id="@+id/nome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView_Act_openReceita"
-            android:layout_margin="10dp"
-            android:text="@string/nome_receita"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_below="@+id/include"
+            android:layout_alignEnd="@+id/delete"
+            android:layout_marginEnd="16dp" />
 
         <TextView
             android:id="@+id/tv_nomeReceita_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/nome"
-            android:layout_alignBottom="@+id/nome"
-            android:layout_alignStart="@id/nome"
-            android:layout_marginStart="55dp"
             android:text="TextView"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp" />
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/imageView_Act_openReceita"
+            android:layout_toEndOf="@+id/autor" />
 
         <TextView
             android:id="@+id/ingredientes"
@@ -70,12 +60,12 @@
             android:id="@+id/tv_ingredientesReceita_Act_openReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nome"
-            android:layout_marginStart="11dp"
-            android:layout_toEndOf="@+id/ingredientes"
             android:text="texteview"
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/ingredientes"
+            android:layout_alignBottom="@+id/ingredientes"
+            android:layout_toEndOf="@+id/ingredientes" />
 
         <TextView
             android:id="@+id/tempo"
@@ -173,27 +163,27 @@
         <Button
             android:id="@+id/version"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@color/colorPrimary"
-            android:text="version"
-            android:layout_below="@+id/nome"
-            android:layout_alignParentEnd="true" />
+            android:text="versionar"
+            android:layout_below="@+id/autor"
+            android:layout_alignStart="@+id/autor" />
 
         <Button
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@null"
             android:text="DEL"
-            android:textColor="@color/white"
-            android:layout_alignTop="@+id/preparo"
-            android:layout_alignEnd="@+id/tv_preparoReceita_Act_openReceita" />
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/include"
+            android:layout_alignParentEnd="true" />
 
         <ExpandableListView
             android:id="@+id/expList"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:layout_below="@+id/tv_autor_Act_openReceita"
+            android:layout_below="@+id/version"
             android:layout_alignParentStart="true" />
 
 

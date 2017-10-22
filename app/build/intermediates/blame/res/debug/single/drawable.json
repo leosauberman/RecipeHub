@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_black_24dp.png",
         "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\src\\main\\res\\drawable\\ic_menu_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
