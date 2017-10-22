@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -34,6 +36,7 @@ public class FilhasActivity extends AppCompatActivity {
         tempArrayList = new ArrayList<>();
         receitaArrayList = new ArrayList<>();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerFilhas);
+        final TextView textView = (TextView) findViewById(R.id.text);
 
         Intent i = getIntent();
         String idProprio = i.getExtras().getString("idProprio");
@@ -50,7 +53,10 @@ public class FilhasActivity extends AppCompatActivity {
                 for(int j = 0; j < tempArrayList.size(); j++){
                     if(tempArrayList.get(j).getTipo().equals(tipo)) {
                         receitaArrayList.add(tempArrayList.get(j));
-
+                    }
+                    if(receitaArrayList.isEmpty()){
+                        textView.setVisibility(View.VISIBLE);
+                        recyclerView.setVisibility(View.GONE);
                     }
                 }
                 adapter = new RecyclerAdapter(receitaArrayList, FilhasActivity.this);
