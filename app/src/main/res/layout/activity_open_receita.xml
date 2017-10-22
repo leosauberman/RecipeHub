@@ -37,13 +37,13 @@
 
         <TextView
             android:id="@+id/tv_nomeReceita_Act_openReceita"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="@android:color/background_dark"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:layout_alignTop="@+id/imageView_Act_openReceita"
-            android:layout_toEndOf="@+id/autor" />
+            android:layout_margin="10dp" />
 
         <TextView
             android:id="@+id/ingredientes"

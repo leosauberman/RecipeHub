@@ -3649,7 +3649,7 @@ containing a value of this type.
         public static final int always=0x7f0e0045;
         public static final int auto=0x7f0e002f;
         public static final int automatic=0x7f0e0057;
-        public static final int autor=0x7f0e00a1;
+        public static final int autor=0x7f0e00a9;
         public static final int avatar=0x7f0e0108;
         public static final int basic=0x7f0e0017;
         public static final int beginning=0x7f0e0041;
@@ -3749,7 +3749,7 @@ containing a value of this type.
         public static final int imageView_Act_telaReceita=0x7f0e00cc;
         public static final int imageView_Act_versionamento=0x7f0e00de;
         public static final int info=0x7f0e0118;
-        public static final int ingredientes=0x7f0e00a2;
+        public static final int ingredientes=0x7f0e00a1;
         public static final int inline=0x7f0e0056;
         public static final int item_touch_helper_previous_elevation=0x7f0e0005;
         public static final int large=0x7f0e005a;
@@ -3788,7 +3788,7 @@ containing a value of this type.
         public static final int parentPanel=0x7f0e0068;
         public static final int pin=0x7f0e003b;
         public static final int preferences=0x7f0e012a;
-        public static final int preparo=0x7f0e00a6;
+        public static final int preparo=0x7f0e00a5;
         public static final int profileContent=0x7f0e00af;
         public static final int profileImage=0x7f0e00b2;
         public static final int profileTV=0x7f0e0109;
@@ -3853,7 +3853,7 @@ containing a value of this type.
         public static final int submenuarrow=0x7f0e0079;
         public static final int submit_area=0x7f0e008a;
         public static final int tabMode=0x7f0e001c;
-        public static final int tempo=0x7f0e00a4;
+        public static final int tempo=0x7f0e00a3;
         public static final int text=0x7f0e008f;
         public static final int text2=0x7f0e011e;
         public static final int textSpacerNoButtons=0x7f0e006d;
@@ -3865,7 +3865,7 @@ containing a value of this type.
         public static final int textinputemail=0x7f0e0094;
         public static final int textinputsenha=0x7f0e0096;
         public static final int time=0x7f0e0116;
-        public static final int tipo=0x7f0e00a8;
+        public static final int tipo=0x7f0e00a7;
         public static final int tipoRadioGroup_Act_telaReceita=0x7f0e00d0;
         public static final int tipoRadioGroup_Act_versionamento=0x7f0e00e1;
         public static final int title=0x7f0e0065;
@@ -3881,7 +3881,7 @@ containing a value of this type.
         public static final int tv_botao_seguir_act_perfil_usuario=0x7f0e00b5;
         public static final int tv_esqueceuSenha_Act_resetpassword=0x7f0e00b9;
         public static final int tv_informeEmail_Act_resetpassword=0x7f0e00ba;
-        public static final int tv_ingredientesReceita_Act_openReceita=0x7f0e00a3;
+        public static final int tv_ingredientesReceita_Act_openReceita=0x7f0e00a2;
         public static final int tv_ingredientesReceita_Act_telaReceita=0x7f0e00cb;
         public static final int tv_ingredientesReceita_Act_versionamento=0x7f0e00dd;
         public static final int tv_minutes_Act_telaReceita=0x7f0e00d7;
@@ -3890,16 +3890,16 @@ containing a value of this type.
         public static final int tv_nomeReceita_Act_openReceita=0x7f0e00a0;
         public static final int tv_nomeReceita_Act_recyclerChild=0x7f0e0122;
         public static final int tv_nome_act_perfil_usuario=0x7f0e00b1;
-        public static final int tv_preparoReceita_Act_openReceita=0x7f0e00a7;
+        public static final int tv_preparoReceita_Act_openReceita=0x7f0e00a6;
         public static final int tv_preparoReceita_Act_telaReceita=0x7f0e00d5;
         public static final int tv_preparoReceita_Act_versionamento=0x7f0e00e6;
         public static final int tv_seguidores_act_perfil_usuario=0x7f0e00b3;
         public static final int tv_seguindo_act_perfil_usuario=0x7f0e00b4;
-        public static final int tv_tempoReceita_Act_openReceita=0x7f0e00a5;
+        public static final int tv_tempoReceita_Act_openReceita=0x7f0e00a4;
         public static final int tv_tempoReceita_Act_recyclerChild=0x7f0e0123;
         public static final int tv_tempoReceita_Act_telaReceita=0x7f0e00ce;
         public static final int tv_tempoReceita_Act_versionamento=0x7f0e00e0;
-        public static final int tv_tipoReceita_Act_openReceita=0x7f0e00a9;
+        public static final int tv_tipoReceita_Act_openReceita=0x7f0e00a8;
         public static final int tv_tipoReceita_Act_recyclerChild=0x7f0e0124;
         public static final int tv_titulo_Act_login=0x7f0e0093;
         public static final int tv_titulo_Act_singup=0x7f0e00c1;
