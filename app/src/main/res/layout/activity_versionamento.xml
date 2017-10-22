@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_versionamento"
@@ -11,6 +11,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/criarReceita"
     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/txinput_nome_Act_versionamento"
@@ -133,9 +137,9 @@
         android:id="@+id/et_preparoReceita_Act_versionamento"
         android:layout_width="250dp"
         android:layout_height="150dp"
-        android:layout_alignBottom="@+id/fab_versionarReceita_Act_versionamento"
+        android:layout_marginLeft="12dp"
         android:layout_below="@+id/tv_preparoReceita_Act_versionamento"
-        android:layout_margin="12dp"
+        android:layout_toStartOf="@+id/imageView_Act_versionamento"
         android:gravity="top"
         android:textColor="@color/black"
         android:ems="10"
@@ -168,4 +172,5 @@
         android:background="@drawable/ic_add_a_photo_black_24dp" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
