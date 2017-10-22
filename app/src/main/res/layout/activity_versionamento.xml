@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nome"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/et_tempoReceita_Act_versionamento" />
@@ -47,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_ingredientesReceita_Act_versionamento"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:ems="10"
         android:hint="@string/ingredient_description"
         android:textColorHint="@color/input_login_hint"
@@ -69,6 +71,7 @@
         android:layout_below="@+id/tv_tempoReceita_Act_versionamento"
         android:layout_alignEnd="@+id/tv_tempoReceita_Act_versionamento"
         android:inputType="time"
+        android:textColor="@color/black"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_marginTop="14dp"/>
 
@@ -134,6 +137,7 @@
         android:layout_below="@+id/tv_preparoReceita_Act_versionamento"
         android:layout_margin="12dp"
         android:gravity="top"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="textMultiLine"
         android:scrollbarAlwaysDrawVerticalTrack="true" />

@@ -115,7 +115,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                                 }
                             });
                         }catch (Exception e){
-                            Toast.makeText(c, "Erro:" + e, Toast.LENGTH_SHORT).show();
+                            System.out.println("Erro:" + e);
                         }
                     }
                 }

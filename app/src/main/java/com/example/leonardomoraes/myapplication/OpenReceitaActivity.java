@@ -252,7 +252,7 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         expandableListView.setAdapter(listAdapter);
 
 
-        expandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+        /*expandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
 
@@ -261,9 +261,9 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                 return false;
 
             }
-        });
+        });*/
 
-        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+        /*expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
 
             @Override
             public void onGroupExpand(int groupPosition) {
@@ -271,9 +271,9 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
                         listDataHeader.get(groupPosition) + " Expanded",
                         Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
-        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+        /*expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
@@ -283,17 +283,17 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
             }
         });
-
+*/
 
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
 
-                Toast.makeText(getApplicationContext(),
+               /* Toast.makeText(getApplicationContext(),
                         listDataHeader.get(groupPosition)
                                 + ":"
                                 + listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition),
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();*/
                 Intent i = new Intent(OpenReceitaActivity.this, FilhasActivity.class);
                 String tipoFilha = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                 i.putExtra("tipo", tipoFilha);

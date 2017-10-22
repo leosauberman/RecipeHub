@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Oct 21 23:03:04 BRST 2017
+#Sat Oct 21 23:26:38 BRST 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\design_tint_password_toggle.xml
 14.set=ANDROID_RESOURCE
