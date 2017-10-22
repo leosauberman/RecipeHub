@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.leonardomoraes.myapplication">
+    package="org.ort.leonardomoraes.recipehub">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,23 +18,23 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".TelaReceita" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="org.ort.leonardomoraes.recipehub.MainActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.TelaReceita" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".OpenReceitaActivity" />
-        <activity android:name=".SearchActivity" />
-        <activity android:name=".PerfilUsuarioActivity" />
-        <activity android:name=".VersionamentoActivity" />
-        <activity android:name=".SalvarActivity" />
-        <activity android:name=".FilhasActivity"></activity>
+        <activity android:name="org.ort.leonardomoraes.recipehub.SignupActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.ResetPasswordActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.OpenReceitaActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.SearchActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.PerfilUsuarioActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.VersionamentoActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.SalvarActivity" />
+        <activity android:name="org.ort.leonardomoraes.recipehub.FilhasActivity"></activity>
     </application>
 
 </manifest>

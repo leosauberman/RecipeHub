@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="570dp"
         android:scrollbars="vertical"
-        tools:context="com.example.leonardomoraes.myapplication.OpenReceitaActivity">
+        tools:context="com.example.leonardomoraes.recipehub.org.example.leonardomoraes.recipehub.OpenReceitaActivity">
 
         <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/toolbar" />

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "578118998514-e4vqnbev6t2ees7isl47o1m2vk0ufdra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leonardomoraes.myapplication",
+            "certificate_hash": "4f3ab6bcc6e21a77fc37c262b0679d24cfd3fe8a"
+          }
+        },
+        {
           "client_id": "578118998514-oi5qs7f1q5o64h3suqojd4aa2l3abm63.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -44,6 +52,37 @@
               "client_type": 3
             }
           ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578118998514:android:776afd4a6cad825c",
+        "android_client_info": {
+          "package_name": "org.ort.leonardomoraes.recipehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578118998514-5kqtp3ilh1ad4h8qik96un1qgkunmh2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXMsnHyH-sPlu88befd4AM8AJvoPftgIk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

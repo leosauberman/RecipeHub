@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 22 11:24:01 BRST 2017
+#Sun Oct 22 11:56:36 BRST 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_text_cursor_material.xml
 14.set=ANDROID_RESOURCE
