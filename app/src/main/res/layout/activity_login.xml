@@ -5,7 +5,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.leonardomoraes.myapplication.org.example.leonardomoraes.myapplication.LoginActivity">
+    tools:context="org.ort.leonardomoraes.recipehub.LoginActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
