@@ -87,6 +87,7 @@ public class PerfilUsuarioActivity extends MainActivity {
             }
         }
 
+        recyclerView1 = (RecyclerView) findViewById(R.id.recycler_view_usuario);
         receitaArrayList1 = new ArrayList<>();
 
         add = (FloatingActionButton) findViewById(R.id.fab_adicionarReceita_Act_perfil);
@@ -94,6 +95,24 @@ public class PerfilUsuarioActivity extends MainActivity {
         {
             public void onClick(View v){
                 startActivity(new Intent(PerfilUsuarioActivity.this, TelaReceita.class));
+            }
+        });
+
+        //FAB hiding
+        recyclerView1.addOnScrollListener(new RecyclerView.OnScrollListener(){
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy){
+                if (dy > 0 && add.isShown()){
+                    add.hide();
+                }
+                else{
+                    add.show();
+                }
+            }
+
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+
             }
         });
 
@@ -118,7 +137,7 @@ public class PerfilUsuarioActivity extends MainActivity {
                 // Failed to read value
             }
         });
-        recyclerView1 = (RecyclerView) findViewById(R.id.recycler_view_usuario);
+
         recyclerView1.setHasFixedSize(false);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);

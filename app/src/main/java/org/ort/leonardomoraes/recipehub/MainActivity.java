@@ -86,6 +86,24 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
+        //FAB hiding
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener(){
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy){
+                if (dy > 0 && add1.isShown()){
+                    add1.hide();
+                }
+                else{
+                    add1.show();
+                }
+            }
+
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+
+            }
+        });
+
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
