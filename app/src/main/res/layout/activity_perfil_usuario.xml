@@ -15,7 +15,7 @@
         android:id="@+id/profileContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.leonardomoraes.myapplication.PerfilUsuarioActivity">
+        tools:context="com.example.leonardomoraes.myapplication.org.example.leonardomoraes.myapplication.PerfilUsuarioActivity">
 
         <include layout="@layout/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" />
 

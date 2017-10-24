@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '26'
     defaultConfig {
-        applicationId "com.example.leonardomoraes.myapplication"
+        applicationId "org.ort.leonardomoraes.recipehub"
         minSdkVersion 22
         targetSdkVersion 25
         versionCode 1

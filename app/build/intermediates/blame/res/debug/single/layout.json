@@ -12,12 +12,12 @@
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recycler_child.xml",
         "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\src\\main\\res\\layout\\recycler_child.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_Atual\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Pedro\\.android\\build-cache\\c0a377e0e0eb32074707621035f52da22ce26b7c\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\ADM\\.android\\build-cache\\9a4ad77037f0b7cdb50c4e7b2ae58ec333b9c6c9\\output\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\gapeb\\.android\\build-cache\\b647938426ebffa7d1adbe29c611542ecb5a8164\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\ADM\\.android\\build-cache\\9a4ad77037f0b7cdb50c4e7b2ae58ec333b9c6c9\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",

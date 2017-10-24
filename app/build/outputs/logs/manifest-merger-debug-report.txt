@@ -2,7 +2,7 @@
 manifest
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
-		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:3:5-55
+		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -75,15 +75,15 @@ MERGED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\ADM\.and
 		ADDED from [com.facebook.android:facebook-android-sdk:4.26.0] C:\Users\ADM\.android\build-cache\c0b24c2d03823d8b7c08e157984915e3cdc0bc0a\output\AndroidManifest.xml:32:13-63
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:18:13-57
-activity#com.example.leonardomoraes.myapplication.MainActivity
+activity#org.ort.leonardomoraes.recipehub.MainActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:21:9-50
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:21:19-47
-activity#com.example.leonardomoraes.myapplication.TelaReceita
+activity#org.ort.leonardomoraes.recipehub.TelaReceita
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:22:9-49
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:22:19-46
-activity#com.example.leonardomoraes.myapplication.LoginActivity
+activity#org.ort.leonardomoraes.recipehub.LoginActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:23:9-29:20
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:23:19-48
@@ -97,35 +97,35 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:27:27-74
-activity#com.example.leonardomoraes.myapplication.SignupActivity
+activity#org.ort.leonardomoraes.recipehub.SignupActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:30:9-52
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:30:19-49
-activity#com.example.leonardomoraes.myapplication.ResetPasswordActivity
+activity#org.ort.leonardomoraes.recipehub.ResetPasswordActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:31:9-59
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:31:19-56
-activity#com.example.leonardomoraes.myapplication.OpenReceitaActivity
+activity#org.ort.leonardomoraes.recipehub.OpenReceitaActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:32:9-57
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:32:19-54
-activity#com.example.leonardomoraes.myapplication.SearchActivity
+activity#org.ort.leonardomoraes.recipehub.SearchActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:33:9-52
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:33:19-49
-activity#com.example.leonardomoraes.myapplication.PerfilUsuarioActivity
+activity#org.ort.leonardomoraes.recipehub.PerfilUsuarioActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:34:9-59
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:34:19-56
-activity#com.example.leonardomoraes.myapplication.VersionamentoActivity
+activity#org.ort.leonardomoraes.recipehub.VersionamentoActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:35:9-59
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:35:19-56
-activity#com.example.leonardomoraes.myapplication.SalvarActivity
+activity#org.ort.leonardomoraes.recipehub.SalvarActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:36:9-52
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:36:19-49
-activity#com.example.leonardomoraes.myapplication.FilhasActivity
+activity#org.ort.leonardomoraes.recipehub.FilhasActivity
 ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:37:9-61
 	android:name
 		ADDED from C:\Users\ADM\Documents\Android_Projects\RecipeHub_Atual\app\src\main\AndroidManifest.xml:37:19-49

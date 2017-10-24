@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:578118998514:android:e186a120fc011c58",
         "android_client_info": {
-          "package_name": "com.example.leonardomoraes.myapplication"
+          "package_name": "org.ort.leonardomoraes.recipehub"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "578118998514-oi5qs7f1q5o64h3suqojd4aa2l3abm63.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.leonardomoraes.myapplication",
+            "package_name": "org.ort.leonardomoraes.recipehub",
             "certificate_hash": "1c948c5f40e0d6a0e690b15a033b9ca1d3f6ad44"
           }
         },
