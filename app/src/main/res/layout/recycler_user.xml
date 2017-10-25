@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:contentPadding="20dp">
+
+    <RelativeLayout
+        android:layout_width="351dp"
+        android:layout_height="93dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_recyclerUser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/nome_recyclerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/imageView_recyclerUser"
+            />
+
+        <Button
+            android:id="@+id/botaoSeguir_recyclerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:text="Seguir" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

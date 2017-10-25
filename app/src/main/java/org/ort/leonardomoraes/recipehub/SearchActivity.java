@@ -36,9 +36,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class SearchActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
-    private RecyclerView recyclerViewSearch;
+    private RecyclerView recyclerViewSearch, recyclerViewUser;
     private RecyclerAdapter adapterSearch;
-    private UserAdapter adapterUserSearch;
+    private UsuarioAdapter adapterUserSearch;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference searchRef = database.getReference("Receita");
     private DatabaseReference userRef = database.getReference("Usuario");
@@ -62,6 +62,10 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         recyclerViewSearch = (RecyclerView) findViewById(R.id.recycler_view_search);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
         recyclerViewSearch.setLayoutManager(gridLayoutManager);
+
+        recyclerViewUser = (RecyclerView) findViewById(R.id.recycler_view_usersearch);
+        GridLayoutManager gridLayoutManager2 = new GridLayoutManager(this, 1);
+        recyclerViewUser.setLayoutManager(gridLayoutManager2);
 
         NavigationView navView = (NavigationView) findViewById(R.id.navView);
         View headerView = navView.getHeaderView(0);
@@ -101,25 +105,34 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
             }
         });
 
-        /*Query buscanome = userRef.orderByChild("nome").equalTo(query);
+        Query buscanome = userRef.orderByChild("nome").equalTo(query);
         buscanome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ArrayList<User> userList = new ArrayList();
-                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
-                    User user = userSnapshot.getValue(User.class);
+                if(dataSnapshot.exists()) {
+                    for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
+                        User user = new User();
+                        user.setName(userSnapshot.child("nome").getValue(String.class));
+                        user.setEmail(userSnapshot.child("user").child("email").getValue(String.class));
+                        user.setId(userSnapshot.child("user").child("id").getValue(String.class));
+                        user.setImageUrl(userSnapshot.child("user").child("imageUrl").getValue(String.class));
 
-                    userList.add(user);
+                        //user.setId(userSnapshot.getValue(String.class));
+                        user.setId(userSnapshot.getKey().toString());
+                        userList.add(user);
+                    }
                 }
-                adapterUserSearch = new UserAdapter(userList, SearchActivity.this);
-                recyclerViewSearch.setAdapter(adapterUserSearch);
+                adapterUserSearch = new UsuarioAdapter(userList, SearchActivity.this);
+                recyclerViewUser.setAdapter(adapterUserSearch);
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });*/
+        });
+
 
 
         //MENU

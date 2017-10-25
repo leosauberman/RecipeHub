@@ -61,6 +61,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             mRef.child(user.getId()).child("nome").setValue(user.getName());
 
+                            mRef.child(user.getId()).child("user").setValue(user);
+
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("user_id",uid);
                             intent.putExtra("profile_picture",image);

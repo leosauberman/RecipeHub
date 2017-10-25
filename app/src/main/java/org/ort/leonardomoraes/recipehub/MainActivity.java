@@ -1,6 +1,7 @@
 package org.ort.leonardomoraes.recipehub;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -43,8 +44,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private FloatingActionButton add1;
     private RecyclerView recyclerView;
     private RecyclerAdapter adapter;
+    private final boolean c = false;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("Receita");
+    private DatabaseReference myRef2 = database.getReference("Seguidas").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
     private DatabaseReference userRef = database.getReference("Usuario");
     private FirebaseAuth auth = FirebaseAuth.getInstance();
     private static String TAG = MainActivity.class.getSimpleName();
@@ -85,6 +88,45 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 startActivity(new Intent(MainActivity.this, TelaReceita.class));
             }
         });
+
+        receitaArrayList.clear();
+        // Read from the database
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    final Receita receita = receitaSnapshot.getValue(Receita.class);
+                    myRef2.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            for(DataSnapshot seguidorSnapshot : dataSnapshot.getChildren()){
+                                User user = seguidorSnapshot.getValue(User.class);
+                                if(receita.getIdDono().equals(user.getId()) || receita.getIdDono().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())  ){
+                                    receitaArrayList.add(receita);
+                                }
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+                adapter = new RecyclerAdapter(receitaArrayList, MainActivity.this);
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+            }
+        });
+        recyclerView.setHasFixedSize(false);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+
+        recyclerView.setLayoutManager(gridLayoutManager);
 
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
@@ -169,9 +211,23 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
-                    Receita receita = receitaSnapshot.getValue(Receita.class);
+                    final Receita receita = receitaSnapshot.getValue(Receita.class);
+                    myRef2.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            for(DataSnapshot seguidorSnapshot : dataSnapshot.getChildren()){
+                                User user = seguidorSnapshot.getValue(User.class);
+                                if(receita.getIdDono().equals(user.getId()) || receita.getIdDono().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())  ){
+                                    receitaArrayList.add(receita);
+                                }
+                            }
+                        }
 
-                    receitaArrayList.add(receita);
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
                 }
                 adapter = new RecyclerAdapter(receitaArrayList, MainActivity.this);
                 recyclerView.setAdapter(adapter);
@@ -218,25 +274,4 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public void onBackPressed() {
     }
 
-/*
-    private void selectItemFromDrawer(int position) {
-
-        if(position == 0){
-            startActivity(new Intent(this, MainActivity.class));
-        }
-        else if(position == 2){
-            startActivity(new Intent(this, SalvarActivity.class));
-        }
-        else if(position == 3){
-            auth.signOut();
-            startActivity(new Intent(this, LoginActivity.class));
-        }
-
-        mDrawerList.setItemChecked(position, true);
-        setTitle(mNavItems.get(position).mTitle);
-
-
-        // Close the drawer
-        mDrawerLayout.closeDrawer(mDrawerPane);
-    }*/
 }
