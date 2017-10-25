@@ -181,11 +181,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     protected void onStart() {
         super.onStart();
-        receitaArrayList.clear();
+
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                receitaArrayList.clear();
                 for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
                     Receita receita = receitaSnapshot.getValue(Receita.class);
 

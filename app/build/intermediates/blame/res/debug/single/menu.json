@@ -1,34 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_nav.xml",
-        "source": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\src\\main\\res\\menu\\menu_nav.xml"
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub45454\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_nav.xml",
+        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub45454\\app\\src\\main\\res\\menu\\menu_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
-        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\src\\main\\res\\menu\\menu_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_nav.xml",
-        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub18100\\app\\src\\main\\res\\menu\\menu_nav.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_Atual\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_Atual\\app\\src\\main\\res\\menu\\menu_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_Atual\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_nav.xml",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_Atual\\app\\src\\main\\res\\menu\\menu_nav.xml"
-    },
-    {
-        "merged": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
-        "source": "C:\\Users\\gapeb\\Downloads\\RecipeHub-alternative\\RecipeHub1610\\app\\src\\main\\res\\menu\\menu_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_nav.xml",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\src\\main\\res\\menu\\menu_nav.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
-        "source": "C:\\Users\\ADM\\Documents\\Android_Projects\\RecipeHub_1710\\app\\src\\main\\res\\menu\\menu_item.xml"
+        "merged": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub45454\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_item.xml",
+        "source": "C:\\Users\\Pedro\\AndroidStudioProjects\\RecipeHub45454\\app\\src\\main\\res\\menu\\menu_item.xml"
     }
 ]
