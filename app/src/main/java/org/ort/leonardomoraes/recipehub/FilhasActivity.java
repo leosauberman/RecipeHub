@@ -52,10 +52,6 @@ public class FilhasActivity extends AppCompatActivity {
                     if(tempArrayList.get(j).getTipo().equals(tipo)) {
                         receitaArrayList.add(tempArrayList.get(j));
                     }
-                    if(receitaArrayList.isEmpty()){
-                        textView.setVisibility(View.VISIBLE);
-                        recyclerView.setVisibility(View.GONE);
-                    }
                 }
                 adapter = new RecyclerAdapter(receitaArrayList, FilhasActivity.this);
                 recyclerView.setAdapter(adapter);
@@ -66,6 +62,12 @@ public class FilhasActivity extends AppCompatActivity {
 
             }
         });
+
+        if(receitaArrayList.isEmpty()){
+            textView.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        }
+
         recyclerView.setHasFixedSize(false);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);

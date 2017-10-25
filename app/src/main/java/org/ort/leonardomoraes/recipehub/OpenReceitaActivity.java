@@ -9,6 +9,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -31,6 +32,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
@@ -69,8 +71,8 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
 
     private DatabaseReference receitaRef, usuarioRef, paiRef, autorRef;
 
-    private DatabaseReference filhaRef = database.getReference("Receita");
-    private RecyclerView recyclerViewFilhas, recyclerViewPai;
+    private DatabaseReference originalRef = database.getReference("Receita");
+    private RecyclerView  recyclerViewOriginal;
     private RecyclerAdapter adapterFilhas, adapterPai;
 
     private CircleImageView avatar;
@@ -104,10 +106,6 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         setSupportActionBar(toolbar);
 
         expandableListView = (ExpandableListView) findViewById(R.id.expList);
-
-        //recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
-        //GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
-        //recyclerViewFilhas.setLayoutManager(gridLayoutManager);
 
         //LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -146,10 +144,13 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         preparo = (TextView) findViewById(R.id.tv_preparoReceita_Act_openReceita);
         img = (ImageView) findViewById(R.id.imageView_Act_openReceita);
         autor = (TextView) findViewById(R.id.tv_autor_Act_openReceita);
-        //receitaOriginal = (TextView) findViewById(R.id.receita_original);
+        receitaOriginal = (TextView) findViewById(R.id.receita_original);
         //receitasFilhas = (TextView) findViewById(R.id.receitas_filhas);
-        //recyclerViewPai = (RecyclerView) findViewById(R.id.recycler_view_pai);
+        recyclerViewOriginal = (RecyclerView) findViewById(R.id.recycler_view_original);
         //recyclerViewFilhas = (RecyclerView) findViewById(R.id.recycler_view_filhas);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);
+        recyclerViewOriginal.setLayoutManager(gridLayoutManager);
 
 
         progress = new ProgressDialog(OpenReceitaActivity.this);
@@ -249,6 +250,27 @@ public class OpenReceitaActivity extends MainActivity implements View.OnClickLis
         tipo.setText(tipo_string);
         preparo.setText(preparo_string);
         //autor.setText(nomeAutor);
+
+        Query buscaPai = originalRef.orderByChild("idProprio").equalTo(idPai);
+        buscaPai.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<Receita> newList = new ArrayList<>();
+                for(DataSnapshot receitaSnapshot : dataSnapshot.getChildren()) {
+                    Receita receita = receitaSnapshot.getValue(Receita.class);
+                    newList.add(receita);
+                    receitaOriginal.setText("Receita Original:");
+
+                }
+                adapterPai = new RecyclerAdapter(newList, OpenReceitaActivity.this);
+                recyclerViewOriginal.setAdapter(adapterPai);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         Glide.with(OpenReceitaActivity.this).load(imgUri).placeholder(R.drawable.ic_file_download_black_24dp).into(img);
 
